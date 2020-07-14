@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MenubarModule} from 'primeng/menubar';
+import {MenuModule} from 'primeng/menu';
 import {MenuItem} from 'primeng/api';
 import {SidebarModule} from 'primeng/sidebar';
 
@@ -11,64 +12,31 @@ import {SidebarModule} from 'primeng/sidebar';
 })
 export class OuterLayoutComponent implements OnInit {
 constructor() { }
-// visibleSidebar1;
 
   items: MenuItem[];
+  visibleSidebar1;
+
+  sidemenuitem : MenuItem[];
+  
 
 ngOnInit(): void {
     this.items = [
       {
-          label: 'File',
-          icon: 'pi pi-fw pi-file',
+        icon: 'pi pi-fw pi-bell',
           items: [{
-                  label: 'New', 
-                  icon: 'pi pi-fw pi-plus',
-                  items: [
-                      {label: 'Project'},
-                      {label: 'Other'},
-                  ]
+                  label: 'Notifications',
+              
               },
               {label: 'Open'},
               {separator:true},
               {label: 'Quit'}
           ]
       },
+      {separator:true},
+    
       {
-          label: 'Edit',
-          icon: 'pi pi-fw pi-pencil',
-          items: [
-              {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-              {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
-          ]
-      },
-      {
-          label: 'Help',
-          icon: 'pi pi-fw pi-question',
-          items: [
-              {
-                  label: 'Contents'
-              },
-              {
-                  label: 'Search', 
-                  icon: 'pi pi-fw pi-search', 
-                  items: [
-                      {
-                          label: 'Text', 
-                          items: [
-                              {
-                                  label: 'Workspace'
-                              }
-                          ]
-                      },
-                      {
-                          label: 'File'
-                      }
-              ]}
-          ]
-      },
-      {
-          label: 'Actions',
-          icon: 'pi pi-fw pi-cog',
+          label: 'John Doe',
+          icon: 'pi pi-fw pi-user',
           items: [
               {
                   label: 'Edit',
@@ -89,10 +57,30 @@ ngOnInit(): void {
       },
       {separator:true},
       {
-          label: 'Quit', icon: 'pi pi-fw pi-times'
+           icon: 'pi pi-fw pi-question-circle'
       }
   ];
-  }
-  visibleSidebar1;
+  
+//   visibleSidebar1;
+  this.sidemenuitem = [
+    {label: 'Dashboard', icon: 'pi pi-fw pi-plus'},
+    {separator:true},
+
+    {label: 'Contract', icon: 'pi pi-fw pi-download'},
+    {separator:true},
+
+    {label: 'Reports', icon: 'pi pi-fw pi-refresh'},
+    {separator:true},
+
+    {label: 'Search', icon: 'pi pi-fw pi-download'},
+    {separator:true},
+    {label: 'User Management', icon: 'pi pi-fw pi-download'},
+    {separator:true},
+    {label: 'SetUp', icon: 'pi pi-fw pi-download'},
+
+    
+];
+
+}
 
 }

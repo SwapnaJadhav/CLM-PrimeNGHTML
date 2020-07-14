@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { OuterLayoutComponent } from './outer-layout/outer-layout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenubarModule } from 'primeng/menubar';
+import {MenuModule} from 'primeng/menu';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import {SidebarModule} from 'primeng/sidebar';
+
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import {SidebarModule} from 'primeng/sidebar';
     MenubarModule,
     InputTextModule,
     ButtonModule,
-    SidebarModule
+    SidebarModule,
+    MenuModule,
 ],
   providers: [],
   bootstrap: [AppComponent]
