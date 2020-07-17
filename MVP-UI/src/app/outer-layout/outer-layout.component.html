@@ -1,16 +1,18 @@
-<p-menubar [model]="items">
+<p-menubar [model]="items" styleClass="Sundeusmenuright">
     <div>
     
-        <button pButton type="button" (click)="visibleSidebar1 = true" icon="pi pi-bars"></button>
+        <button pButton type="button" (click)="visibleSidebar1 = true" icon="pi pi-bars">
 
+        </button>
+  
         <!-- <input type="text" pInputText placeholder="Search">
         <button pButton label="Logout" icon="pi pi-power-off" style="margin-left:.25em"></button> -->
     </div>
 </p-menubar>
-<p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
-    <p-menu [model]="sidemenuitem"></p-menu>
+<p-sidebar [(visible)]="visibleSidebar1"  styleClass="sidebarsize" [baseZIndex]="10000">
+   <p-tieredMenu [model]="sundeussidemenu" styleClass="Sundeussideborder"></p-tieredMenu>
+
     
-    <!-- <p-tieredMenu [model]="sidebaritems"></p-tieredMenu> -->
 
     <!-- <h1 style="font-weight:normal">Left Sidebar</h1> -->
     <!-- <button pButton type="button" (click)="visibleSidebar1 = false" label="Save" class="ui-button-success"></button>

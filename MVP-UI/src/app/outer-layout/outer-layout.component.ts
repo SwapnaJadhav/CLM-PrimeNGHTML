@@ -1,22 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {MenubarModule} from 'primeng/menubar';
-import {MenuModule} from 'primeng/menu';
-import {MenuItem} from 'primeng/api';
 import {SidebarModule} from 'primeng/sidebar';
+import {TieredMenuModule} from 'primeng/tieredmenu';
+import {MenuItem} from 'primeng/api';
+
 
 
 @Component({
   selector: 'app-outer-layout',
   templateUrl: './outer-layout.component.html',
-  styleUrls: ['./outer-layout.component.css']
+  styleUrls: ['./outer-layout.component.css'],
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class OuterLayoutComponent implements OnInit {
 constructor() { }
 
   items: MenuItem[];
   visibleSidebar1;
-
-  sidemenuitem : MenuItem[];
+  sundeussidemenu: MenuItem[];
   
 
 ngOnInit(): void {
@@ -36,23 +37,32 @@ ngOnInit(): void {
     
       {
           label: 'John Doe',
+          // label: 'Sundeus Technology',
           icon: 'pi pi-fw pi-user',
           items: [
               {
-                  label: 'Edit',
-                  icon: 'pi pi-fw pi-pencil',
-                  items: [
-                      {label: 'Save', icon: 'pi pi-fw pi-save'},
-                      {label: 'Update', icon: 'pi pi-fw pi-save'},
-                  ]
+                  label: 'User Preferences',
+                  icon: 'pi pi-fw pi-user',
+                  // items: [
+                  //     {label: 'Save', icon: 'pi pi-fw pi-save'},
+                  //     {label: 'Update', icon: 'pi pi-fw pi-save'},
+                  // ]
               },
               {
-                  label: 'Other',
-                  icon: 'pi pi-fw pi-tags',
-                  items: [
-                      {label: 'Delete', icon: 'pi pi-fw pi-minus'}
-                  ]
-              }
+                  label: 'Customize Dashboard',
+                  icon: 'pi pi-fw pi-cog',
+                 
+              },
+              {
+                label: 'Change Password',
+                icon: 'pi pi-fw pi-lock',
+              
+            },
+            {
+              label: 'Logout',
+              icon: 'pi pi-fw pi-power-off',
+             
+          }
           ]
       },
       {separator:true},
@@ -61,24 +71,69 @@ ngOnInit(): void {
       }
   ];
   
-//   visibleSidebar1;
-  this.sidemenuitem = [
-    {label: 'Dashboard', icon: 'pi pi-fw pi-plus'},
-    {separator:true},
+// siderbar menu with tieredmenu
+this.sundeussidemenu = [
+  {
+      label: 'Dashboard',
+      icon: 'pi pi-fw pi-home',
 
-    {label: 'Contract', icon: 'pi pi-fw pi-download'},
-    {separator:true},
+      // items: [{
+      //         label: 'New', 
+      //         icon: 'pi pi-fw pi-plus',
+      //         items: [
+      //             {label: 'Project'},
+      //             {label: 'Other'},
+      //         ]
+      //     },
+      //     {label: 'Open'},
+      //     {label: 'Quit'}
+      // ]
+  },
+  {separator:true},
+  {
+      label: 'Contracts',
+      icon: 'pi pi-fw pi-file-o',
+      // items: [
+      //     {label: 'Delete', icon: 'pi pi-fw pi-trash'},
+      //     {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
+      // ]
+  },
+  {
+    label: 'Reports',
+    icon: 'pi pi-fw pi-file',
+    // items: [
+    //     {label: 'Delete', icon: 'pi pi-fw pi-trash'},
+    //     {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
+    // ]
+},
+{
+  label: 'Search',
+  icon: 'pi pi-fw pi-search-plus',
+  // items: [
+  //     {label: 'Delete', icon: 'pi pi-fw pi-trash'},
+  //     {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
+  // ]
+},
+{
+  label: 'User Management',
+  icon: 'pi pi-fw pi-file',
+  items: [
+      {label: 'Users'},
+      {label: 'Role & permissions'}
+  ]
+},
+{
+  label: 'Setup',
+  icon: 'pi pi-fw pi-cog',
+  items: [
+      {label: 'Alerts & Notification'},
+      {label: 'Contract Type'},
+      {label: 'Clauses'},
+      {label: 'Templates'},
+      {label: 'Organisation Details'},
 
-    {label: 'Reports', icon: 'pi pi-fw pi-refresh'},
-    {separator:true},
-
-    {label: 'Search', icon: 'pi pi-fw pi-download'},
-    {separator:true},
-    {label: 'User Management', icon: 'pi pi-fw pi-download'},
-    {separator:true},
-    {label: 'SetUp', icon: 'pi pi-fw pi-download'},
-
-    
+  ]
+}
 ];
 
 }

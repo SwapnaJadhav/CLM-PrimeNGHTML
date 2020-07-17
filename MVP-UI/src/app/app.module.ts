@@ -6,10 +6,13 @@ import { AppComponent } from './app.component';
 import { OuterLayoutComponent } from './outer-layout/outer-layout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenubarModule } from 'primeng/menubar';
-import {MenuModule} from 'primeng/menu';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import {SidebarModule} from 'primeng/sidebar';
+import {TieredMenuModule} from 'primeng/tieredmenu';
+// import {MenuItem} from 'primeng/api';
+
+
 
 
 
@@ -26,8 +29,9 @@ import {SidebarModule} from 'primeng/sidebar';
     InputTextModule,
     ButtonModule,
     SidebarModule,
-    MenuModule,
-],
+    TieredMenuModule,
+    // MenuItem
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    font-family: palatino;
+    font-size: 14px;
+}
+.Sundeusmenuright ul.ui-menubar-root-list {
+    float: right;
+}
+.Sundeusmenuright.ui-menubar .ui-menubar-custom {
+    float: left;
+} 
+body .Sundeussideborder.ui-tieredmenu{
+    border: none;
+}
+.sidebarsize.ui-sidebar-left{
+    width: 16em;
+}
+/* .sidebarsize.pi-times:before {
+    content: "";
+} */
+body .sidebarsize.ui-sidebar {
+    background-color: #012164;
+    color: #333333;
+    border: none;
+}
+.sidebarsize.ui-sidebar-left {
+    top: 43px;
+}
+body .Sundeussideborder.ui-tieredmenu{
+    background-color: #012164;
+}
+body .Sundeussideborder.ui-tieredmenu .ui-menuitem-link .ui-menuitem-text {
+    color: #ffffff;
+    font-size: 12px;
+}
+body .Sundeussideborder.ui-tieredmenu .ui-menuitem .ui-menuitem-link .ui-submenu-icon {
+    right: -23px;
+    font-size: 14px;
+    color: #ffffff;
+}
+body .Sundeussideborder.ui-tieredmenu .ui-menuitem-link .ui-menuitem-icon {
+    color: #ffffff;
+    margin-right: 15px;
+}
+body .Sundeussideborder.ui-tieredmenu .ui-submenu-list{
+    background-color: #012164;
+    left: 210px;
+    border: none;
+}
+/* body .ui-widget-overlay {
+    background-color:none;
+} */
