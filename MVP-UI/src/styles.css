@@ -10,6 +10,10 @@ body{
 .Sundeusmenuright.ui-menubar .ui-menubar-custom {
     float: left;
 } 
+body .Sundeusmenuright.ui-menubar .ui-menuitem-link .ui-menuitem-text {
+    font-size: 12px;
+    font-family: palatino;
+}
 body .Sundeussideborder.ui-tieredmenu{
     border: none;
     background-color: #012164;
@@ -27,6 +31,9 @@ body .sidebarsize.ui-sidebar {
     color: #333333;
     border: none;
     padding-left: 1px;
+}
+span.ui-menuitem-icon.dashimg.ng-star-inserted {
+    background: url(/MVP-UI/src/dist/SundeusCLMImg/Orange_menuicon/dashboardSelected.svg);
 }
 
 body .Sundeussideborder.ui-tieredmenu .ui-menuitem-link .ui-menuitem-text {

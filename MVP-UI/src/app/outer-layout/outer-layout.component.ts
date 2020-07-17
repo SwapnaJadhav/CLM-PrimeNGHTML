@@ -75,7 +75,7 @@ ngOnInit(): void {
 this.sundeussidemenu = [
   {
       label: 'Dashboard',
-      icon: 'pi pi-fw pi-home',
+      icon: 'dashimg',
 },
   {separator:true},
   {
@@ -101,6 +101,7 @@ this.sundeussidemenu = [
   icon: 'pi pi-fw pi-file',
   items: [
       {label: 'Users'},
+      {separator:true},
       {label: 'Role & permissions'}
   ]
 },
@@ -110,9 +111,13 @@ this.sundeussidemenu = [
   icon: 'pi pi-fw pi-cog',
   items: [
       {label: 'Alerts & Notification'},
+      {separator:true},
       {label: 'Contract Type'},
+      {separator:true},
       {label: 'Clauses'},
+      {separator:true},
       {label: 'Templates'},
+      {separator:true},
       {label: 'Organisation Details'},
 
   ]
