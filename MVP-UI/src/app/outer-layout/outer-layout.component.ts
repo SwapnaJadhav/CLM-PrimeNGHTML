@@ -76,44 +76,26 @@ this.sundeussidemenu = [
   {
       label: 'Dashboard',
       icon: 'pi pi-fw pi-home',
-
-      // items: [{
-      //         label: 'New', 
-      //         icon: 'pi pi-fw pi-plus',
-      //         items: [
-      //             {label: 'Project'},
-      //             {label: 'Other'},
-      //         ]
-      //     },
-      //     {label: 'Open'},
-      //     {label: 'Quit'}
-      // ]
-  },
+},
   {separator:true},
   {
       label: 'Contracts',
       icon: 'pi pi-fw pi-file-o',
-      // items: [
-      //     {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-      //     {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
-      // ]
+      
   },
+  {separator:true},
   {
     label: 'Reports',
     icon: 'pi pi-fw pi-file',
-    // items: [
-    //     {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-    //     {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
-    // ]
+    
 },
+{separator:true},
 {
   label: 'Search',
   icon: 'pi pi-fw pi-search-plus',
-  // items: [
-  //     {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-  //     {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
-  // ]
+  
 },
+{separator:true},
 {
   label: 'User Management',
   icon: 'pi pi-fw pi-file',
@@ -122,6 +104,7 @@ this.sundeussidemenu = [
       {label: 'Role & permissions'}
   ]
 },
+{separator:true},
 {
   label: 'Setup',
   icon: 'pi pi-fw pi-cog',
@@ -133,7 +116,9 @@ this.sundeussidemenu = [
       {label: 'Organisation Details'},
 
   ]
-}
+},
+{separator:true},
+
 ];
 
 }
