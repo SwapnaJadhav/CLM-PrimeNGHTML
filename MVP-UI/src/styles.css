@@ -33,7 +33,7 @@ body .sidebarsize.ui-sidebar {
     padding-left: 1px;
 }
 span.ui-menuitem-icon.dashimg.ng-star-inserted {
-    background: url(/MVP-UI/src/dist/SundeusCLMImg/Orange_menuicon/dashboardSelected.svg);
+    background: url(F:/sapnaraje/New%20Repo%20Code/CLM-PrimeNGHTML/MVP-UI/src/dist/SundeusCLMImg/Orange_menuicon/dashboardSelected.svg);
 }
 
 body .Sundeussideborder.ui-tieredmenu .ui-menuitem-link .ui-menuitem-text {
@@ -54,9 +54,12 @@ body .Sundeussideborder.ui-tieredmenu .ui-submenu-list{
     left: 210px;
     border: none;
 }
-/* body .ui-widget-overlay {
-    background-color:none;
+/* body .Sundeussideborder.ui-tieredmenu .ui-menu-separator{
+    width: 13em;
 } */
+body .ui-widget-overlay {
+    background-color: none;
+}
 .sidebarsize.ui-sidebar .ui-sidebar-close{
     visibility: hidden;
 }
