@@ -16,7 +16,7 @@ export class OuterLayoutComponent implements OnInit {
 constructor() { }
 
   items: MenuItem[];
-  visibleSidebar1: true;
+  visibleSidebar1 = true ;
   sundeussidemenu: MenuItem[];
   
 
