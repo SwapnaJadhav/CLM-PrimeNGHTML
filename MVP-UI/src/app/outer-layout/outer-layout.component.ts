@@ -80,13 +80,13 @@ this.sundeussidemenu = [
   {separator:true},
   {
       label: 'Contracts',
-      icon: 'pi pi-fw pi-file-o',
+      icon: 'contractimg',
       
   },
   {separator:true},
   {
     label: 'Reports',
-    icon: 'pi pi-fw pi-file',
+    icon: 'reportsimag',
     
 },
 {separator:true},
@@ -98,7 +98,7 @@ this.sundeussidemenu = [
 {separator:true},
 {
   label: 'User Management',
-  icon: 'pi pi-fw pi-file',
+  icon: 'usermtimg',
   items: [
       {label: 'Users'},
       {separator:true},
@@ -108,7 +108,7 @@ this.sundeussidemenu = [
 {separator:true},
 {
   label: 'Setup',
-  icon: 'pi pi-fw pi-cog',
+  icon: 'setupimg',
   items: [
       {label: 'Alerts & Notification'},
       {separator:true},
