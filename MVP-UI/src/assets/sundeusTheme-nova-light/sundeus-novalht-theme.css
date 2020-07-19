@@ -1338,31 +1338,31 @@ body p-togglebutton.ng-dirty.ng-invalid .ui-button {
 }
 body .ui-button {
   margin: 0;
-  color: #ffffff;
-  background-color: #012164;    /* Custom css change color by me*/
-  border: 1px solid #012164;    /* Custom css change  color by me*/
-  font-size: 12px;                  /* Custom css change fontsize 14 by me*/
+  color: #012164;
+  background-color: #ffffff;    /* Custom css change color by me*/
+  border: transparent;    /* Custom css change  color by me*/
+  font-size: 17px;                  /* Custom css change fontsize 14 by me*/
   -moz-transition: background-color 0.2s, box-shadow 0.2s;
   -o-transition: background-color 0.2s, box-shadow 0.2s;
   -webkit-transition: background-color 0.2s, box-shadow 0.2s;
   transition: background-color 0.2s, box-shadow 0.2s;
 }
 body .ui-button:enabled:hover {
-  background-color: #012164;    /* Custom css change color by me*/
-  color: #ffffff;
-  border-color: #012164;      /* Custom css change color by me*/
+  background-color: #ffffff;    /* Custom css change color by me*/
+  color: #012164;
+  border-color: none;      /* Custom css change color by me*/
 }
 body .ui-button:enabled:focus {
   outline: 0 none;
   outline-offset: 0px;
   -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
   -moz-box-shadow: 0 0 0 0.2em #8dcdff;
-  box-shadow: 0 0 0 0.2em #8dcdff;
+  box-shadow: 0 0 0 0.2em #ffffff;
 }
 body .ui-button:enabled:active {
-  background-color: #005b9f;      
-  color: #ffffff;
-  border-color: #012164;         /* Custom css change color 005b9f by me*/
+  background-color: #ffffff;      
+  color: #012164;
+  border-color: #ffffff;         /* Custom css change color 005b9f by me*/
 }
 body .ui-button.ui-button-text-only .ui-button-text {
   padding: 0.429em 1em;
@@ -3292,8 +3292,9 @@ body .ui-menubar .ui-menuitem-link .ui-menuitem-text {
   color: #333333;
 }
 body .ui-menubar .ui-menuitem-link .ui-menuitem-icon {
-  color: #333333;
+  color: #012164;                        /* Custom css change by me */
   margin-right: 0.5em;
+  font-size: 18px;
 }
 body .ui-menubar .ui-menuitem-link:not(.ui-state-disabled):hover {
   background-color: #eaeaea;
@@ -3724,7 +3725,7 @@ body .ui-tieredmenu .ui-menuitem-link:focus {
   outline-offset: 0;
   -webkit-box-shadow: inset 0 0 0 0.2em #8dcdff;
   -moz-box-shadow: inset 0 0 0 0.2em #8dcdff;
-  box-shadow: inset 0 0 0 0.2em #8dcdff;
+  box-shadow: inset 0 0 0 0.2em #ffffff;         /*Custom css chnage by me 8dcdff*/
 }
 body .ui-tieredmenu .ui-menuitem-link.ui-menuitem-link-active .ui-menuitem-text {
   color: #007ad9;

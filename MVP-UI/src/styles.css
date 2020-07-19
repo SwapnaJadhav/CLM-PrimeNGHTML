@@ -10,9 +10,41 @@ body{
 .Sundeusmenuright.ui-menubar .ui-menubar-custom {
     float: left;
 } 
+.Sundeusheaderlogo1{
+    content: url(./dist/SundeusCLMImg/Sundeus_logo/Logo.svg);
+    height: 41px;
+    width: 140px;
+    vertical-align: middle;
+}
+/* span.ui-menuitem-icon.Sundeusheaderlogo.ng-star-inserted {
+    content: url(./dist/SundeusCLMImg/Sundeus_logo/Sundeuslogo.svg);
+} */
+.pi-caret-down:before {
+    content: "";
+}
+span.ui-menuitem-icon.fa.fa-question-circle.ng-star-inserted {
+    margin-right: 0px !important;
+}
+span.ui-menuitem-icon.fa.fa-bell.ng-star-inserted {
+    margin-right: -30px !important;
+}
+span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
+    content: url(./dist/SundeusCLMImg/img_avatar.png);
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    border-radius: 15px;
+}
+.Sundeusmenuright.ui-menubar .ui-menubar-root-list > .ui-menu-separator {
+    height: 3.5em;
+}
 .Sundeusmenuright.ui-menubar .ui-menuitem-link .ui-menuitem-text {
     font-size: 12px;
-    font-family: palatino;
+    font-family: Avenir Heavy;
+}
+.Sundeusmenuright ul.ui-widget-content.ui-corner-all.ui-submenu-list.ui-shadow {
+    top: 51px !important;
+    left: -23px !important;
 }
 .Sundeussideborder.ui-tieredmenu{
     border: none;
@@ -21,7 +53,7 @@ body{
 }
 .sidebarsize.ui-sidebar-left{
     width: 13em;
-    top: 43px;
+    top: 51px;
     /* transform: translate3d(-120px, 0px, 0px); */
 }
 /* .ui-sidebar-left.ui-sidebar-active, .ui-sidebar-right.ui-sidebar-active {
@@ -79,15 +111,10 @@ body{
     height: 28px;
     width: 28px;
 }
-
-/* .dashimg{
-    background: url(./dist/SundeusCLMImg/menuicon_white/dashboardwhite.svg);
- font-size: 24px;
-} */
-
 .Sundeussideborder.ui-tieredmenu .ui-menuitem-link .ui-menuitem-text {
     color: #ffffff;
-    font-size: 12px;
+    font-size: 14px;
+    font-family: Avenir Heavy;
 }
 .Sundeussideborder.ui-tieredmenu .ui-menuitem .ui-menuitem-link .ui-submenu-icon {
     right: -3px;

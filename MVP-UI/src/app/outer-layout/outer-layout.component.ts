@@ -23,7 +23,12 @@ constructor() { }
 ngOnInit(): void {
     this.items = [
       {
-        icon: 'pi pi-fw pi-bell',
+        icon: "Sundeusheaderlogo"
+    },
+      {separator:true},
+
+      {
+        icon: 'fa fa-bell',
           items: [{
                   label: 'Notifications',
               
@@ -38,11 +43,11 @@ ngOnInit(): void {
       {
           label: 'John Doe',
           // label: 'Sundeus Technology',
-          icon: 'pi pi-fw pi-user',
+          icon: 'SundeusLogout',
           items: [
               {
                   label: 'User Preferences',
-                  icon: 'pi pi-fw pi-user',
+                  icon: 'fa fa-user-circle-o',
                   // items: [
                   //     {label: 'Save', icon: 'pi pi-fw pi-save'},
                   //     {label: 'Update', icon: 'pi pi-fw pi-save'},
@@ -50,24 +55,24 @@ ngOnInit(): void {
               },
               {
                   label: 'Customize Dashboard',
-                  icon: 'pi pi-fw pi-cog',
+                  icon: 'fa fa-cog',
                  
               },
               {
                 label: 'Change Password',
-                icon: 'pi pi-fw pi-lock',
+                icon: 'fa fa-lock',
               
             },
             {
               label: 'Logout',
-              icon: 'pi pi-fw pi-power-off',
+              icon: 'fa fa-power-off',
              
           }
           ]
       },
       {separator:true},
       {
-           icon: 'pi pi-fw pi-question-circle'
+           icon: 'fa fa-question-circle'
       }
   ];
   
@@ -127,5 +132,7 @@ this.sundeussidemenu = [
 ];
 
 }
-
+sidenavClosed(){
+    this.visibleSidebar1=true; 
+}
 }
