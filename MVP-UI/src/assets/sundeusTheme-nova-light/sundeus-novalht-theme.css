@@ -3294,7 +3294,7 @@ body .ui-menubar .ui-menuitem-link .ui-menuitem-text {
 body .ui-menubar .ui-menuitem-link .ui-menuitem-icon {
   color: #012164;                        /* Custom css change by me */
   margin-right: 0.5em;
-  font-size: 18px;
+  font-size: 20px;
 }
 body .ui-menubar .ui-menuitem-link:not(.ui-state-disabled):hover {
   background-color: #eaeaea;
