@@ -10,6 +10,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import {SidebarModule} from 'primeng/sidebar';
 import {TieredMenuModule} from 'primeng/tieredmenu';
+import { DashboardComponent } from './outer-layout/dashboard/dashboard.component';
 // import {MenuItem} from 'primeng/api';
 
 
@@ -19,7 +20,8 @@ import {TieredMenuModule} from 'primeng/tieredmenu';
 @NgModule({
   declarations: [
     AppComponent,
-    OuterLayoutComponent
+    OuterLayoutComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

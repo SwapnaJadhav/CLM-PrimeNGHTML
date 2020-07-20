@@ -19,13 +19,16 @@ body{
 /* span.ui-menuitem-icon.Sundeusheaderlogo.ng-star-inserted {
     content: url(./dist/SundeusCLMImg/Sundeus_logo/Sundeuslogo.svg);
 } */
-.pi-caret-down:before {
+/* .pi-caret-down:before {
     content: "";
+} */
+.Sundeusmenuright span.ui-submenu-icon.pi.pi-fw.pi-caret-down.ng-star-inserted {
+    color: #012164;
 }
 span.ui-menuitem-icon.fa.fa-question-circle.ng-star-inserted {
     margin-right: 0px !important;
 }
-span.ui-menuitem-icon.fa.fa-bell.ng-star-inserted {
+.Sundeusmenuright span.ui-menuitem-icon.fa.fa-bell.ng-star-inserted {
     margin-right: -30px !important;
 }
 span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
@@ -83,34 +86,38 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
 .ui-menuitem-icon.dashimg{
     content: url(./dist/SundeusCLMImg/menuicon_white/dashboardwhite.svg);
     /* background: url(./dist/SundeusCLMImg/menuicon_white/dashboardwhite.svg); */
-    height: 28px;
-    width: 28px;
+    height: 25px;
+    width: 25px;
 }
 .ui-menuitem-icon.dashimg:hover{
     content: url(./dist/SundeusCLMImg/Orange_menuicon/dashboardSelected.svg);
-    height: 28px;
-    width: 28px;
+    height: 25px;
+    width: 25px;
 }
 .ui-menuitem-icon.contractimg{
     content: url(./dist/SundeusCLMImg/menuicon_white/ContractTypewhite.svg);
-    height: 28px;
-    width: 28px;
+    height: 25px;
+    width: 25px;
 }
 .ui-menuitem-icon.reportsimag{
     content: url(./dist/SundeusCLMImg/menuicon_white/ruleswhite.svg);
-    height: 28px;
-    width: 28px;
+    height: 25px;
+    width: 25px;
 }
 .ui-menuitem-icon.usermtimg{
     content: url(./dist/SundeusCLMImg/menuicon_white/ContractWhite.svg);
-    height: 28px;
-    width: 28px;
+    height: 25px;
+    width: 25px;
 }
 .ui-menuitem-icon.setupimg{
     content: url(./dist/SundeusCLMImg/menuicon_white/settingswhite.svg);
-    height: 28px;
-    width: 28px;
+    height: 25px;
+    width: 25px;
 }
+/* body .ui-tieredmenu .ui-menuitem.ui-menuitem-active > .ui-menuitem-link :hover .ui-menuitem-icon.setupimg{
+    background-color: #eaeaea;
+    content: url(./dist/SundeusCLMImg/Orange_menuicon/settingsselected.svg);
+} */
 .Sundeussideborder.ui-tieredmenu .ui-menuitem-link .ui-menuitem-text {
     color: #ffffff;
     font-size: 14px;
