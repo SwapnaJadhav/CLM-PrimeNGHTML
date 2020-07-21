@@ -1,8 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     margin: 0;
-    font-family: palatino;
+    padding: 0;
+    font-family: Avenir Heavy;
     font-size: 14px;
+    background-color: #EFF3F7;
 }
 .Sundeusmenuright ul.ui-menubar-root-list {
     float: right;
@@ -12,16 +14,10 @@ body{
 } 
 .Sundeusheaderlogo1{
     content: url(./dist/SundeusCLMImg/Sundeus_logo/Logo.svg);
-    height: 41px;
-    width: 140px;
+    height: 40px;
+    width: 155px;
     vertical-align: middle;
 }
-/* span.ui-menuitem-icon.Sundeusheaderlogo.ng-star-inserted {
-    content: url(./dist/SundeusCLMImg/Sundeus_logo/Sundeuslogo.svg);
-} */
-/* .pi-caret-down:before {
-    content: "";
-} */
 .Sundeusmenuright span.ui-submenu-icon.pi.pi-fw.pi-caret-down.ng-star-inserted {
     color: #012164;
 }
@@ -30,6 +26,11 @@ span.ui-menuitem-icon.fa.fa-question-circle.ng-star-inserted {
 }
 .Sundeusmenuright span.ui-menuitem-icon.fa.fa-bell.ng-star-inserted {
     margin-right: -30px !important;
+}
+/* a.downarrowiconremove.ui-menuitem-link.ui-corner-all.ng-star-inserted >.pi-caret-down:before{
+    content: "" !important;} */
+.Sundeusmenuright a.downarrowiconremove>.pi-caret-down:before{
+    content: "" !important;
 }
 span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     content: url(./dist/SundeusCLMImg/img_avatar.png);
@@ -52,40 +53,34 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
 .Sundeussideborder.ui-tieredmenu{
     border: none;
     background-color: #012164;
-
 }
 .sidebarsize.ui-sidebar-left{
-    width: 13em;
+    width: 12.5em;             /*edit by pushkar*/
     top: 51px;
     /* transform: translate3d(-120px, 0px, 0px); */
 }
-/* .ui-sidebar-left.ui-sidebar-active, .ui-sidebar-right.ui-sidebar-active {
-    transform: translateX(-121px);
-    opacity: 1;
-} */
-/* .ng-tns-c22-0.ng-trigger.ng-trigger-panelState.sidebarsize.ui-sidebar.ui-widget.ui-widget-content.ui-shadow.ui-sidebar-left {
-    transform: translate3d(0px, 0px, 0px);
+.sidebarsize.ui-sidebar-left:not(.ui-sidebar-active){
     opacity: 1 !important;
-} */
-/* .ng-tns-c22-0.ng-trigger.ng-trigger-panelState.sidebarsize.ui-sidebar.ui-widget.ui-widget-content.ui-shadow.ui-sidebar-active.ui-sidebar-left {
-    transform: translate3d(-122px, 0px, 0px);
-    opacity: 1;
-} */
-/* .ng-tns-c22-0.ng-trigger.ng-trigger-panelState.sidebarsize.ui-sidebar.ui-widget.ui-widget-content.ui-shadow.ui-sidebar-left {
-    opacity: 0;
-    transform: translate3d(0px, 0px, 0px);
-    z-index: 11002;
-} */
+    transform: translateX(-60%);
+}
+    /*edit by pushkar*/
 
+.sidebarsize.ui-sidebar-left:not(.ui-sidebar-active) .abc > a > .ui-menuitem-text{
+    display: none !important;
+
+}            /*edit by pushkar*/
+.sidebarsize.ui-sidebar-left:not(.ui-sidebar-active) .Sundeussideborder.ui-tieredmenu{
+    margin-left: 105px;
+    width: 70px;
+}          /*edit by pushkar*/
 .sidebarsize.ui-sidebar {
     background-color: #012164;
     color: #333333;
     border: none;
-    padding-left: 1px;
+    padding-left: 0px;         /*edit by pushkar*/
 }
 .ui-menuitem-icon.dashimg{
     content: url(./dist/SundeusCLMImg/menuicon_white/dashboardwhite.svg);
-    /* background: url(./dist/SundeusCLMImg/menuicon_white/dashboardwhite.svg); */
     height: 25px;
     width: 25px;
 }
@@ -114,10 +109,7 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     height: 25px;
     width: 25px;
 }
-/* body .ui-tieredmenu .ui-menuitem.ui-menuitem-active > .ui-menuitem-link :hover .ui-menuitem-icon.setupimg{
-    background-color: #eaeaea;
-    content: url(./dist/SundeusCLMImg/Orange_menuicon/settingsselected.svg);
-} */
+
 .Sundeussideborder.ui-tieredmenu .ui-menuitem-link .ui-menuitem-text {
     color: #ffffff;
     font-size: 14px;
@@ -135,12 +127,13 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
 }
 .Sundeussideborder.ui-tieredmenu .ui-submenu-list{
     background-color: #012164;
-    left: 181px !important;
+    /* left: 181px !important; */
     border: none;
 }
-/* body .Sundeussideborder.ui-tieredmenu .ui-menu-separator{
-    width: 13em;
-} */
 .sidebarsize.ui-sidebar .ui-sidebar-close{
     visibility: hidden;
+}
+   /* Dashboard Comp css */
+.layout-content{
+    padding: 2em !important;
 }

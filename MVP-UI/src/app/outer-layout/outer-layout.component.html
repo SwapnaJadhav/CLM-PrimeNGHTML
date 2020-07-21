@@ -8,7 +8,7 @@
         <button pButton label="Logout" icon="pi pi-power-off" style="margin-left:.25em"></button> -->
     </div>
 </p-menubar>
-<p-sidebar (onHide)="sidenavClosed()" [(visible)]="visibleSidebar1" styleClass="sidebarsize" [baseZIndex]="10000">
+<p-sidebar [(visible)]="visibleSidebar1" styleClass="sidebarsize" [baseZIndex]="10000">
    <p-tieredMenu [model]="sundeussidemenu" styleClass="Sundeussideborder"></p-tieredMenu>
 
     
@@ -17,8 +17,8 @@
     <!-- <button pButton type="button" (click)="visibleSidebar1 = false" label="Save" class="ui-button-success"></button>
     <button pButton type="button" (click)="visibleSidebar1 = false" label="Cancel" class="ui-button-secondary"></button> -->
 </p-sidebar>
-<div class="wrapper">
+<!-- <div class="wrapper">
     <h1>hello Angular I am here with you .</h1>
-</div>
+</div> -->
 <app-dashboard></app-dashboard>
 

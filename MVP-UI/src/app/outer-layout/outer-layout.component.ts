@@ -29,10 +29,10 @@ ngOnInit(): void {
 
       {
         icon: 'fa fa-bell',
+        styleClass: 'downarrowiconremove',
           items: [{
                   label: 'Notifications',
-              
-              },
+                },
               {label: 'Open'},
               {separator:true},
               {label: 'Quit'}
@@ -113,6 +113,7 @@ this.sundeussidemenu = [
 {separator:true},
 {
   label: 'Setup',
+  styleClass: 'abc',
   icon: 'setupimg',
   items: [
       {label: 'Alerts & Notification'},
@@ -132,7 +133,5 @@ this.sundeussidemenu = [
 ];
 
 }
-sidenavClosed(){
-    this.visibleSidebar1=true; 
-}
+
 }

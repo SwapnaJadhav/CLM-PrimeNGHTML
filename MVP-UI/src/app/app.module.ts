@@ -11,6 +11,8 @@ import { ButtonModule } from 'primeng/button';
 import {SidebarModule} from 'primeng/sidebar';
 import {TieredMenuModule} from 'primeng/tieredmenu';
 import { DashboardComponent } from './outer-layout/dashboard/dashboard.component';
+import {CardModule} from 'primeng/card';
+
 // import {MenuItem} from 'primeng/api';
 
 
@@ -32,6 +34,7 @@ import { DashboardComponent } from './outer-layout/dashboard/dashboard.component
     ButtonModule,
     SidebarModule,
     TieredMenuModule,
+    CardModule,
     // MenuItem
   ],
   providers: [],
