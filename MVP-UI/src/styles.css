@@ -57,7 +57,6 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
 .sidebarsize.ui-sidebar-left{
     width: 12.5em;             /*edit by pushkar*/
     top: 51px;
-    /* transform: translate3d(-120px, 0px, 0px); */
 }
 .sidebarsize.ui-sidebar-left:not(.ui-sidebar-active){
     opacity: 1 !important;
@@ -72,7 +71,8 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
 .sidebarsize.ui-sidebar-left:not(.ui-sidebar-active) .Sundeussideborder.ui-tieredmenu{
     margin-left: 105px;
     width: 70px;
-}          /*edit by pushkar*/
+}       
+   /*edit by pushkar*/
 .sidebarsize.ui-sidebar {
     background-color: #012164;
     color: #333333;
@@ -94,8 +94,18 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     height: 25px;
     width: 25px;
 }
+.ui-menuitem-icon:hover.contractimg{
+    content: url(./dist/SundeusCLMImg/Orange_menuicon/ContractTypesSelected.svg);
+    height: 25px;
+    width: 25px;
+}
 .ui-menuitem-icon.reportsimag{
     content: url(./dist/SundeusCLMImg/menuicon_white/ruleswhite.svg);
+    height: 25px;
+    width: 25px;
+}
+.ui-menuitem-icon:hover.reportsimag{
+    content: url(./dist/SundeusCLMImg/Orange_menuicon/rulesselected.svg);
     height: 25px;
     width: 25px;
 }
@@ -104,8 +114,18 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     height: 25px;
     width: 25px;
 }
+.ui-menuitem-icon:hover.usermtimg{
+    content: url(./dist/SundeusCLMImg/Orange_menuicon/ContractSelecteed.svg);
+    height: 25px;
+    width: 25px;
+}
 .ui-menuitem-icon.setupimg{
     content: url(./dist/SundeusCLMImg/menuicon_white/settingswhite.svg);
+    height: 25px;
+    width: 25px;
+}
+.ui-menuitem-icon:hover.setupimg{
+    content: url(./dist/SundeusCLMImg/Orange_menuicon/settingsselected.svg);
     height: 25px;
     width: 25px;
 }
