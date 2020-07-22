@@ -19,7 +19,7 @@ body{
     vertical-align: middle;
 }
 .Sundeusmenuright span.ui-submenu-icon.pi.pi-fw.pi-caret-down.ng-star-inserted {
-    color: #012164;
+    color: #013164;
 }
 span.ui-menuitem-icon.fa.fa-question-circle.ng-star-inserted {
     margin-right: 0px !important;
@@ -52,7 +52,7 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
 }
 .Sundeussideborder.ui-tieredmenu{
     border: none;
-    background-color: #012164;
+    background-color: #013164;
 }
 .sidebarsize.ui-sidebar-left{
     width: 12.5em;             /*edit by pushkar*/
@@ -74,7 +74,7 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
 }       
    /*edit by pushkar*/
 .sidebarsize.ui-sidebar {
-    background-color: #012164;
+    background-color: #013164;
     color: #333333;
     border: none;
     padding-left: 0px;         /*edit by pushkar*/
@@ -146,14 +146,32 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     /* float: right; */
 }
 .Sundeussideborder.ui-tieredmenu .ui-submenu-list{
-    background-color: #012164;
-    /* left: 181px !important; */
+    background-color: #013164;
     border: none;
 }
 .sidebarsize.ui-sidebar .ui-sidebar-close{
     visibility: hidden;
 }
    /* Dashboard Comp css */
+.layout-main{
+    margin-left: 70px;
+}
 .layout-content{
-    padding: 2em !important;
+    padding: 1em !important;
+}
+.p-col-3.p-col-align-center.overview-box-status {
+    color: purple;
+    font-size: xx-large;
+}
+.p-col-3.p-col-align-center.overview-box-status2 {
+    color: #FE7815;
+    font-size: xx-large;
+}
+.p-col-3.p-col-align-center.overview-box-status3 {
+    color: deeppink;
+    font-size: xx-large;
+}
+.p-col-3.p-col-align-center.overview-box-status4 {
+    font-size: xx-large;
+    color: cadetblue;
 }

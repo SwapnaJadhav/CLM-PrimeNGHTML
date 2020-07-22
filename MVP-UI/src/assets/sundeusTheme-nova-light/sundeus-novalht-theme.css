@@ -46,7 +46,8 @@
 }
 
 body .ui-widget {
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  /* font-family: "Open Sans", "Helvetica Neue", sans-serif; */
+  font-family: Avenir Heavy;  /* Custom css by me */
   font-size: 14px;
   text-decoration: none;
 }
