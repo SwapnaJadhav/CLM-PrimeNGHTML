@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {CardModule} from 'primeng/card';
 import {TableModule} from 'primeng/table';
-// import { CarService } from './carservice';
-// import { Car } from './car';
+import { Car } from './car';
+import { CarService } from './carservice';
 
 
 @Component({
@@ -11,21 +11,24 @@ import {TableModule} from 'primeng/table';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  cars: Car[];
+  cars1: Car[];
 
-  cols: any[];
+  // cols: any[];
+  scrollableCols: any[];
 
   constructor(private carService: CarService) { }
 
   ngOnInit(): void {
-    this.carService.getCarsSmall().then(cars => this.cars = cars);
+    this.carService.getCarsSmall().then(cars => this.cars1 = cars);
 
-    this.cols = [
-        { field: 'vin', header: 'Vin' },
-        {field: 'year', header: 'Year' },
-        { field: 'brand', header: 'Brand' },
-        { field: 'color', header: 'Color' }
-    ];
+    this.scrollableCols = [
+      { field: 'year', header: 'Year' },
+      { field: 'brand', header: 'Brand' },
+      { field: 'color', header: 'Color' },
+      { field: 'year', header: 'Year' },
+      { field: 'brand', header: 'Brand' },
+      { field: 'color', header: 'Color' }
+  ];
   }
 
 }
