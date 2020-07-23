@@ -175,3 +175,21 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     font-size: xx-large;
     color: cadetblue;
 }
+.ui-card-body {
+    height: 6em;
+}
+.card {
+    background-color: #FFFFFF;
+    padding: 10px;
+}                       /* My Task Table card*/
+.card h3:first-child {
+    margin-top: 0px;
+    margin-bottom: 18px;
+}
+.card h3 {
+    color: #013164 !important;
+    font-size: 14px;
+}
+.p-col-6.p-md-4.customicon {
+    text-align: right;
+}

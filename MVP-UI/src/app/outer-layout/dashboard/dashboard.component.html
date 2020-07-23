@@ -3,9 +3,9 @@
 <div class="layout-content">
 <div class="p-grid layout-dashboard">
     <div class="p-col-12 p-xl-3 p-md-6">
-        <p-card styleClass="Kpicardstyles">
+        <p-card>
            <div class="p-grid overview-box">
-                <div class="p-col-3 p-col-align-center overview-box-icon"><img src="card" src="./../../../dist/SundeusCLMImg/Dashboard_Kpi_img/intiatedkpi.svg" style="height: 50px;"></div>
+                <div class="p-col-3 p-col-align-center overview-box-icon"><img src="card" src="./../../../dist/SundeusCLMImg/Dashboard_Kpi_img/intiatedkpi.svg"></div>
                 <div class="p-col-6 p-col-align-center overview-box-text">
                     <h3>Initiated</h3>
                 </div>
@@ -14,9 +14,9 @@
         </p-card>
     </div>
     <div class="p-col-12 p-xl-3 p-md-6">
-        <p-card styleClass="Kpicardstyles">
+        <p-card>
             <div class="p-grid overview-box">
-                 <div class="p-col-3 p-col-align-center overview-box-icon"><img src="card" src="./../../../dist/SundeusCLMImg/Dashboard_Kpi_img/PendingSignature.svg" style="height: 50px;"></div>
+                 <div class="p-col-3 p-col-align-center overview-box-icon"><img src="card" src="./../../../dist/SundeusCLMImg/Dashboard_Kpi_img/PendingSignature.svg"></div>
                  <div class="p-col-6 p-col-align-center overview-box-text">
                      <h3>Pending Signature</h3>
                  </div>
@@ -25,9 +25,9 @@
          </p-card>
     </div>
     <div class="p-col-12 p-xl-3 p-md-6">
-        <p-card styleClass="Kpicardstyles">
+        <p-card>
             <div class="p-grid overview-box">
-                 <div class="p-col-3 p-col-align-center overview-box-icon"><img src="card" src="./../../../dist/SundeusCLMImg/Dashboard_Kpi_img/PendingApproval.svg" style="height: 50px;"></div>
+                 <div class="p-col-3 p-col-align-center overview-box-icon"><img src="card" src="./../../../dist/SundeusCLMImg/Dashboard_Kpi_img/PendingApproval.svg"></div>
                  <div class="p-col-6 p-col-align-center overview-box-text">
                      <h3>Pending Approval</h3>
                  </div>
@@ -36,9 +36,9 @@
          </p-card>
     </div>
     <div class="p-col-12 p-xl-3 p-md-6">
-        <p-card styleClass="Kpicardstyles">
+        <p-card>
             <div class="p-grid overview-box">
-                 <div class="p-col-3 p-col-align-center overview-box-icon"><img src="card" src="./../../../dist/SundeusCLMImg/Dashboard_Kpi_img/expiring.svg" style="height: 50px;"></div>
+                 <div class="p-col-3 p-col-align-center overview-box-icon"><img src="card" src="./../../../dist/SundeusCLMImg/Dashboard_Kpi_img/expiring.svg"></div>
                  <div class="p-col-6 p-col-align-center overview-box-text">
                      <h3>Expiring</h3>
                  </div>
@@ -46,7 +46,46 @@
              </div>
          </p-card>
     </div>
+    <!--2nd row content start table/graph-->
+<div class="p-col-12 p-lg-6">
+<div class="p-grid p-dir-col p-nogutter">
+    <div class="p-col-12">
+        <div class="card myTasktable">
+            <div class="p-grid">
+                <div class="p-col-6 p-md-8">
+                    <h3>My Task</h3>
+                </div>
+                <div class="p-col-6 p-md-4 customicon">
+                    <span><i class="fa fa-arrows-alt" aria-hidden="true"></i></span>
+                    <!-- <span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span> -->
+                </div>
+            </div>
+            <!-- primng table -->
+            <p-table [columns]="cols" [value]="cars">
+                <ng-template pTemplate="header" let-columns>
+                    <tr>
+                        <th *ngFor="let col of columns">
+                            {{col.header}}
+                        </th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-rowData let-columns="columns">
+                    <tr>
+                        <td *ngFor="let col of columns">
+                                {{rowData[col.field]}}
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+            <!--end of dynamic table-->
+        </div>
+    </div>
 </div>
 </div>
-</div>
+<div class="p-col-12 p-lg-6"></div>
+
+</div>       <!--layout-dashboard end-->
+
+</div>       <!--layout-content end-->
+</div>       <!--layout-main end-->
 

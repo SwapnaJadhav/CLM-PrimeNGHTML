@@ -12,13 +12,13 @@ import {SidebarModule} from 'primeng/sidebar';
 import {TieredMenuModule} from 'primeng/tieredmenu';
 import { DashboardComponent } from './outer-layout/dashboard/dashboard.component';
 import {CardModule} from 'primeng/card';
+// import {FormsModule} from '@angular/forms';
+// import { HttpClientModule } from '@angular/common/http';
+// import { CarService } from './carservice';
+import {TableModule} from 'primeng/table';
+
 
 // import {MenuItem} from 'primeng/api';
-
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +34,7 @@ import {CardModule} from 'primeng/card';
     ButtonModule,
     SidebarModule,
     TieredMenuModule,
-    CardModule,
+    TableModule
     // MenuItem
   ],
   providers: [],
