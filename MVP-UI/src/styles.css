@@ -64,7 +64,7 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
 }
     /*edit by pushkar*/
 
-.sidebarsize.ui-sidebar-left:not(.ui-sidebar-active) .abc > a > .ui-menuitem-text{
+.sidebarsize.ui-sidebar-left:not(.ui-sidebar-active) .expandcontent > a > .ui-menuitem-text{
     display: none !important;
 
 }            /*edit by pushkar*/
@@ -78,6 +78,7 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     color: #333333;
     border: none;
     padding-left: 0px;         /*edit by pushkar*/
+    padding-top: 0px !important;
 }
 .ui-menuitem-icon.dashimg{
     content: url(./dist/SundeusCLMImg/menuicon_white/dashboardwhite.svg);
@@ -149,9 +150,12 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     background-color: #013164;
     border: none;
 }
-.sidebarsize.ui-sidebar .ui-sidebar-close{
-    visibility: hidden;
+a.ng-tns-c22-0.ui-sidebar-close.ui-corner-all.ng-star-inserted {
+    display: none !important;
 }
+/* .sidebarsize.ui-sidebar .ui-sidebar-close{
+    visibility: hidden;
+} */
    /* Dashboard Comp css */
 .layout-main{
     margin-left: 70px;
@@ -175,9 +179,12 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     font-size: xx-large;
     color: cadetblue;
 }
-.ui-card-body {
-    height: 6em;
+.p-col-6.p-col-align-center.overview-box-text {
+    font-size: 12px;
 }
+/* .ui-card-body {
+    height: 6em;
+} */
 .card {
     background-color: #FFFFFF;
     padding: 10px;
@@ -190,6 +197,8 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     color: #013164 !important;
     font-size: 14px;
 }
-.p-col-6.p-md-4.customicon {
-    text-align: right;
+span.customicon {
+    float: right;
+    color: #013164;
+    font-size: 14px;
 }

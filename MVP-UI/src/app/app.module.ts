@@ -14,8 +14,9 @@ import { DashboardComponent } from './outer-layout/dashboard/dashboard.component
 import {CardModule} from 'primeng/card';
 import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { CarService } from './carservice';
 import {TableModule} from 'primeng/table';
+import {ChartModule} from 'primeng/chart';
+
 
 
 // import {MenuItem} from 'primeng/api';
@@ -37,10 +38,11 @@ import {TableModule} from 'primeng/table';
     CardModule,
     FormsModule,
     HttpClientModule,
-    TableModule
+    TableModule,
+    ChartModule
     // MenuItem
   ],
-  providers: [CarService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

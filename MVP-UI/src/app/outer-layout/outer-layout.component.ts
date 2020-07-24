@@ -80,36 +80,36 @@ ngOnInit(): void {
 this.sundeussidemenu = [
   {
       label: 'Dashboard',
-      styleClass: 'abc',
+      styleClass: 'expandcontent',
       icon: 'dashimg',
 },
   {separator:true},
   {
       label: 'Contracts',
-      styleClass: 'abc',
+      styleClass: 'expandcontent',
       icon: 'contractimg',
       
   },
   {separator:true},
   {
     label: 'Reports',
-    styleClass: 'abc',
+    styleClass: 'expandcontent',
     icon: 'reportsimag',
     
 },
 {separator:true},
 {
   label: 'Search',
-  styleClass: 'abc',
+  styleClass: 'expandcontent',
   icon: 'pi pi-fw pi-search-plus',
   
 },
 {separator:true},
 {
   label: 'User Management',
-  styleClass: 'abc',
+  styleClass: 'expandcontent',
   icon: 'usermtimg',
-  items: [
+items: [
       {label: 'Users'},
       {separator:true},
       {label: 'Role & permissions'}
@@ -118,7 +118,7 @@ this.sundeussidemenu = [
 {separator:true},
 {
   label: 'Setup',
-  styleClass: 'abc',
+  styleClass: 'expandcontent',
   icon: 'setupimg',
   items: [
       {label: 'Alerts & Notification'},

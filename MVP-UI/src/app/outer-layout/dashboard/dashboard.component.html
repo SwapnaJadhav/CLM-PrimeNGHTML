@@ -55,13 +55,13 @@
                 <div class="p-col-6 p-md-8">
                     <h3>My Task</h3>
                 </div>
-                <div class="p-col-6 p-md-4 customicon">
-                    <span><i class="fa fa-arrows-alt" aria-hidden="true"></i></span>
+                <div class="p-col-6 p-md-4">
+                    <span class="customicon"><i class="fa fa-arrows-alt" aria-hidden="true"></i></span>
                     <!-- <span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span> -->
                 </div>
             </div>
             <!-- primng table -->
-            <p-table [columns]="cols" [value]="cars1" [scrollable]="true" scrollHeight="200px">
+            <p-table [columns]="scrollableCols" [value]="cars1" [scrollable]="true" scrollHeight="200px">
                 <ng-template pTemplate="header" let-columns>
                     <tr>
                         <th *ngFor="let col of columns">
@@ -82,8 +82,70 @@
     </div>
 </div>
 </div>
-<div class="p-col-12 p-lg-6"></div>
-
+<div class="p-col-12 p-lg-6">
+    <div class="p-grid p-dir-col p-nogutter">
+        <div class="p-col-12">
+            <div class="card myTasktable">
+                <div class="p-grid">
+                    <div class="p-col-6 p-md-8">
+                        <h3>Active Contracts by Type</h3>
+                    </div>
+                    <div class="p-col-6 p-md-4">
+                        <span class=" customicon"><i class="fa fa-arrows-alt" aria-hidden="true"></i></span>
+                        <!-- <span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span> -->
+                    </div>
+                </div>
+                <!-- Bar Chart COl start -->
+                <p-chart type="bar" [data]="data"></p-chart>
+                <!--Bar Char Col end -->
+            </div>
+        </div>
+    </div>
+</div>
+<!--3rd row content start doughnutchart-graph/ Pie-graph etc-->
+<div class="p-col-12 p-lg-4 p-md-6">
+    <div class="card">
+        <div class="p-grid p-nogutter">
+          <div class="p-col-6 title">
+            <h3>Contract Per Status</h3>
+          </div>
+          <div class="p-col-6">
+            <span class="customicon"><i class="fa fa-arrows-alt" aria-hidden="true"></i></span>
+          </div>
+        </div>
+        <!-- doughnutchart-graph 1 -->
+        <p-chart type="doughnut" [data]="data1"></p-chart>
+    </div>
+</div>
+<div class="p-col-12 p-lg-4 p-md-6">
+    <div class="card">
+        <div class="p-grid p-nogutter">
+          <div class="p-col-6 title">
+            <h3>Contract Per Category</h3>
+          </div>
+          <div class="p-col-6">
+            <span class="customicon"><i class="fa fa-arrows-alt" aria-hidden="true"></i></span>
+          </div>
+        </div>
+        <!-- pie_chart-graph 2 -->
+        <p-chart type="pie" [data]="data2"></p-chart>
+    </div>
+</div>
+<div class="p-col-12 p-lg-4 p-md-6">
+    <div class="card">
+        <div class="p-grid p-nogutter">
+          <div class="p-col-6 title">
+            <h3>Contract Per Organisation Unit</h3>
+          </div>
+          <div class="p-col-6">
+            <span class="customicon"><i class="fa fa-arrows-alt" aria-hidden="true"></i></span>
+          </div>
+        </div>
+        <!-- doughnutchart-graph 3 -->
+        <p-chart type="doughnut" [data]="data3"></p-chart>
+ </div>
+</div>
+<!--3rd row content Enddd doughnutchart-graph-->
 </div>       <!--layout-dashboard end-->
 
 </div>       <!--layout-content end-->
