@@ -61,7 +61,7 @@
                 </div>
             </div>
             <!-- primng table -->
-            <p-table [columns]="scrollableCols" [value]="cars1" [scrollable]="true" scrollHeight="200px">
+            <p-table [columns]="scrollableCols" [value]="contracttask" [scrollable]="true" scrollHeight="200px">
                 <ng-template pTemplate="header" let-columns>
                     <tr>
                         <th *ngFor="let col of columns">
@@ -75,7 +75,7 @@
                             {{rowData[col.field]}}
                         </td>
                     </tr>
-                </ng-template>
+                </ng-template>      
             </p-table>
             <!--end of dynamic table-->
         </div>

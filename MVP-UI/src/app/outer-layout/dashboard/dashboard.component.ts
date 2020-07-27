@@ -12,7 +12,8 @@ import {ChartModule} from 'primeng/chart';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  cars1: any[];
+  contracttask: any[];
+  // image: any[];
   scrollableCols: any[];
   data: any;
   data1: any;
@@ -105,28 +106,33 @@ export class DashboardComponent implements OnInit {
    }   //  end-of-constructor-bracket
 
   ngOnInit(): void {
-    this.cars1 =  [
-      {"Subject": "234", "Action": "swapna"}
+    this.contracttask =  [
+      {"Subject": "Approval request assigned for CRN12345"},
+      {"Subject": "Approval request assigned for CRN12345"},
+      {"Subject": "Approval request assigned for CRN12345"},
+      {"Subject": "Approval request assigned for CRN12345"},
+      {"Subject": "Approval request assigned for CRN12345"},
+      {"Subject": "Approval request assigned for CRN12345"},
+      {"Subject": "Approval request assigned for CRN12345"},
+      {"Subject": "Approval request assigned for CRN12345"}
+
       // {"brand": "VW", "year": 2012, "color": "Orange", "vin": "dsad231ff"},
-      // {"brand": "Audi", "year": 2011, "color": "Black", "vin": "gwregre345"},
-      // {"brand": "Renault", "year": 2005, "color": "Gray", "vin": "h354htr"},
-      // {"brand": "BMW", "year": 2003, "color": "Blue", "vin": "j6w54qgh"},
-      // {"brand": "Mercedes", "year": 1995, "color": "Orange", "vin": "hrtwy34"},
-      // {"brand": "Volvo", "year": 2005, "color": "Black", "vin": "jejtyj"},
-      // {"brand": "Honda", "year": 2012, "color": "Yellow", "vin": "g43gr"},
-      // {"brand": "Jaguar", "year": 2013, "color": "Orange", "vin": "greg34"},
-      // {"brand": "Ford", "year": 2000, "color": "Black", "vin": "h54hw5"},
-      // {"brand": "Fiat", "year": 2013, "color": "Red", "vin": "245t2s"}
+    //   {"brand": "Audi", "year": 2011, "color": "Black", "vin": "gwregre345"},
+    //   {"brand": "Renault", "year": 2005, "color": "Gray", "vin": "h354htr"},
+    //   {"brand": "Fiat", "year": 2013, "color": "Red", "vin": "245t2s"}
   ];
+// this.image = [
+  
+//     {image: 'Viewlatest.svg'}
+
+  
+// ];
 
     this.scrollableCols = [
       { field: 'Subject', header: 'Subject' },
-      { field: 'Action', header: 'Action' },
-      // { field: 'color', header: 'Color' },
-      // { field: 'year', header: 'Year' },
-      // { field: 'brand', header: 'Brand' },
-      // { field: 'color', header: 'Color' }
-  ];
+      { field: 'Action', header: 'Action' }
+];
+
   }    //end bracket of void
 
 }    // end bracket_of_Oninit
