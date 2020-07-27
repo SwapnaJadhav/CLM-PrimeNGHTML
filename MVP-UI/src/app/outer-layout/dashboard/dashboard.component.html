@@ -61,7 +61,7 @@
                 </div>
             </div>
             <!-- primng table -->
-            <p-table [columns]="scrollableCols" [value]="contracttask" [scrollable]="true" scrollHeight="200px">
+            <p-table [columns]="scrollableCols" [value]="contracttask" [scrollable]="true" scrollHeight="265px">
                 <ng-template pTemplate="header" let-columns>
                     <tr>
                         <th *ngFor="let col of columns">
@@ -71,8 +71,17 @@
                 </ng-template>
                 <ng-template pTemplate="body" let-rowData let-columns="columns">
                     <tr>
-                        <td *ngFor="let col of columns">
-                            {{rowData[col.field]}}
+                        <!-- <td *ngFor="let col of columns">
+                            <span *ngIf = "col.field!='image'">
+                                {{rowData[col.field]}}
+                          </span>
+                             <img *ngIf = "col.field=='image'" [src]="rowData['image']" alt="">
+                        </td> -->
+                        <td>
+                            {{rowData['Subject']}}
+                        </td>
+                         <td>
+                           <img [src]="rowData['image']"  style="height: 30px;" alt="">
                         </td>
                     </tr>
                 </ng-template>      

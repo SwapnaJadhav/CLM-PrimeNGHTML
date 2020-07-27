@@ -13,7 +13,6 @@ import {ChartModule} from 'primeng/chart';
 })
 export class DashboardComponent implements OnInit {
   contracttask: any[];
-  // image: any[];
   scrollableCols: any[];
   data: any;
   data1: any;
@@ -107,30 +106,22 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.contracttask =  [
-      {"Subject": "Approval request assigned for CRN12345"},
-      {"Subject": "Approval request assigned for CRN12345"},
-      {"Subject": "Approval request assigned for CRN12345"},
-      {"Subject": "Approval request assigned for CRN12345"},
-      {"Subject": "Approval request assigned for CRN12345"},
-      {"Subject": "Approval request assigned for CRN12345"},
-      {"Subject": "Approval request assigned for CRN12345"},
-      {"Subject": "Approval request assigned for CRN12345"}
+      {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
+      {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
+      {"Subject": "Approval request assigned for CRN12345","image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
+      {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
+      {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
+      {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
+      {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
+      {"Subject": "Approval request assigned for CRN12345","image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"}
 
       // {"brand": "VW", "year": 2012, "color": "Orange", "vin": "dsad231ff"},
-    //   {"brand": "Audi", "year": 2011, "color": "Black", "vin": "gwregre345"},
-    //   {"brand": "Renault", "year": 2005, "color": "Gray", "vin": "h354htr"},
+   
     //   {"brand": "Fiat", "year": 2013, "color": "Red", "vin": "245t2s"}
   ];
-// this.image = [
-  
-//     {image: 'Viewlatest.svg'}
-
-  
-// ];
-
-    this.scrollableCols = [
+this.scrollableCols = [
       { field: 'Subject', header: 'Subject' },
-      { field: 'Action', header: 'Action' }
+      { field: 'image', header: 'Action' }
 ];
 
   }    //end bracket of void
