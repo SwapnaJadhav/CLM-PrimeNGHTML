@@ -15,29 +15,38 @@ export class DashboardComponent implements OnInit {
   contracttask: any[];
   scrollableCols: any[];
   data: any;
+  options: any;
   data1: any;
+  // options1: any;
   data2: any;
   data3: any;
+
 
  constructor() {
    // Bar Chart
     this.data = {
-      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+      labels: ['Consulting', 'MSA', 'NDA', 'SOW', 'Agreement'],
       datasets: [
           {
-              label: 'My First dataset',
-              backgroundColor: '#42A5F5',
+              labels: 'My First dataset',
+              data: [6, 8, 10, 8, 12],
               borderColor: '#1E88E5',
-              data: [65, 59, 80, 81, 56, 55, 40]
-          },
-          {
-              label: 'My Second dataset',
-              backgroundColor: '#9CCC65',
-              borderColor: '#7CB342',
-              data: [28, 48, 40, 19, 86, 27, 90]
+              backgroundColor: ['#42A5F5',
+               "#9966FF",  
+              "#4C4CFF",  
+              "#00FFFF",  
+              "#f990a7"
+            ],
+            fill: true  
           }
+         
       ]
   }      //  end-of-data as bar_chart in secondRow dashboard
+ this.options = {
+  legend: {
+        position: 'right'
+    }
+  };
   // Circle/ Doughnut_chart_1
   this.data1 = {
     labels: ['A','B','C', 'D', 'E'],
@@ -61,6 +70,15 @@ export class DashboardComponent implements OnInit {
             ]
         }]    
     };    // end-of-dought_chart1_col_1 in 3rd_Row
+  //   this.options1 = {
+  //     label: {
+  //         display: true,
+  //         text: 'My Title',
+  //         fontSize: 16
+  //     }
+    
+  // };
+    // Circle/pie_chart_2
   this.data2 = {
     // labels: ['A','B','C', 'D', 'E', 'F'],
     datasets: [
@@ -84,11 +102,13 @@ export class DashboardComponent implements OnInit {
             ]
         }]    
     };     //end of data2 piechart2 col_2 in 3rd_Row
+    
+    // Circle/ Doughnut_chart_3
   this.data3 = {
     labels: ['A','B','C'],
     datasets: [
         {
-            // data: [130, 180, 200,],
+        
             data: [27.45, 35.26, 38.07,],
             backgroundColor: [
                 "#F933FF",
@@ -108,7 +128,7 @@ export class DashboardComponent implements OnInit {
     this.contracttask =  [
       {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
       {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
-      {"Subject": "Approval request assigned for CRN12345","image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
+      {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
       {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
       {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
       {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
@@ -116,8 +136,6 @@ export class DashboardComponent implements OnInit {
       {"Subject": "Approval request assigned for CRN12345","image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"}
 
       // {"brand": "VW", "year": 2012, "color": "Orange", "vin": "dsad231ff"},
-   
-    //   {"brand": "Fiat", "year": 2013, "color": "Red", "vin": "245t2s"}
   ];
 this.scrollableCols = [
       { field: 'Subject', header: 'Subject' },

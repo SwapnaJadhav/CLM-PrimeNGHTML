@@ -12,6 +12,11 @@ body{
 .Sundeusmenuright.ui-menubar .ui-menubar-custom {
     float: left;
 } 
+.Sundeusmenuright.ui-menubar.ui-widget.ui-widget-content.ui-corner-all{
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+}
 .Sundeusheaderlogo1{
     content: url(./dist/SundeusCLMImg/Sundeus_logo/Logo.svg);
     height: 40px;
@@ -159,6 +164,7 @@ a.ng-tns-c22-0.ui-sidebar-close.ui-corner-all.ng-star-inserted {
    /* Dashboard Comp css */
 .layout-main{
     margin-left: 70px;
+    padding-top: 52px;
 }
 .layout-content{
     padding: 1em !important;
@@ -202,3 +208,6 @@ span.customicon {
     color: #013164;
     font-size: 14px;
 }
+/* .w-header {
+width: 80%;
+} */
