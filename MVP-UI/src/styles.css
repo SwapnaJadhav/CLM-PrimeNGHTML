@@ -32,8 +32,6 @@ span.ui-menuitem-icon.fa.fa-question-circle.ng-star-inserted {
 .Sundeusmenuright span.ui-menuitem-icon.fa.fa-bell.ng-star-inserted {
     margin-right: -30px !important;
 }
-/* a.downarrowiconremove.ui-menuitem-link.ui-corner-all.ng-star-inserted >.pi-caret-down:before{
-    content: "" !important;} */
 .Sundeusmenuright a.downarrowiconremove>.pi-caret-down:before{
     content: "" !important;
 }
@@ -53,7 +51,7 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
 }
 .Sundeusmenuright ul.ui-widget-content.ui-corner-all.ui-submenu-list.ui-shadow {
     top: 51px !important;
-    left: -23px !important;
+    left: -35px !important;
 }
 .Sundeussideborder.ui-tieredmenu{
     border: none;
@@ -68,7 +66,6 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     transform: translateX(-60%);
 }
     /*edit by pushkar*/
-
 .sidebarsize.ui-sidebar-left:not(.ui-sidebar-active) .expandcontent > a > .ui-menuitem-text{
     display: none !important;
 
@@ -76,8 +73,7 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
 .sidebarsize.ui-sidebar-left:not(.ui-sidebar-active) .Sundeussideborder.ui-tieredmenu{
     margin-left: 105px;
     width: 70px;
-}       
-   /*edit by pushkar*/
+}       /*edit by pushkar*/
 .sidebarsize.ui-sidebar {
     background-color: #013164;
     color: #333333;
@@ -90,28 +86,23 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     height: 25px;
     width: 25px;
 }
-.ui-menuitem-icon.dashimg:hover{
+/* .ui-menuitem-icon.dashimg:hover{
     content: url(./dist/SundeusCLMImg/Orange_menuicon/dashboardSelected.svg);
     height: 25px;
     width: 25px;
-}
+} */
 .ui-menuitem-icon.contractimg{
     content: url(./dist/SundeusCLMImg/menuicon_white/ContractTypewhite.svg);
     height: 25px;
     width: 25px;
 }
-.ui-menuitem-icon:hover.contractimg{
+/* .ui-menuitem-icon:hover.contractimg{
     content: url(./dist/SundeusCLMImg/Orange_menuicon/ContractTypesSelected.svg);
     height: 25px;
     width: 25px;
-}
+} */
 .ui-menuitem-icon.reportsimag{
     content: url(./dist/SundeusCLMImg/menuicon_white/ruleswhite.svg);
-    height: 25px;
-    width: 25px;
-}
-.ui-menuitem-icon:hover.reportsimag{
-    content: url(./dist/SundeusCLMImg/Orange_menuicon/rulesselected.svg);
     height: 25px;
     width: 25px;
 }
@@ -120,22 +111,11 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     height: 25px;
     width: 25px;
 }
-.ui-menuitem-icon:hover.usermtimg{
-    content: url(./dist/SundeusCLMImg/Orange_menuicon/ContractSelecteed.svg);
-    height: 25px;
-    width: 25px;
-}
 .ui-menuitem-icon.setupimg{
     content: url(./dist/SundeusCLMImg/menuicon_white/settingswhite.svg);
     height: 25px;
     width: 25px;
 }
-.ui-menuitem-icon:hover.setupimg{
-    content: url(./dist/SundeusCLMImg/Orange_menuicon/settingsselected.svg);
-    height: 25px;
-    width: 25px;
-}
-
 .Sundeussideborder.ui-tieredmenu .ui-menuitem-link .ui-menuitem-text {
     color: #ffffff;
     font-size: 14px;
@@ -149,8 +129,7 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
 .Sundeussideborder.ui-tieredmenu .ui-menuitem-link .ui-menuitem-icon {
     color: #ffffff;
     margin-right: 15px;
-    /* float: right; */
-}
+  }
 .Sundeussideborder.ui-tieredmenu .ui-submenu-list{
     background-color: #013164;
     border: none;
@@ -158,9 +137,7 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
 a.ng-tns-c22-0.ui-sidebar-close.ui-corner-all.ng-star-inserted {
     display: none !important;
 }
-/* .sidebarsize.ui-sidebar .ui-sidebar-close{
-    visibility: hidden;
-} */
+
    /* Dashboard Comp css */
 .layout-main{
     margin-left: 70px;
@@ -188,26 +165,59 @@ a.ng-tns-c22-0.ui-sidebar-close.ui-corner-all.ng-star-inserted {
 .p-col-6.p-col-align-center.overview-box-text {
     font-size: 12px;
 }
-/* .ui-card-body {
-    height: 6em;
-} */
+.overview-box-icon > img {
+height: 55px !important;
+}
 .card {
     background-color: #FFFFFF;
     padding: 10px;
 }                       /* My Task Table card*/
-.card h3:first-child {
+/* .card h3:first-child {
     margin-top: 0px;
-    margin-bottom: 18px;
+    margin-bottom: 12px;
 }
 .card h3 {
     color: #013164 !important;
     font-size: 14px;
+} */
+span.title-caption{                /*re-usable*/
+    color: #013164 !important;
+    font-size: 14px;
+    font-family: Avenir Heavy;
+    font-weight: bold;
 }
 span.customicon {
-    float: right;
+    float: right;        
     color: #013164;
     font-size: 14px;
 }
-/* .w-header {
-width: 80%;
-} */
+span.customicon.pr-doticon {
+    padding-right: 13px;
+}
+.ui-table-mytask th.w-tableheader {
+width: 80%;                  
+}
+.ui-table-mytask td.w-tableheader {
+    width: 80%;
+}
+
+ /* Notification-List Screen CSS start*/
+          /* Button*/
+.ui-button-secondary.Sundeus-button-ui {
+    float: right !important;       /*Create Notificaton button*/   /*re-usable*/
+}
+button.ui-button-warn.Sundeus-golbal-serch.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only {
+    color: #ffffff;
+    background-color: #013164;               /*re-usable*/
+}
+td.listactionicon img{    /*re-usable*/
+    margin-left: 22px;
+    height: 14px;
+}
+body .ui-togglebutton:not(.ui-state-disabled):not(.ui-state-active) {
+    background-color: #FF8C00;
+    color: #FFFFFF;
+}
+body .ui-togglebutton:not(.ui-state-disabled):not(.ui-state-active):hover {
+    color: #ffffff;
+}

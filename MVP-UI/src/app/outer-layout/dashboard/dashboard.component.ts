@@ -24,29 +24,37 @@ export class DashboardComponent implements OnInit {
 
  constructor() {
    // Bar Chart
-    this.data = {
-      labels: ['Consulting', 'MSA', 'NDA', 'SOW', 'Agreement'],
-      datasets: [
-          {
-              labels: 'My First dataset',
-              data: [6, 8, 10, 8, 12],
-              borderColor: '#1E88E5',
-              backgroundColor: ['#42A5F5',
-               "#9966FF",  
-              "#4C4CFF",  
-              "#00FFFF",  
-              "#f990a7"
-            ],
-            fill: true  
-          }
-         
-      ]
-  }      //  end-of-data as bar_chart in secondRow dashboard
- this.options = {
-  legend: {
-        position: 'right'
-    }
-  };
+  this.data = {
+    labels: ['Consulting', 'MSA', 'NDA', 'NDVA', 'SOW', 'VA', 'DA'],
+    datasets: [
+        {
+            label: 'My First dataset',
+            // backgroundColor: '#42A5F5',
+            backgroundColor: ['#42A5F5',
+                          "#9966FF",  
+                         "#4C4CFF",  
+                         "#00FFFF",  
+                         "#f990a7",
+                         "#F39C12",
+                        "#FF6347"
+                      ],
+            borderColor: '#1E88E5',
+            data: [65, 59, 80, 81, 56, 55, 40]
+        },
+        {
+            label: 'My Second dataset',
+            backgroundColor: '#9CCC65',
+            borderColor: '#7CB342',
+            data: [28, 48, 40, 19, 86, 27, 90]
+        }
+    ]
+}                                  //  end-of-data as bar_chart in secondRow dashboard
+//  this.options = {
+//   legend: {
+//         position: 'top'
+//     }
+//   };
+
   // Circle/ Doughnut_chart_1
   this.data1 = {
     labels: ['A','B','C', 'D', 'E'],
@@ -70,17 +78,10 @@ export class DashboardComponent implements OnInit {
             ]
         }]    
     };    // end-of-dought_chart1_col_1 in 3rd_Row
-  //   this.options1 = {
-  //     label: {
-  //         display: true,
-  //         text: 'My Title',
-  //         fontSize: 16
-  //     }
-    
-  // };
+
     // Circle/pie_chart_2
   this.data2 = {
-    // labels: ['A','B','C', 'D', 'E', 'F'],
+    labels: ['A','B','C', 'D', 'E', 'F'],
     datasets: [
         {
             data: [100, 90, 80, 60, 40, 15],
@@ -134,8 +135,6 @@ export class DashboardComponent implements OnInit {
       {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
       {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
       {"Subject": "Approval request assigned for CRN12345","image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"}
-
-      // {"brand": "VW", "year": 2012, "color": "Orange", "vin": "dsad231ff"},
   ];
 this.scrollableCols = [
       { field: 'Subject', header: 'Subject' },

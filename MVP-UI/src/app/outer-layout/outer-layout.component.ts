@@ -82,6 +82,7 @@ this.sundeussidemenu = [
       label: 'Dashboard',
       styleClass: 'expandcontent',
       icon: 'dashimg',
+      routerLink: ['/app/dashboard'],
 },
   {separator:true},
   {
@@ -120,8 +121,9 @@ items: [
   label: 'Setup',
   styleClass: 'expandcontent',
   icon: 'setupimg',
+  // routerLink: ['/app/setup/notifications/notification-list'],
   items: [
-      {label: 'Alerts & Notification'},
+      {label: 'Alerts & Notification', routerLink: ['/app/setup/notifications/notification-list'] },
       {separator:true},
       {label: 'Contract Type'},
       {separator:true},

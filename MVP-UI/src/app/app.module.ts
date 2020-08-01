@@ -16,6 +16,11 @@ import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {TableModule} from 'primeng/table';
 import {ChartModule} from 'primeng/chart';
+import { SetupComponent } from './outer-layout/setup/setup.component';
+import { NotificationsComponent } from './outer-layout/setup/notifications/notifications.component';
+import { NotificationListComponent } from './outer-layout/setup/notifications/notification-list/notification-list.component';
+import { NotificationFormComponent } from './outer-layout/setup/notifications/notification-form/notification-form.component';
+import {ToggleButtonModule} from 'primeng/togglebutton';
 
 
 
@@ -25,6 +30,11 @@ import {ChartModule} from 'primeng/chart';
     AppComponent,
     OuterLayoutComponent,
     DashboardComponent,
+    SetupComponent,
+    NotificationsComponent,
+    NotificationListComponent,
+    NotificationFormComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -39,7 +49,8 @@ import {ChartModule} from 'primeng/chart';
     FormsModule,
     HttpClientModule,
     TableModule,
-    ChartModule
+    ChartModule,
+    ToggleButtonModule
     // MenuItem
   ],
   providers: [],
