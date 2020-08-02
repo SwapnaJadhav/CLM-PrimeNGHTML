@@ -203,8 +203,15 @@ width: 80%;
 
  /* Notification-List Screen CSS start*/
           /* Button*/
-.ui-button-secondary.Sundeus-button-ui {
-    float: right !important;       /*Create Notificaton button*/   /*re-usable*/
+.Sundeus-button-ui {
+    float: right !important;      /*re-usable*/
+}
+.ui-button-primary{
+    background-color: #FF8C00 !important;            /*re-usable*/
+    color: #ffffff !important;
+}
+button.ui-button-primary.bottomactionbtns {
+  margin: 0px 10px !important;
 }
 button.ui-button-warn.Sundeus-golbal-serch.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only {
     color: #ffffff;
@@ -220,4 +227,20 @@ body .ui-togglebutton:not(.ui-state-disabled):not(.ui-state-active) {
 }
 body .ui-togglebutton:not(.ui-state-disabled):not(.ui-state-active):hover {
     color: #ffffff;
+}
+.p-field.p-col-1.plusicon {
+    margin-top: 34px;
+    color: #013164;
+    font-size: 25px;
+}
+.py-mandatoryline{
+    margin-top: -7px;
+    margin-bottom: 7px;
+    font-size: 11px;
+}
+label {
+    font-weight: bold !important;
+}
+.p-col-8.grayborder-r {
+    border-right: 1px soild #B2AEAE;
 }

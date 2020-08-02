@@ -21,6 +21,8 @@ import { NotificationsComponent } from './outer-layout/setup/notifications/notif
 import { NotificationListComponent } from './outer-layout/setup/notifications/notification-list/notification-list.component';
 import { NotificationFormComponent } from './outer-layout/setup/notifications/notification-form/notification-form.component';
 import {ToggleButtonModule} from 'primeng/togglebutton';
+import {MultiSelectModule} from 'primeng/multiselect';
+import {InputTextareaModule} from 'primeng/inputtextarea';
 
 
 
@@ -50,7 +52,9 @@ import {ToggleButtonModule} from 'primeng/togglebutton';
     HttpClientModule,
     TableModule,
     ChartModule,
-    ToggleButtonModule
+    ToggleButtonModule,
+    MultiSelectModule,
+    InputTextareaModule
     // MenuItem
   ],
   providers: [],

@@ -20,7 +20,7 @@
                 <div class="p-grid">
                    <div class="p-col-8"></div>
                     <div class="p-col-4">
-                        <button pButton type="button" label="Create Notification" class="ui-button-secondary Sundeus-button-ui" routerLink = "/app/setup/notifications/notification-form"></button>
+                        <button pButton type="button" label="Create Notification" class="ui-button-primary Sundeus-button-ui" routerLink = "/app/setup/notifications/notification-form"></button>
                     </div>
                 </div>
                 <!--PrimeNg Sort&page Table-->
@@ -41,15 +41,14 @@
                   <!-- <td *ngFor="let col of columns">
                         {{rowData[col.field]}}
                   </td> -->
-                <td>{{rowData['Notification Name']}}</td>
+                <td><a href="#">{{rowData['Notification Name']}}</a></td>
                 <td>{{rowData['ID']}}</td>
                 <td>{{rowData['Type']}}</td>
                 <td>{{rowData['Set Up On Object']}}</td>
                 <td>{{rowData['Created By']}}</td>
                 <td>{{rowData['Created On']}}</td>
-                <!-- <td><p-toggleButton [(ngModel)]="checked1" [style]="{'width':'110px'}">{{rowData['Status']}}</p-toggleButton></td> -->
                 <td>
-                    <p-toggleButton [(ngModel)]="checked1" onLabel="Active" offLabel="Inactive" [style]="{'width':'85px','border-radius':'25px'}"  styleClass="togglebutton">{{rowData['Status']}}</p-toggleButton>
+                    <p-toggleButton [(ngModel)]="checked1" onLabel="Active" offLabel="Inactive" [style]="{'width':'75px','border-radius':'25px','margin-left':'25px'}"  styleClass="togglebutton">{{rowData['Status']}}</p-toggleButton>
                 </td>
                     <!-- {{rowData['Status']}} -->
                  <td class="listactionicon">

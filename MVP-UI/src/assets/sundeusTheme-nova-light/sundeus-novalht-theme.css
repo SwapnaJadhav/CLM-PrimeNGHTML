@@ -1418,15 +1418,15 @@ body .ui-splitbutton.ui-buttonset .ui-menu {
 body .ui-button.ui-state-default.ui-button-secondary, body .ui-buttonset.ui-button-secondary > .ui-button.ui-state-default {
   /* color: #333333; */
   /* background-color: #f4f4f4; */        /* Custom css change color by me*/
-  color: #ffffff;
-  background-color: #FF8C00;         
-  border: 1px solid #f4f4f4;
+  color: #FF8C00;
+  background-color: #ffffff;         
+  border: 1px solid #FF8C00;
 }
 body .ui-button.ui-state-default.ui-button-secondary:enabled:hover, body .ui-buttonset.ui-button-secondary > .ui-button.ui-state-default:enabled:hover {
   /* background-color: #c8c8c8; */   /* Custom css change color 005b9f by me*/
-  background-color: #FF8C00;
-  color: #ffffff;
-  border-color: #c8c8c8;
+  background-color: #ffffff;
+  color: #FF8C00;
+  border-color: #FF8C00;
 }
 body .ui-button.ui-state-default.ui-button-secondary:enabled:focus, body .ui-buttonset.ui-button-secondary > .ui-button.ui-state-default:enabled:focus {
   -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
@@ -1434,9 +1434,9 @@ body .ui-button.ui-state-default.ui-button-secondary:enabled:focus, body .ui-but
   box-shadow: 0 0 0 0.2em;      /* Custom css change color 8dcdff by me*/
 }
 body .ui-button.ui-state-default.ui-button-secondary:enabled:active, body .ui-buttonset.ui-button-secondary > .ui-button.ui-state-default:enabled:active {
-  background-color: #FF8C00;   /* Custom css change color 005b9f by me*/
-  color: #ffffff;
-  border-color: #a0a0a0;
+  background-color: #ffffff;   /* Custom css change color 005b9f by me*/
+  color: #FF8C00;
+  border-color: #FF8C00;
 }
 body .ui-button.ui-state-default.ui-button-info, body .ui-buttonset.ui-button-info > .ui-button.ui-state-default {
   color: #ffffff;

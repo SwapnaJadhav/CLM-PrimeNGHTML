@@ -1,1 +1,102 @@
-<p>notification-form works!</p>
+<!-- <p>notification-form works!</p> -->
+<div class="layout-main">
+    <div class="layout-content">
+       <div class="p-grid layout-dashboard">
+           <div class="p-col-12">
+                <!-- Top hedaer Title and Serch placeholder div_start  -->
+               <div class="p-grid ui-fluid">
+                   <div class="p-col-12 p-md-9">
+                       <span class="title-caption">Create Notifications</span>
+                   </div>
+                   <div class="p-col-12 p-md-3"></div>
+           </div>
+              <!-- Top hedaer Title and Serch placeholder div_end -->
+        <p-card  styleClass="ui-card-shadow">
+            <div class="py-mandatoryline">
+            <p>**All Fields are mandatory</p>
+            </div>
+           <!--1st Row-->
+            <div class="ui-fluid p-formgrid p-grid">
+                <div class="p-field p-col-12 p-md-2">
+                    <label for="notificationid">Notifiation ID</label>
+                    <input id="notificationnameid" name="notificationid" type="text" pInputText placeholder="System Generated"> 
+                </div>
+                <div class="p-field p-col-12 p-md-2">
+                    <label for="notificationname">Notification Name</label>
+                    <input id="notificationname" name="notificationname" type="text" pInputText placeholder="Add Notification Name"> 
+                </div>
+                <div class="p-field p-col-12 p-md-2">
+                    <label for="notificationtype">Notification Type</label>
+                    <p-multiSelect [options]="notificationtype" [(ngModel)]="selectedCars1" name="notificationtype"></p-multiSelect>
+                    <p>Selected Cars: {{selectedCars1}}</p>
+                </div>
+                <div class="p-field p-col-12 p-md-2">
+                    <label for="contracttype">Contract Type</label>
+                    <p-multiSelect [options]="contracttype" name="contracttype"></p-multiSelect>
+                </div>
+                <div class="p-field p-col-12 p-md-2">
+                    <label for="triggerbasedon">Trigger (Action / Event)</label>
+                    <p-multiSelect [options]="triggerbasedon" name="triggerbasedon"></p-multiSelect>
+                </div>
+            </div>
+               <!--1st Row end-->
+            <div class="p-grid">
+                <div class="p-col-8 grayborder-r">
+                  <div class="ui-fluid p-formgrid p-grid">
+                    <div class="p-field p-col-11">
+                        <label for="sendto">Send To</label>
+                        <p-multiSelect [options]="sendto" name="sendto"></p-multiSelect>
+                    </div>
+                    <div class="p-field p-col-1 plusicon">
+                     <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                   </div>
+                    <div class="p-field p-col-11">
+                        <label for="sendto">CC To</label>
+                        <p-multiSelect [options]="ccto" name="ccto"></p-multiSelect>
+                    </div>
+                    <div class="p-field p-col-1 plusicon">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                      </div>
+                    <div class="p-field p-col-12">
+                        <label for="subject">Subject</label>
+                        <input id="subject" name="subject" type="text" pInputText placeholder="Add Subject"> 
+                    </div>
+                    <div class="p-field p-col-12">
+                        <label for="subject">Email Body</label>
+                        <textarea rows="5" cols="30" pInputTextarea placeholder="Type your message here..."></textarea>
+                    </div>
+                </div>
+            </div>
+                <div class="p-col-4">
+                    <h3 style="margin: 0;">Select Metedata to insert in Email</h3>
+                    <p-card>
+                     <p>Drag Metedata to email body which you would like to include in your email or subject</p>
+                     <div class="p-col-12">
+                     <div class="ui-inputgroup">
+                        <input type="text" pInputText placeholder="Search By Keywords">   
+                        <button pButton type="button" icon="pi pi-search" class="ui-button-warn Sundeus-golbal-serch"></button>      
+                    </div>
+                 </div>
+                    </p-card>
+                </div>
+            </div>
+            <hr>
+               <!--2nd Row end-->
+             <div class="p-grid">
+                <div class="p-col-12 p-md-6 p-lg-3"></div>
+                <div class="p-col-12 p-md-6 p-lg-3"></div>
+                <div class="p-col-12 p-md-6 p-lg-3"></div>
+                <div class="p-col-12 p-md-6 p-lg-3">
+                      <div class="Sundeus-button-ui">
+                        <button pButton type="button" label="Save" class="ui-button-primary bottomactionbtns"></button>
+                        <button pButton type="button" label="Cancel" class="ui-button-secondary"></button>
+                </div>
+                </div>
+            </div>
+            <!--3rd Row end-->
+           </p-card>
+          </div>
+       </div>       <!--layout-dashboard end-->
+       
+    </div>       <!--layout-content end-->
+   </div>       <!--layout-main end-->
