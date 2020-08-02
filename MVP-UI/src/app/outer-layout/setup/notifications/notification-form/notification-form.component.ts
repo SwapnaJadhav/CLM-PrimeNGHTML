@@ -14,6 +14,9 @@ export class NotificationFormComponent implements OnInit {
   sendto: SelectItem[];
   ccto: SelectItem[];
   selectedCars1: string[] = [];
+  dragmedatadalist: SelectItem[];
+  selectedCar: string = 'BMW';
+
 
 
   constructor() {
@@ -56,7 +59,18 @@ this.ccto = [
   {label: 'dheerug@hotmail.com', value: 'dheerug@hotmail.com'},
   {label: 'yadav.sandeep1920@gmail.com', value: 'Completed Review'},
 ];    //  end of ccto_Multiselect5
-
+this.dragmedatadalist = [
+  {label: 'Audi', value: 'Audi'},
+  {label: 'BMW', value: 'BMW'},
+  {label: 'Fiat', value: 'Fiat'},
+  {label: 'Ford', value: 'Ford'},
+  {label: 'Honda', value: 'Honda'},
+  {label: 'Jaguar', value: 'Jaguar'},
+  {label: 'Mercedes', value: 'Mercedes'},
+  {label: 'Renault', value: 'Renault'},
+  {label: 'VW', value: 'VW'},
+  {label: 'Volvo', value: 'Volvo'}
+];   //  end of dragmedatadalist
 }   //  end of construcor() method
 
   ngOnInit(): void {

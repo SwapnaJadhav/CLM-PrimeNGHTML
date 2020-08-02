@@ -23,6 +23,8 @@ import { NotificationFormComponent } from './outer-layout/setup/notifications/no
 import {ToggleButtonModule} from 'primeng/togglebutton';
 import {MultiSelectModule} from 'primeng/multiselect';
 import {InputTextareaModule} from 'primeng/inputtextarea';
+import {ListboxModule} from 'primeng/listbox';
+
 
 
 
@@ -54,7 +56,8 @@ import {InputTextareaModule} from 'primeng/inputtextarea';
     ChartModule,
     ToggleButtonModule,
     MultiSelectModule,
-    InputTextareaModule
+    InputTextareaModule,
+    ListboxModule
     // MenuItem
   ],
   providers: [],
