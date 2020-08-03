@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { OuterLayoutComponent } from './outer-layout/outer-layout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenubarModule } from 'primeng/menubar';
+// import  { MenubarModule} from 'customprimeng/menubar/public_api';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import {SidebarModule} from 'primeng/sidebar';
@@ -44,7 +45,7 @@ import {ListboxModule} from 'primeng/listbox';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MenubarModule,
+   MenubarModule,
     InputTextModule,
     ButtonModule,
     SidebarModule,

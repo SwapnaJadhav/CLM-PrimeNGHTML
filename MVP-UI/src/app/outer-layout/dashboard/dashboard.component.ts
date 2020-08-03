@@ -127,14 +127,14 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.contracttask =  [
-      {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
-      {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
-      {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
-      {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
-      {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
-      {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
-      {"Subject": "Approval request assigned for CRN12345", "image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"},
-      {"Subject": "Approval request assigned for CRN12345","image": "dist/SundeusCLMImg/List Page icons/Viewlatest.svg"}
+      {"Subject": "CRN12345"},
+      {"Subject": "CRN12345"},
+      {"Subject": "CRN12345"},
+      {"Subject": "CRN12345"},
+      {"Subject": "CRN12345"},
+      {"Subject": "CRN12345"},
+      {"Subject": "CRN12345"}
+    
   ];
 this.scrollableCols = [
       { field: 'Subject', header: 'Subject' },

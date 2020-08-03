@@ -82,10 +82,10 @@
                              <img *ngIf = "col.field=='image'" [src]="rowData['image']" alt="">
                         </td> -->
                         <td class="w-tableheader">
-                            {{rowData['Subject']}}
+                            Approval request assigned for <a href="">{{rowData['Subject']}}</a>
                         </td>
                          <td style="text-align: center;">
-                           <img [src]="rowData['image']"  style="height: 20px;" alt="">
+                           <img src="dist/SundeusCLMImg/List Page icons/Viewlatest.svg" style="height: 20px;" alt="">
                         </td>
                     </tr>
                 </ng-template>      

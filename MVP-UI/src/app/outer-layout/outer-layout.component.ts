@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {MenubarModule} from 'primeng/menubar';
+// import  { MenubarModule} from 'customprimeng/menubar/public_api';
 import {SidebarModule} from 'primeng/sidebar';
 import {TieredMenuModule} from 'primeng/tieredmenu';
 import {MenuItem} from 'primeng/api';

@@ -48,9 +48,10 @@
                 <td>{{rowData['Created By']}}</td>
                 <td>{{rowData['Created On']}}</td>
                 <td>
-                    <p-toggleButton [(ngModel)]="checked1" onLabel="Active" offLabel="Inactive" [style]="{'width':'75px','border-radius':'25px','margin-left':'25px'}"  styleClass="togglebutton">{{rowData['Status']}}</p-toggleButton>
+                    <p-toggleButton [(ngModel)]="rowData['checked']" onLabel="Active" offLabel="Inactive" [style]="{'width':'75px','border-radius':'25px','margin-left':'25px'}"  styleClass="togglebutton">{{rowData['Status']}}</p-toggleButton>
                 </td>
                     <!-- {{rowData['Status']}} -->
+             
                  <td class="listactionicon">
                    <img [src]="rowData['image']" alt="">
                    <img [src]="rowData['image1']" alt="">

@@ -68,7 +68,7 @@
             </div>
             <!--ListBox with Card section start-->
                 <div class="p-col-4">
-                    <h3 style="margin: 0;">Select Metadata to insert in Email</h3>
+                    <h3 style="margin: 6px 0px;">Select Metadata to insert in Email</h3>
                     <p-card styleClass="p-cardbox">
                      <p class="text-color-gray">Drag Metedata to email body which you would like to include in your email or subject</p>
                      <div class="p-col-12">
@@ -80,8 +80,9 @@
                  <p-listbox [options]="dragmetadatadalist" [(ngModel)]="selectedCar" [listStyle]="{'max-height':'220px', 'width':'365px'}">
                     <ng-template let-car pTemplate="item">
                       <div class="ui-helper-clearfix">
+                        <span style="display:inline-block;margin:5px 0 0 5px">{{car.value}}</span>
                         <!-- <img src="assets/showcase/images/demo/car/{{car.label}}.png" style="display:inline-block;margin:5px 0 0 5px" width="48"> -->
-                        <span style="margin:20px 10px 0 0">{{car.value}}</span>
+                        <span style="float:right;margin:20px 10px 0 0"><i class="fa fa-bars" aria-hidden="true"></i></span>
                       </div>
                     </ng-template>
                     <!-- <p-footer>
