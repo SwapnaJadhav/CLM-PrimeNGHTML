@@ -244,3 +244,6 @@ label {
 .p-col-8.grayborder-r {
     border-right: 1px soild #B2AEAE;
 }
+p.text-color-gray{
+    color: gray;
+}

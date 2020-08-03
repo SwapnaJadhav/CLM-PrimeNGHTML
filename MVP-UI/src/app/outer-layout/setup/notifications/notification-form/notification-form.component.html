@@ -1,16 +1,15 @@
-<!-- <p>notification-form works!</p> -->
 <div class="layout-main">
     <div class="layout-content">
        <div class="p-grid layout-dashboard">
            <div class="p-col-12">
-                <!-- Top hedaer Title and Serch placeholder div_start  -->
+                <!-- Top hedaer Title div_start  -->
                <div class="p-grid ui-fluid">
                    <div class="p-col-12 p-md-9">
                        <span class="title-caption">Create Notifications</span>
                    </div>
                    <div class="p-col-12 p-md-3"></div>
            </div>
-              <!-- Top hedaer Title and Serch placeholder div_end -->
+              <!-- Top hedaer Title div_end -->
         <p-card  styleClass="ui-card-shadow">
             <div class="py-mandatoryline">
             <p>**All Fields are mandatory</p>
@@ -27,8 +26,8 @@
                 </div>
                 <div class="p-field p-col-12 p-md-2">
                     <label for="notificationtype">Notification Type</label>
-                    <p-multiSelect [options]="notificationtype" [(ngModel)]="selectedCars1" name="notificationtype"></p-multiSelect>
-                    <p>Selected Cars: {{selectedCars1}}</p>
+                    <p-multiSelect [options]="notificationtype" [(ngModel)]="selectedNotitype" name="notificationtype"></p-multiSelect>
+                    <!-- <p>Selected Cars: {{selectedNotitype}}</p> -->
                 </div>
                 <div class="p-field p-col-12 p-md-2">
                     <label for="contracttype">Contract Type</label>
@@ -67,21 +66,22 @@
                     </div>
                 </div>
             </div>
+            <!--ListBox with Card section start-->
                 <div class="p-col-4">
-                    <h3 style="margin: 0;">Select Metedata to insert in Email</h3>
-                    <p-card>
-                     <p>Drag Metedata to email body which you would like to include in your email or subject</p>
+                    <h3 style="margin: 0;">Select Metadata to insert in Email</h3>
+                    <p-card styleClass="p-cardbox">
+                     <p class="text-color-gray">Drag Metedata to email body which you would like to include in your email or subject</p>
                      <div class="p-col-12">
                      <div class="ui-inputgroup">
                         <input type="text" pInputText placeholder="Search By Keywords">   
                         <button pButton type="button" icon="pi pi-search" class="ui-button-warn Sundeus-golbal-serch"></button>      
                     </div>
                  </div>
-                 <p-listbox [options]="dragmedatadalist" [(ngModel)]="selectedCar" [listStyle]="{'max-height':'220px', 'width':'365px'}">
+                 <p-listbox [options]="dragmetadatadalist" [(ngModel)]="selectedCar" [listStyle]="{'max-height':'220px', 'width':'365px'}">
                     <ng-template let-car pTemplate="item">
                       <div class="ui-helper-clearfix">
                         <!-- <img src="assets/showcase/images/demo/car/{{car.label}}.png" style="display:inline-block;margin:5px 0 0 5px" width="48"> -->
-                        <span style="margin:20px">{{car.value}}</span>
+                        <span style="margin:20px 10px 0 0">{{car.value}}</span>
                       </div>
                     </ng-template>
                     <!-- <p-footer>
@@ -90,10 +90,10 @@
                   </p-listbox>
                     </p-card>
                 </div>
-            </div>
+                 <!--end ListBox with Card section-->
+            </div>     <!--2nd Row end-->
             <hr>
-               <!--2nd Row end-->
-             <div class="p-grid">
+            <div class="p-grid">
                 <div class="p-col-12 p-md-6 p-lg-3"></div>
                 <div class="p-col-12 p-md-6 p-lg-3"></div>
                 <div class="p-col-12 p-md-6 p-lg-3"></div>
@@ -101,7 +101,7 @@
                       <div class="Sundeus-button-ui">
                         <button pButton type="button" label="Save" class="ui-button-primary bottomactionbtns"></button>
                         <button pButton type="button" label="Cancel" class="ui-button-secondary"></button>
-                </div>
+                    </div>
                 </div>
             </div>
             <!--3rd Row end-->

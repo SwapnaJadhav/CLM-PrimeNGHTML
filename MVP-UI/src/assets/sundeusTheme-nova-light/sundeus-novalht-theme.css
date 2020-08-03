@@ -802,7 +802,8 @@ body p-inputmask.ng-dirty.ng-invalid > .ui-inputtext {
 }
 body .ui-listbox {
   padding: 0;
-  min-width: 12em;
+  /* min-width: 12em; */
+  min-width: 25em;      /*Cusom css change by me*/
   background: #ffffff;
   border: 1px solid #a6a6a6;
 }
@@ -836,7 +837,8 @@ body .ui-listbox .ui-listbox-list {
 body .ui-listbox .ui-listbox-list .ui-listbox-item {
   margin: 0;
   padding: 0.429em 0.857em;
-  border: 0 none;
+  /* border: 0 none; */
+  border: 0.5px solid gray;     /*Custon css chanage by me*/
   color: #333333;
   background-color: transparent;
   -moz-transition: background-color 0.2s, box-shadow 0.2s;

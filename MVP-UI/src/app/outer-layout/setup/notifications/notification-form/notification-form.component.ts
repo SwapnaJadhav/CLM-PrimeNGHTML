@@ -13,8 +13,8 @@ export class NotificationFormComponent implements OnInit {
   triggerbasedon: SelectItem[];
   sendto: SelectItem[];
   ccto: SelectItem[];
-  selectedCars1: string[] = [];
-  dragmedatadalist: SelectItem[];
+  selectedNotitype: string[] = [];
+  dragmetadatadalist: SelectItem[];
   selectedCar: string = 'BMW';
 
 
@@ -59,17 +59,15 @@ this.ccto = [
   {label: 'dheerug@hotmail.com', value: 'dheerug@hotmail.com'},
   {label: 'yadav.sandeep1920@gmail.com', value: 'Completed Review'},
 ];    //  end of ccto_Multiselect5
-this.dragmedatadalist = [
-  {label: 'Audi', value: 'Audi'},
-  {label: 'BMW', value: 'BMW'},
-  {label: 'Fiat', value: 'Fiat'},
-  {label: 'Ford', value: 'Ford'},
-  {label: 'Honda', value: 'Honda'},
-  {label: 'Jaguar', value: 'Jaguar'},
-  {label: 'Mercedes', value: 'Mercedes'},
-  {label: 'Renault', value: 'Renault'},
-  {label: 'VW', value: 'VW'},
-  {label: 'Volvo', value: 'Volvo'}
+this.dragmetadatadalist = [
+  {label:'Contract ID', value:'Contract ID'},
+  {label:'Contract Type', value:'Contract Type'},
+  {label:'Contract Name', value:'Contract Name'},
+  {label:'Contract Status', value:'Contract Status'},
+  {label:'Created By', value:'Created On'},
+  {label:'Expiry Date', value:'Expiry Date'},
+  {label:'Mercedes', value:'Mercedes'},
+  {label:'Action', value:'Action'}
 ];   //  end of dragmedatadalist
 }   //  end of construcor() method
 
