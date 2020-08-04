@@ -15,7 +15,7 @@ export class NotificationFormComponent implements OnInit {
   ccto: SelectItem[];
   selectedNotitype: string[] = [];
   dragmetadatadalist: SelectItem[];
-  selectedCar: string = 'BMW';
+  selectedmetadata: string = 'Contract ID';
 
 
 

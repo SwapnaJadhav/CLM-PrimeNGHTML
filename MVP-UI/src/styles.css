@@ -246,4 +246,5 @@ label {
 }
 p.text-color-gray{
     color: gray;
+    font-size: 13px;
 }
