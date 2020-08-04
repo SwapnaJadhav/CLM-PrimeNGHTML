@@ -2,22 +2,12 @@
     <div>
     <button pButton type="button" (click)="visibleSidebar1 = true"  icon="pi pi-bars"></button>
     <span class="Sundeusheaderlogo1"></span>
-
-  
-        <!-- <input type="text" pInputText placeholder="Search">
+       <!-- <input type="text" pInputText placeholder="Search">
         <button pButton label="Logout" icon="pi pi-power-off" style="margin-left:.25em"></button> -->
     </div>
 </p-menubar>
 <p-sidebar [(visible)]="visibleSidebar1" styleClass="sidebarsize" [baseZIndex]="10000">
    <p-tieredMenu [model]="sundeussidemenu" styleClass="Sundeussideborder"></p-tieredMenu>
-
-    
-
-    <!-- <h1 style="font-weight:normal">Left Sidebar</h1> -->
-    <!-- <button pButton type="button" (click)="visibleSidebar1 = false" label="Save" class="ui-button-success"></button>
-    <button pButton type="button" (click)="visibleSidebar1 = false" label="Cancel" class="ui-button-secondary"></button> -->
 </p-sidebar>
-<!-- <div class="wrapper">
-</div> -->
 <!-- <app-dashboard></app-dashboard> -->
 <router-outlet></router-outlet>

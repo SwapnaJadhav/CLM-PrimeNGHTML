@@ -25,6 +25,8 @@ import {ToggleButtonModule} from 'primeng/togglebutton';
 import {MultiSelectModule} from 'primeng/multiselect';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import {ListboxModule} from 'primeng/listbox';
+import {TooltipModule} from 'primeng/tooltip';
+
 
 
 
@@ -58,7 +60,8 @@ import {ListboxModule} from 'primeng/listbox';
     ToggleButtonModule,
     MultiSelectModule,
     InputTextareaModule,
-    ListboxModule
+    ListboxModule,
+    TooltipModule
     // MenuItem
   ],
   providers: [],

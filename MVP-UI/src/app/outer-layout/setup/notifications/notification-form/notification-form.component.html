@@ -1,6 +1,6 @@
 <div class="layout-main">
     <div class="layout-content">
-       <div class="p-grid layout-dashboard">
+       <div class="p-grid">
            <div class="p-col-12">
                 <!-- Top hedaer Title div_start  -->
                <div class="p-grid ui-fluid">
@@ -47,7 +47,10 @@
                         <p-multiSelect [options]="sendto" name="sendto"></p-multiSelect>
                     </div>
                     <div class="p-field p-col-1 plusicon">
+                        <!-- pTooltip comp -->
+                        <span pTooltip="Add User" tooltipPosition="top" tooltipEvent="focus">
                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                    </span>
                    </div>
                     <div class="p-field p-col-11">
                         <label for="sendto">CC To</label>
@@ -112,7 +115,7 @@
             <!--3rd Row end-->
            </p-card>
           </div>
-       </div>       <!--layout-dashboard end-->
+       </div>       <!--top grid end-->
        
     </div>       <!--layout-content end-->
    </div>       <!--layout-main end-->
