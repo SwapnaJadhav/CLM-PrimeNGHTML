@@ -64,6 +64,7 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
 .sidebarsize.ui-sidebar-left:not(.ui-sidebar-active){
     opacity: 1 !important;
     transform: translateX(-60%);
+    z-index: 11003;
 }
     /*edit by pushkar*/
 .sidebarsize.ui-sidebar-left:not(.ui-sidebar-active) .expandcontent > a > .ui-menuitem-text{
@@ -117,7 +118,7 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     font-family: Avenir Heavy;
 }
 .Sundeussideborder.ui-tieredmenu .ui-menuitem .ui-menuitem-link .ui-submenu-icon {
-    right: -3px;
+    right: 3px;
     font-size: 14px;
     color: #ffffff;
 }
@@ -143,18 +144,18 @@ a.ng-tns-c22-0.ui-sidebar-close.ui-corner-all.ng-star-inserted {
 }
 .p-col-3.p-col-align-center.overview-box-status {
     color: purple;
-    font-size: xx-large;
+    font-size: 44px;
 }
 .p-col-3.p-col-align-center.overview-box-status2 {
     color: #FE7815;
-    font-size: xx-large;
+    font-size: 44px;
 }
 .p-col-3.p-col-align-center.overview-box-status3 {
     color: deeppink;
-    font-size: xx-large;
+    font-size: 44px;
 }
 .p-col-3.p-col-align-center.overview-box-status4 {
-    font-size: xx-large;
+    font-size: 44px;
     color: cadetblue;
 }
 .p-col-6.p-col-align-center.overview-box-text {
@@ -167,6 +168,12 @@ height: 55px !important;
     background-color: #FFFFFF;
     padding: 10px;
 }                       /* My Task Table card*/
+.title-captionkpi{
+    color: #333333 !important;
+    font-size: 18px;
+    font-family: Avenir Heavy;
+    font-weight: bold;
+}
 span.title-caption{                /*re-usable*/
     color: #013164 !important;
     font-size: 14px;
@@ -197,7 +204,7 @@ width: 80%;
     background-color: #FF8C00 !important;            /*re-usable*/
     color: #ffffff !important;
 }
-button.ui-button-primary.bottomactionbtns {
+.bottomactionbtns {
   margin: 0px 10px !important;
 }
 button.ui-button-warn.Sundeus-golbal-serch.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only {
@@ -209,7 +216,7 @@ td.listactionicon img{    /*re-usable*/
     height: 14px;
 }
 body .ui-togglebutton:not(.ui-state-disabled):not(.ui-state-active) {
-    background-color: #FF8C00;
+    background-color: slategray;
     color: #FFFFFF;
 }
 body .ui-togglebutton:not(.ui-state-disabled):not(.ui-state-active):hover {
@@ -234,4 +241,13 @@ label {
 p.text-color-gray{
     color: gray;
     font-size: 13px;
+}
+ /*Scrollpanel css*/
+.custombar1 .ui-scrollpanel-bar {
+    background-color: #013164;
+    opacity: 1;
+    transition: background-color .3s;
+}
+.custombar1 .ui-scrollpanel-bar:hover {
+    background-color: #135ba1;
 }

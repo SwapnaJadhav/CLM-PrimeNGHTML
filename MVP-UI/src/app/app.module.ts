@@ -26,6 +26,9 @@ import {MultiSelectModule} from 'primeng/multiselect';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import {ListboxModule} from 'primeng/listbox';
 import {TooltipModule} from 'primeng/tooltip';
+import {DropdownModule} from 'primeng/dropdown';
+import {EditorModule} from 'primeng/editor';
+import {ScrollPanelModule} from 'primeng/scrollpanel';
 
 
 
@@ -61,7 +64,10 @@ import {TooltipModule} from 'primeng/tooltip';
     MultiSelectModule,
     InputTextareaModule,
     ListboxModule,
-    TooltipModule
+    TooltipModule,
+    DropdownModule,
+    EditorModule,
+    ScrollPanelModule
     // MenuItem
   ],
   providers: [],

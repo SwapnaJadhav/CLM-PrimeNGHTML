@@ -26,8 +26,8 @@
                 <!--PrimeNg Sort&page Table-->
          <div class="p-grid">
             <div class="p-col-12">
-            <p-table [columns]="cols" [value]="customtabledata" (sortFunction)="customSort($event)" [customSort]="true" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[5,10,20]" [showCurrentPageReport]="true"
-            currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">
+            <p-table [columns]="cols" [value]="customtabledata" (sortFunction)="customSort($event)" [customSort]="true" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[10,20,30]" [showCurrentPageReport]="true"
+            currentPageReportTemplate="Showing {first} to {last} of {totalRecords} records">
                <ng-template pTemplate="header" let-columns>
                <tr>
                     <th *ngFor="let col of columns" [pSortableColumn]="col.field">
@@ -48,7 +48,7 @@
                 <td>{{rowData['Created By']}}</td>
                 <td>{{rowData['Created On']}}</td>
                 <td>
-                    <p-toggleButton [(ngModel)]="rowData['checked']" onLabel="Active" offLabel="Inactive" [style]="{'width':'75px','border-radius':'25px','margin-left':'25px'}" styleClass="togglebutton">{{rowData['Status']}}</p-toggleButton>
+                    <p-toggleButton [(ngModel)]="rowData['checked']" onLabel="Active" offLabel="Inactive" [style]="{'width':'75px','border-radius':'25px'}" styleClass="togglebutton">{{rowData['Status']}}</p-toggleButton>
                 </td>
              <td class="listactionicon">
                      <img src="dist/SundeusCLMImg/List Page icons/Editlatest.svg" alt="">

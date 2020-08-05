@@ -16,31 +16,31 @@
             </div>
            <!--1st Row-->
             <div class="ui-fluid p-formgrid p-grid">
-                <div class="p-field p-col-12 p-md-2">
+                <div class="p-field p-col">
                     <label for="notificationid">Notifiation ID</label>
                     <input id="notificationnameid" name="notificationid" type="text" pInputText placeholder="System Generated"> 
                 </div>
-                <div class="p-field p-col-12 p-md-2">
+                <div class="p-field p-col">
                     <label for="notificationname">Notification Name</label>
                     <input id="notificationname" name="notificationname" type="text" pInputText placeholder="Add Notification Name"> 
                 </div>
-                <div class="p-field p-col-12 p-md-2">
+                <div class="p-field p-col">
                     <label for="notificationtype">Notification Type</label>
-                    <p-multiSelect [options]="notificationtype" [(ngModel)]="selectedNotitype" name="notificationtype"></p-multiSelect>
-                    <!-- <p>Selected Cars: {{selectedNotitype}}</p> -->
+                    <p-dropdown [options]="notificationtype" [(ngModel)]="selectedNotitype" placeholder="Select a Type" optionLabel="name" [showClear]="true"></p-dropdown>
+                   <!-- <p>Selected Notitype: {{selectedNotitype ? selectedNotitype.name : 'none'}}</p> -->
                 </div>
-                <div class="p-field p-col-12 p-md-2">
+                <div class="p-field p-col">
                     <label for="contracttype">Contract Type</label>
                     <p-multiSelect [options]="contracttype" name="contracttype"></p-multiSelect>
                 </div>
-                <div class="p-field p-col-12 p-md-2">
+                <div class="p-field p-col">
                     <label for="triggerbasedon">Trigger (Action / Event)</label>
                     <p-multiSelect [options]="triggerbasedon" name="triggerbasedon"></p-multiSelect>
                 </div>
             </div>
                <!--1st Row end-->
             <div class="p-grid">
-                <div class="p-col-8 grayborder-r">
+                <div class="p-col-9 grayborder-r">
                   <div class="ui-fluid p-formgrid p-grid">
                     <div class="p-field p-col-11">
                         <label for="sendto">Send To</label>
@@ -65,40 +65,36 @@
                     </div>
                     <div class="p-field p-col-12">
                         <label for="subject">Email Body</label>
-                        <textarea rows="5" cols="30" pInputTextarea placeholder="Type your message here..."></textarea>
+                        <p-editor [(ngModel)]="text1" [style]="{'height':'180px'}" placeholder="Type your message here..."></p-editor>
+                           <!-- <p>Value: {{text1||'empty'}}</p> -->
+                       <!-- <button pButton type="button" label="Clear" icon="pi pi-times" (click)="text1=null"></button> -->
                     </div>
                 </div>
             </div>
-            <!--ListBox with Card section start-->
-                <div class="p-col-4">
-                    <h3 style="margin: 6px 0px;">Select Metadata to insert in Email</h3>
-                    <p-card styleClass="p-cardbox">
+            <!--Advanced_ListBox with Card section start-->
+            <div class="p-col-3">
+                 <h3 style="margin: 6px 0px;">Select Metadata to insert in Email</h3>
+                <p-card styleClass="p-cardbox">
                     <div class="py-mandatoryline">
-                     <p class="text-color-gray">Drag Metedata to email body which you would like to include in your email or subject.</p>
+                      <p class="text-color-gray">Drag Metedata to email body which you would like to include in your email or subject.</p>
                      </div>
-                     <div class="p-grid">
-                     <div class="p-col-12">
-                     <div class="ui-inputgroup">
-                        <input type="text" pInputText placeholder="Search By Keywords" style="width: 24em;">   
-                        <button pButton type="button" icon="pi pi-search" class="ui-button-warn Sundeus-golbal-serch"></button>      
+                        <!-- <div class="p-grid">
+                        <div class="p-col-12">
+                        <div class="ui-inputgroup">
+                            <input type="text" pInputText placeholder="Search By Keywords" style="width: 24em;">   
+                            <button pButton type="button" icon="pi pi-search" class="ui-button-warn Sundeus-golbal-serch"></button>      
+                        </div>
                     </div>
-                 </div>
-                </div>
-                 <p-listbox [options]="dragmetadatadalist" [(ngModel)]="selectedmetadata" [listStyle]="{'max-height':'220px', 'width':'365px'}">
-                    <ng-template let-dragdata pTemplate="item">
-                      <div class="ui-helper-clearfix">
-                        <span style="display:inline-block;margin:5px 0 0 5px">{{dragdata.value}}</span>
-                        <!-- <img src="assets/showcase/images/demo/car/{{dragdata.label}}.png" style="display:inline-block;margin:5px 0 0 5px" width="48"> -->
-                        <span style="float:right;margin:5px 10px 0 5px"><i class="fa fa-bars" aria-hidden="true"></i></span>
-                      </div>
-                    </ng-template>
-                    <!-- <p-footer>
-                      Selected: {{selectedmetadata||'none'}}
-                    </p-footer> -->
-                  </p-listbox>
-                    </p-card>
-                </div>
-                 <!--end ListBox with Card section-->
+                    </div> -->
+                        <p-scrollPanel [style]="{width: '100%', height: '250px'}" styleClass="custombar1">
+                          <p-listbox [options]="dragmetadatadalist" [(ngModel)]="selectedmetadata" [checkbox]="false" [filter]="true" optionLabel="label">
+                            <!-- <p-header>Cars</p-header> -->
+                          </p-listbox>
+                        </p-scrollPanel>
+                  <!-- <p>Selected metadata: <span *ngFor="let c of selectedmetadata" style="margin-right: 10px">{{c.name}</span></p> -->
+                </p-card>
+            </div>
+            <!--end Advanced_ListBox with Card section-->
             </div>     <!--2nd Row end-->
             <hr>
             <div class="p-grid">
@@ -107,8 +103,8 @@
                 <div class="p-col-12 p-md-6 p-lg-3"></div>
                 <div class="p-col-12 p-md-6 p-lg-3">
                       <div class="Sundeus-button-ui">
-                        <button pButton type="button" label="Save" class="ui-button-primary bottomactionbtns"></button>
-                        <button pButton type="button" label="Cancel" class="ui-button-secondary"></button>
+                        <button pButton type="button" label="Cancel" class="ui-button-secondary bottomactionbtns"></button>
+                        <button pButton type="button" label="Save" class="ui-button-primary"></button>
                     </div>
                 </div>
             </div>
