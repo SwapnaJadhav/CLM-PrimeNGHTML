@@ -26,7 +26,7 @@
                 <!--PrimeNg Sort&page Table-->
          <div class="p-grid">
             <div class="p-col-12">
-            <p-table [columns]="cols" [value]="customtabledata" (sortFunction)="customSort($event)" [customSort]="true" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[10,20,30]" [showCurrentPageReport]="true"
+            <p-table [columns]="cols" [value]="customtabledata" [resizableColumns]="true" (sortFunction)="customSort($event)" [customSort]="true" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[10,20,30]" [showCurrentPageReport]="true"
             currentPageReportTemplate="Showing {first} to {last} of {totalRecords} records">
                <ng-template pTemplate="header" let-columns>
                <tr>
