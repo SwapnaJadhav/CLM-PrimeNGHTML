@@ -16,11 +16,11 @@ import {SharedModule} from 'primeng/api';
             <span class="ui-paginator-current" *ngIf="showCurrentPageReport">{{currentPageReport}}</span>
             <a [attr.tabindex]="isFirstPage() ? null : '0'" class="ui-paginator-first ui-paginator-element ui-state-default ui-corner-all"
                     (click)="changePageToFirst($event)" (keydown.enter)="changePageToFirst($event)" [ngClass]="{'ui-state-disabled':isFirstPage()}" [tabindex]="isFirstPage() ? -1 : null">
-                <span class="ui-paginator-icon pi pi-step-backward"></span>
+                <span class="ui-paginator-icon fa fa-backward"></span>
             </a>
             <a tabindex="0" [attr.tabindex]="isFirstPage() ? null : '0'" class="ui-paginator-prev ui-paginator-element ui-state-default ui-corner-all"
                     (click)="changePageToPrev($event)" (keydown.enter)="changePageToPrev($event)" [ngClass]="{'ui-state-disabled':isFirstPage()}" [tabindex]="isFirstPage() ? -1 : null">
-                <span class="ui-paginator-icon pi pi-caret-left"></span>
+               <span class="ui-paginator-icon fa fa-caret-left"></span>
             </a>
             <span class="ui-paginator-pages">
                 <a tabindex="0" *ngFor="let pageLink of pageLinks" class="ui-paginator-page ui-paginator-element ui-state-default ui-corner-all"
@@ -28,11 +28,11 @@ import {SharedModule} from 'primeng/api';
             </span>
             <a [attr.tabindex]="isLastPage() ? null : '0'" class="ui-paginator-next ui-paginator-element ui-state-default ui-corner-all"
                     (click)="changePageToNext($event)" (keydown.enter)="changePageToNext($event)" [ngClass]="{'ui-state-disabled':isLastPage()}" [tabindex]="isLastPage() ? -1 : null">
-                <span class="ui-paginator-icon pi pi-caret-right"></span>
+                <span class="ui-paginator-icon fa fa-caret-right"></span>
             </a>
             <a [attr.tabindex]="isLastPage() ? null : '0'" class="ui-paginator-last ui-paginator-element ui-state-default ui-corner-all"
                     (click)="changePageToLast($event)" (keydown.enter)="changePageToLast($event)" [ngClass]="{'ui-state-disabled':isLastPage()}" [tabindex]="isLastPage() ? -1 : null">
-                <span class="ui-paginator-icon pi pi-step-forward"></span>
+                <span class="ui-paginator-icon fa fa-forward"></span>
             </a>
             <p-dropdown [options]="rowsPerPageItems" [(ngModel)]="rows" *ngIf="rowsPerPageOptions" 
                 (onChange)="onRppChange($event)" [appendTo]="dropdownAppendTo" [scrollHeight]="dropdownScrollHeight"></p-dropdown>

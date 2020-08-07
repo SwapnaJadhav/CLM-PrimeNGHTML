@@ -819,7 +819,8 @@ body .ui-listbox .ui-listbox-header {
   margin: 0;
 }
 body .ui-listbox .ui-listbox-header .ui-listbox-filter-container {
-  width: calc(100% - (0.857em + 0.857em + 0.5em));
+  /* width: calc(100% - (0.857em + 0.857em + 0.5em)); */    
+  width: calc(100% - (-1.143em + 0.857em + 0.5em));     /*Custom css change by me*/
 }
 body .ui-listbox .ui-listbox-header .ui-listbox-filter-container input {
   padding: 0.429em;
@@ -830,7 +831,8 @@ body .ui-listbox .ui-listbox-header .ui-listbox-filter-container .ui-listbox-fil
   left: auto;
   margin-top: -0.5em;
   right: 0.5em;
-  color: #007ad9;
+  /* color: #007ad9; */
+  color: #013164;       /*Custom css change by me*/
 }
 body .ui-listbox .ui-listbox-list {
   background-color: #ffffff;
@@ -951,7 +953,8 @@ body .ui-multiselect-panel .ui-multiselect-header .ui-multiselect-filter-contain
   padding-right: 2em;
 }
 body .ui-multiselect-panel .ui-multiselect-header .ui-multiselect-filter-container .ui-multiselect-filter-icon {
-  color: #007ad9;
+  /* color: #007ad9; */
+  color: #013164;             /*Custom css change by me*/
   top: 50%;
   margin-top: -0.5em;
   right: 0.5em;
@@ -1022,7 +1025,7 @@ body .ui-multiselect-panel .ui-multiselect-items .ui-multiselect-item:focus {
   outline-offset: 0;
   -webkit-box-shadow: inset 0 0 0 0.2em #8dcdff;
   -moz-box-shadow: inset 0 0 0 0.2em #8dcdff;
-  box-shadow: inset 0 0 0 0.2em #8dcdff;
+  box-shadow: inset 0 0 0 0.2em #013164;               /*Custom css change by me*/
 }
 body .ui-multiselect-panel .ui-multiselect-items .ui-multiselect-item .ui-chkbox {
   position: static;
@@ -1836,7 +1839,8 @@ body .ui-paginator .ui-paginator-first,
 body .ui-paginator .ui-paginator-prev,
 body .ui-paginator .ui-paginator-next,
 body .ui-paginator .ui-paginator-last {
-  color: #848484;
+  /* color: #848484; */
+  color: #333333;   /*Custom css change by me*/
   height: 2.286em;
   min-width: 2.286em;
   border: 0 none;
@@ -2078,7 +2082,7 @@ body .ui-table .ui-sortable-column:focus {
   outline-offset: 0;
   -webkit-box-shadow: inset 0 0 0 0.2em #8dcdff;
   -moz-box-shadow: inset 0 0 0 0.2em #8dcdff;
-  box-shadow: inset 0 0 0 0.2em #8dcdff;
+  box-shadow: inset 0 0 0 0.2em #013164;             /* Custom css change by me*/
 }
 body .ui-table .ui-sortable-column .ui-sortable-column-icon {
   /* color: #848484; */     /* Custom css change by me*/
@@ -2094,7 +2098,8 @@ body .ui-table .ui-sortable-column:not(.ui-state-highlight):hover .ui-sortable-c
   color: #333333;
 }
 body .ui-table .ui-sortable-column.ui-state-highlight {
-  background-color: #007ad9;
+  /* background-color: #007ad9; */
+  background-color: #013164;             /*Custom css change by me*/
   color: #ffffff;
 }
 body .ui-table .ui-sortable-column.ui-state-highlight .ui-sortable-column-icon {

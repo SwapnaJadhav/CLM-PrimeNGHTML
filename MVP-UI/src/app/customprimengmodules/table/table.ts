@@ -2,7 +2,8 @@ import { NgModule, Component, HostListener, OnInit, OnDestroy, AfterViewInit, Af
     Input, Output, EventEmitter, ElementRef, ContentChildren, TemplateRef, QueryList, ViewChild, NgZone, ChangeDetectorRef, OnChanges, SimpleChanges, ChangeDetectionStrategy, Query} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { PaginatorModule } from 'primeng/paginator';
+// import { PaginatorModule } from 'primeng/paginator';
+import { PaginatorModule } from './../paginator/public_api';
 import { DomHandler } from 'primeng/dom';
 import { ObjectUtils } from 'primeng/utils';
 import { SortMeta } from 'primeng/api';

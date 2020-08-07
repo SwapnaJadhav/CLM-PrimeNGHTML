@@ -30,18 +30,50 @@
             currentPageReportTemplate="Showing {first} to {last} of {totalRecords} records">
                <ng-template pTemplate="header" let-columns>
                <tr>
-                    <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+                    <!-- <th *ngFor="let col of columns" [pSortableColumn]="col.field">
                          {{col.header}}
                         <p-sortIcon [field]="col.field"></p-sortIcon>
-                    </th>
-              </tr>
+                    </th> -->
+                    <th class="w-coltable" [pSortableColumn]="columns[0].field">
+                        {{columns[0].header}}
+                       <p-sortIcon [field]="columns[0].field"></p-sortIcon>
+                   </th>
+                   <th [pSortableColumn]="columns[1].field">
+                    {{columns[1].header}}
+                   <p-sortIcon [field]="columns[1].field"></p-sortIcon>
+               </th>
+                 <th [pSortableColumn]="columns[2].field">
+                      {{columns[2].header}}
+                     <p-sortIcon [field]="columns[2].field"></p-sortIcon>
+                 </th>
+                     <th [pSortableColumn]="columns[3].field">
+                            {{columns[3].header}}
+                        <p-sortIcon [field]="columns[3].field"></p-sortIcon>
+                  </th>
+                    <th [pSortableColumn]="columns[4].field">
+                       {{columns[4].header}}
+                     <p-sortIcon [field]="columns[4].field"></p-sortIcon>
+                     </th>
+               <th [pSortableColumn]="columns[5].field">
+                      {{columns[5].header}}
+                     <p-sortIcon [field]="columns[5].field"></p-sortIcon>
+            </th>
+            <th [pSortableColumn]="columns[6].field">
+                {{columns[6].header}}
+               <p-sortIcon [field]="columns[6].field"></p-sortIcon>
+           </th>
+           <th style="width: 10%;">
+                     {{columns[7].header}}
+                   
+           </th>
+     </tr>
                </ng-template>
                <ng-template pTemplate="body" let-rowData let-columns="columns">
                 <tr>
                   <!-- <td *ngFor="let col of columns">
                         {{rowData[col.field]}}
                   </td> -->
-                <td><a href="#">{{rowData['Notification Name']}}</a></td>
+                <td class="w-coltable"><a href="#">{{rowData['Notification Name']}}</a></td>
                 <td>{{rowData['ID']}}</td>
                 <td>{{rowData['Type']}}</td>
                 <td>{{rowData['Object Name']}}</td>
@@ -51,8 +83,8 @@
                     <p-toggleButton [(ngModel)]="rowData['checked']" onLabel="Active" offLabel="Inactive" [style]="{'width':'75px','border-radius':'25px'}" styleClass="togglebutton">{{rowData['Status']}}</p-toggleButton>
                 </td>
              <td class="listactionicon">
-                     <img src="dist/SundeusCLMImg/List Page icons/Editlatest.svg" alt="">
-                     <img src="dist/SundeusCLMImg/List Page icons/Viewlatest.svg" alt="">
+                     <img src="dist/SundeusCLMImg/List Page icons/Editlatest.svg" alt="" style="padding-right: 10px;">
+                     <img src="dist/SundeusCLMImg/List Page icons/Viewlatest.svg" alt="" style="padding-right: 10px;">
                      <img src="dist/SundeusCLMImg/List Page icons/Deletelatest.svg" alt="">
               </td>
             </tr>

@@ -133,6 +133,8 @@ export class DashboardComponent implements OnInit {
       {"Subject": "CRN12345"},
       {"Subject": "CRN12345"},
       {"Subject": "CRN12345"},
+      {"Subject": "CRN12345"},
+      {"Subject": "CRN12345"},
       {"Subject": "CRN12345"}
     
   ];

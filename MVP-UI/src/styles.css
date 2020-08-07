@@ -211,9 +211,13 @@ button.ui-button-warn.Sundeus-golbal-serch.ui-button.ui-widget.ui-state-default.
     color: #ffffff;
     background-color: #013164;               /*re-usable*/
 }
+th.w-coltable.ui-sortable-column {
+    width: 15%;
+}
 td.listactionicon img{    /*re-usable*/
-    margin-left: 22px;
+    /* margin-left: 22px; */
     height: 14px;
+    vertical-align: middle;
 }
 body .ui-togglebutton:not(.ui-state-disabled):not(.ui-state-active) {
     background-color: slategray;
@@ -231,6 +235,10 @@ body .ui-togglebutton:not(.ui-state-disabled):not(.ui-state-active):hover {
     margin-top: -7px;
     margin-bottom: 7px;
     font-size: 11px;
+}
+ul.ui-listbox-list {
+    height: 32em;
+    overflow-y: scroll;  /*ask to pushkar_add new class as per documetn */
 }
 label {
     font-weight: bold !important;      /*reusable*/

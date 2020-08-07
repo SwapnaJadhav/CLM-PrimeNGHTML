@@ -16,7 +16,8 @@ import { DashboardComponent } from './outer-layout/dashboard/dashboard.component
 import {CardModule} from 'primeng/card';
 import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import {TableModule} from 'primeng/table';
+// import {TableModule} from 'primeng/table';
+import {TableModule} from './customprimengmodules/table/public_api';
 import {ChartModule} from 'primeng/chart';
 import { SetupComponent } from './outer-layout/setup/setup.component';
 import { NotificationsComponent } from './outer-layout/setup/notifications/notifications.component';
@@ -30,6 +31,7 @@ import {TooltipModule} from 'primeng/tooltip';
 import {DropdownModule} from 'primeng/dropdown';
 import {EditorModule} from 'primeng/editor';
 import {ScrollPanelModule} from 'primeng/scrollpanel';
+
 
 
 
@@ -51,7 +53,7 @@ import {ScrollPanelModule} from 'primeng/scrollpanel';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-   MenubarModule,
+    MenubarModule,
     InputTextModule,
     ButtonModule,
     SidebarModule,
@@ -68,7 +70,8 @@ import {ScrollPanelModule} from 'primeng/scrollpanel';
     TooltipModule,
     DropdownModule,
     EditorModule,
-    ScrollPanelModule
+    ScrollPanelModule,
+   
     // MenuItem
   ],
   providers: [],
