@@ -520,9 +520,9 @@ body .ui-dropdown:not(.ui-state-disabled).ui-state-focus {
   outline: 0 none;
   outline-offset: 0;
   -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
-  -moz-box-shadow: 0 0 0 0.2em #8dcdff;
-  box-shadow: 0 0 0 0.2em #8dcdff;
-  border-color: #007ad9;
+  -moz-box-shadow: 0 0 0 0.2em #8dcdff;           
+  box-shadow: 0 0 0 0.2em transparent;           /* #8dcdff change by me*/
+  /* border-color: #007ad9; */                    /*Custom css change by me*/
 }
 body .ui-dropdown .ui-dropdown-label {
   padding-right: 2em;
@@ -795,8 +795,8 @@ body .ui-inputtext:enabled:focus:not(.ui-state-error) {
   outline-offset: 0;
   -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
   -moz-box-shadow: 0 0 0 0.2em #8dcdff;
-  box-shadow: 0 0 0 0.2em #8dcdff;
-  border-color: #007ad9;
+  box-shadow: 0 0 0 0.2em transparent;         /* #8dcdff change by me*/
+  border-color: #013164;            /*#007ad9 Custom css change by me*/
 }
 body p-inputmask.ng-dirty.ng-invalid > .ui-inputtext {
   border: 1px solid #a80000;
@@ -3363,7 +3363,8 @@ body .ui-menubar .ui-menubar-root-list > .ui-menuitem > .ui-menuitem-link {
   padding: 0.714em 0.857em;
 }
 body .ui-menubar .ui-menubar-root-list > .ui-menu-separator {
-  border: 1px solid #c8c8c8;
+  /* border: 1px solid #c8c8c8; */
+  border: 1px solid #013164;      /*Custom css change by me*/
   border-width: 0 0 0 1px;
 }
 body .ui-menubar .ui-submenu-list {
@@ -3761,14 +3762,15 @@ body .ui-tieredmenu .ui-menuitem-link:not(.ui-state-disabled):hover .ui-menuitem
   color: #ffffff;                 /* Custom css change 3px by me */
 }
 body .ui-tieredmenu .ui-menuitem-link:not(.ui-state-disabled):hover .ui-menuitem-icon {
-  color: #333333;
+  /* color: #333333; */
+  color: #ffffff;    /*Custom css change by me*/
 }
 body .ui-tieredmenu .ui-menuitem-link:focus {
   outline: 0 none;
   outline-offset: 0;
   -webkit-box-shadow: inset 0 0 0 0.2em #8dcdff;
   -moz-box-shadow: inset 0 0 0 0.2em #8dcdff;
-  box-shadow: inset 0 0 0 0.2em #ffffff;         /*Custom css chnage by me 8dcdff*/
+  box-shadow: inset 0 0 0 0.1em #ffffff;         /*Custom css chnage by me 8dcdff*/
 }
 body .ui-tieredmenu .ui-menuitem-link.ui-menuitem-link-active .ui-menuitem-text {
   /* color: #007ad9; */
@@ -3804,7 +3806,8 @@ body .ui-tieredmenu .ui-menuitem.ui-menuitem-active > .ui-menuitem-link .ui-menu
   color: #ffffff;                               /* Custom css change 3px by me */
 }
 body .ui-tieredmenu .ui-menu-separator {
-  border: 1px solid #c8c8c8;
+  /* border: 1px solid #c8c8c8; */
+  border: 1px inset #c8c8c8;        /*Custom css change by me*/
   border-width: 1px 0 0 0;
 }
 body .ui-message {

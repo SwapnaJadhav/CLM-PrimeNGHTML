@@ -43,7 +43,7 @@ ngOnInit(): void {
     
       {
           label: 'John Doe',
-          // label: 'Sundeus Technology',
+          // sublabel: 'Sundeus Technology',
           icon: 'SundeusLogout',
           items: [
               {

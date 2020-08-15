@@ -204,6 +204,9 @@ width: 80%;
     background-color: #FF8C00 !important;            /*re-usable*/
     color: #ffffff !important;
 }
+.ui-button-primary.p-button{
+    padding: 1px 6px;
+}
 .bottomactionbtns {
   margin: 0px 10px !important;
 }

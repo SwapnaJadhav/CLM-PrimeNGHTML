@@ -78,7 +78,7 @@
                     <div class="py-mandatoryline">
                       <p class="text-color-gray">Drag Metedata to email body which you would like to include in your email or subject.</p>
                      </div>
-                    <p-scrollPanel [style]="{width: '100%', height: '250px'}" styleClass="custombar1">
+                    <p-scrollPanel [style]="{width: '100%', height: '100%'}" styleClass="custombar1">
                           <p-listbox [options]="dragmetadatadalist" [(ngModel)]="selectedmetadata" [checkbox]="false" [filter]="true" optionLabel="label">
                             <!-- <p-header>Cars</p-header> -->
                           </p-listbox>
@@ -96,7 +96,7 @@
                 <div class="p-col-12 p-md-6 p-lg-3">
                       <div class="Sundeus-button-ui">
                         <button pButton type="button" label="Cancel" class="ui-button-secondary bottomactionbtns"></button>
-                        <button pButton type="button" label="Save" class="ui-button-primary"></button>
+                        <button pButton type="button" label="Save" class="ui-button-primary p-button"></button>
                     </div>
                 </div>
             </div>
