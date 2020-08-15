@@ -126,7 +126,7 @@ items: [
   items: [
       {label: 'Alerts & Notification', routerLink: ['/app/setup/notifications/notification-list'] },
       {separator:true},
-      {label: 'Contract Type'},
+      {label: 'Contract Type', routerLink: ['/app/setup/contract-type/contracttype-list'] },
       {separator:true},
       {label: 'Clauses'},
       {separator:true},

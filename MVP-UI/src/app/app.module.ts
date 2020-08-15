@@ -31,6 +31,9 @@ import {TooltipModule} from 'primeng/tooltip';
 import {DropdownModule} from 'primeng/dropdown';
 import {EditorModule} from 'primeng/editor';
 import {ScrollPanelModule} from 'primeng/scrollpanel';
+import { ContractTypeComponent } from './outer-layout/setup/contract-type/contract-type.component';
+import { ContracttypeListComponent } from './outer-layout/setup/contract-type/contracttype-list/contracttype-list.component';
+import { ContracttypeFormComponent } from './outer-layout/setup/contract-type/contracttype-form/contracttype-form.component';
 
 
 
@@ -47,6 +50,9 @@ import {ScrollPanelModule} from 'primeng/scrollpanel';
     NotificationsComponent,
     NotificationListComponent,
     NotificationFormComponent,
+    ContractTypeComponent,
+    ContracttypeListComponent,
+    ContracttypeFormComponent,
 
   ],
   imports: [
