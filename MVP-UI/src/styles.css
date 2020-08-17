@@ -174,12 +174,6 @@ height: 55px !important;
     font-family: Avenir Heavy;
     font-weight: bold;
 }
-span.title-caption{                /*re-usable*/
-    color: #013164 !important;
-    font-size: 14px;
-    font-family: Avenir Heavy;
-    font-weight: bold;
-}
 span.customicon {
     float: right;        
     color: #013164;
@@ -194,11 +188,16 @@ width: 80%;
 .ui-table-mytask td.w-tableheader {
     width: 80%;
 }
-
- /* Notification-List Screen CSS start*/
+/* Notification-List/module Screen CSS start*/
+ span.title-caption{                /*re-usable in list screen*/
+    color: #013164 !important;
+    font-size: 14px;
+    font-family: Avenir Heavy;
+    font-weight: bold;
+}
           /* Button*/
 .Sundeus-button-ui {
-    float: right !important;      /*re-usable*/
+    float: right !important;     /*re-usable*/
 }
 .ui-button-primary{
     background-color: #FF8C00 !important;            /*re-usable*/
@@ -262,4 +261,23 @@ p.text-color-gray{
 }
 .custombar1 .ui-scrollpanel-bar:hover {
     background-color: #135ba1;
+}
+/* Contract-type/module Screen CSS start*/
+.float-r{
+    float: right;
+}
+span.tableicon-mr{
+    padding-left: 28px;
+    font-size: 22px;
+    vertical-align: middle;
+    color: #013164;
+}
+th.w-col25{
+    width: 25%;
+}
+/*Footer css*/
+footer.footer {
+    background-color: #013164;
+    color: #ffffff;
+    padding: 6px;
 }
