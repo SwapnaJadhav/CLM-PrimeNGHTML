@@ -123,7 +123,7 @@ export class DashboardComponent implements OnInit {
             ]
         }]    
     };    //end-of data3 doughnut_chart3 col_3 in 3rd_Row
-   }   //  end-of-constructor-bracket
+   }   //  end-of-constructorMethod-bracket
 
   ngOnInit(): void {
     this.contracttask =  [
@@ -143,6 +143,6 @@ this.scrollableCols = [
       { field: 'image', header: 'Action' }
 ];
 
-  }    //end bracket of void
+  }    //end bracket of void()_method
 
 }    // end bracket_of_Oninit

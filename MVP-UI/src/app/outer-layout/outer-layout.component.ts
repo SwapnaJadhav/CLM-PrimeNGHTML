@@ -84,6 +84,7 @@ this.sundeussidemenu = [
       styleClass: 'expandcontent',
       icon: 'dashimg',
       routerLink: ['/app/dashboard'],
+      // routerLinkActive: 'active'
 },
   {separator:true},
   {

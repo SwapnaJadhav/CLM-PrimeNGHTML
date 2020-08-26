@@ -2,32 +2,28 @@ import { Component, OnInit } from '@angular/core';
 import {trigger,state,style,transition,animate} from '@angular/animations';
 import {SelectItem} from 'primeng/api';
 
-interface notitype {             /*check with pushkar*/
-  name: string,
-  code: string
-}
 @Component({
   selector: 'app-notification-form',
   templateUrl: './notification-form.component.html',
   styleUrls: ['./notification-form.component.css']
 })
 export class NotificationFormComponent implements OnInit {
-  notificationtype: notitype[];
-  selectedNotitype: notitype;          /* defined  notitype in interfacs on top*/
+  notificationtypes: SelectItem[];
+  selectednotitype1: string;
   contracttype: SelectItem[];
   triggerbasedon: SelectItem[];
   sendto: SelectItem[];
   ccto: SelectItem[];
   dragmetadatadalist: SelectItem[];
   selectedmetadata: string = 'Contract ID';     /*check with pushkar*/
-  text1: string = '';
+  text1: string = '';        //Editor
 
 
   constructor() {
-    this.notificationtype = [
-      {name: 'Action Based', code: 'AB'},
-      {name: 'Event Based', code: 'EB'}
-   ];    //  end of Notification_Type dropdownt1
+    this.notificationtypes = [
+      {label: 'Action Based', value: 'Action Based'},
+      {label: 'Event Based', value: 'Event Based'}
+  ];    //  end of Notification_Type dropdownt1
     this.contracttype = [
    {label: 'NDA', value: 'NDA'},
     {label: 'SOW', value: 'SOW'},

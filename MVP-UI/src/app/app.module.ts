@@ -34,7 +34,10 @@ import {ScrollPanelModule} from 'primeng/scrollpanel';
 import { ContractTypeComponent } from './outer-layout/setup/contract-type/contract-type.component';
 import { ContracttypeListComponent } from './outer-layout/setup/contract-type/contracttype-list/contracttype-list.component';
 import { ContracttypeFormComponent } from './outer-layout/setup/contract-type/contracttype-form/contracttype-form.component';
-
+import {TabViewModule} from 'primeng/tabview';
+import {AccordionModule} from 'primeng/accordion';
+import {ChipsModule} from 'primeng/chips';
+import {CheckboxModule} from 'primeng/checkbox';
 
 
 
@@ -77,6 +80,10 @@ import { ContracttypeFormComponent } from './outer-layout/setup/contract-type/co
     DropdownModule,
     EditorModule,
     ScrollPanelModule,
+    TabViewModule,
+    AccordionModule,
+    ChipsModule,
+    CheckboxModule
    
     // MenuItem
   ],

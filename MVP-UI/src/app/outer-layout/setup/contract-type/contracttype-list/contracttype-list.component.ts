@@ -34,7 +34,7 @@ export class ContracttypeListComponent implements OnInit {
       { field: 'Status', header: 'Status'},
       { field: 'image', header: 'Action'}
   ];
-  }      // end bracket of ngOnInit() Method
+  }      // end bracket of ngOnInit():void Method
   customSort(event: SortEvent) {
     event.data.sort((data1, data2) => {
         let value1 = data1[event.field];

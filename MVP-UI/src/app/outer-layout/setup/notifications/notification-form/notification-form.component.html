@@ -18,7 +18,7 @@
             <div class="ui-fluid p-formgrid p-grid">
                 <div class="p-field p-col">
                     <label for="notificationid">Notifiation ID</label>
-                    <input id="notificationnameid" name="notificationid" type="text" pInputText placeholder="System Generated"> 
+                    <input id="notificationid" name="notificationid1" type="text" pInputText placeholder="System Generated"> 
                 </div>
                 <div class="p-field p-col">
                     <label for="notificationname">Notification Name</label>
@@ -26,8 +26,8 @@
                 </div>
                 <div class="p-field p-col">
                     <label for="notificationtype">Notification Type</label>
-                    <p-dropdown [options]="notificationtype" [(ngModel)]="selectedNotitype" placeholder="Select a Type" optionLabel="name" [showClear]="true"></p-dropdown>
-                   <!-- <p>Selected Notitype: {{selectedNotitype ? selectedNotitype.name : 'none'}}</p> -->
+                    <p-dropdown [options]="notificationtypes" [(ngModel)]="selectednotitype1" name="notitypes" placeholder="Select a Type"></p-dropdown>
+                     <!-- <p>Selected Car: {{selectednotitype1 || 'none'}}</p> -->
                 </div>
                 <div class="p-field p-col">
                     <label for="contracttype">Contract Type</label>
@@ -53,7 +53,7 @@
                     </span>
                    </div>
                     <div class="p-field p-col-11">
-                        <label for="sendto">CC To</label>
+                        <label for="ccto">CC To</label>
                         <p-multiSelect [options]="ccto" name="ccto"></p-multiSelect>
                     </div>
                     <div class="p-field p-col-1 plusicon">
@@ -65,7 +65,7 @@
                     </div>
                     <div class="p-field p-col-12">
                         <label for="subject">Email Body</label>
-                        <p-editor [(ngModel)]="text1" [style]="{'height':'255px'}" placeholder="Type your message here..."></p-editor>
+                        <p-editor [(ngModel)]="text1" [style]="{'height':'255px'}" name="editormsg" placeholder="Type your message here..."></p-editor>
                            <!-- <p>Value: {{text1||'empty'}}</p> -->
                        <!-- <button pButton type="button" label="Clear" icon="pi pi-times" (click)="text1=null"></button> -->
                     </div>
@@ -78,11 +78,11 @@
                     <div class="py-mandatoryline">
                       <p class="text-color-gray">Drag Metedata to email body which you would like to include in your email or subject.</p>
                      </div>
-                    <p-scrollPanel [style]="{width: '100%', height: '100%'}" styleClass="custombar1">
+                    <p-scrollPanel [style]="{width: '100%', height: '200px'}" styleClass="custombar1">
                           <p-listbox [options]="dragmetadatadalist" [(ngModel)]="selectedmetadata" [checkbox]="false" [filter]="true" optionLabel="label">
                             <!-- <p-header>Cars</p-header> -->
                           </p-listbox>
-                        </p-scrollPanel>
+                    </p-scrollPanel>
                   <!-- <p>Selected metadata: <span *ngFor="let c of selectedmetadata" style="margin-right: 10px">{{c.label}</span></p> -->
              <!-- </p-card> -->
             </div>

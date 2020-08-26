@@ -254,11 +254,16 @@ p.text-color-gray{
     font-size: 13px;
 }
  /*Scrollpanel css*/
+.custombar1 .ui-scrollpanel-wrapper {
+    border-right: 9px solid #f4f4f4;
+}
+    
 .custombar1 .ui-scrollpanel-bar {
     background-color: #013164;
     opacity: 1;
     transition: background-color .3s;
 }
+    
 .custombar1 .ui-scrollpanel-bar:hover {
     background-color: #135ba1;
 }
@@ -274,6 +279,31 @@ span.tableicon-mr{
 }
 th.w-col25{
     width: 25%;
+}
+.ui-table-paddtop {
+    padding-top: 10px !important;
+}
+span.colorred {
+    color: red;
+}
+.pt-innerpart{
+    padding-top: 5px;
+}
+/* .ui-tabview-panels{                     
+    height: 34em;
+}
+.whitebackground-ht{
+    height: 30em;
+} */
+.htbottom-buttons{
+position: sticky;
+}
+.whitebackground-ht1{
+    height: 29em;
+    overflow-y: scroll;
+}
+.whitebackground-ht2{
+    height: 30em;
 }
 /*Footer css*/
 footer.footer {

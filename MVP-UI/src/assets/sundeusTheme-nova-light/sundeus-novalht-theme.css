@@ -421,8 +421,8 @@ body .ui-chkbox {
 body .ui-chkbox .ui-chkbox-box {
   border: 1px solid #a6a6a6;
   background-color: #ffffff;
-  width: 20px;
-  height: 20px;
+  /* width: 20px; */  width: 16px;
+  /* height: 20px; */    height: 16px;    /*Custom Css Change by me*/
   text-align: center;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -444,19 +444,23 @@ body .ui-chkbox .ui-chkbox-box.ui-state-focus {
   border-color: #007ad9;
 }
 body .ui-chkbox .ui-chkbox-box.ui-state-active {
-  border-color: #007ad9;
-  background-color: #007ad9;
+  /* border-color: #007ad9; */
+  border-color: #848484;            /*Custom css change by me*/
+  /* background-color: #007ad9; */
+  background-color: #848484;          /*Custom css change by me*/
   color: #ffffff;
 }
 body .ui-chkbox .ui-chkbox-box.ui-state-active:not(.ui-state-disabled):hover {
-  border-color: #005b9f;
-  background-color: #005b9f;
+  /* border-color: #005b9f; */
+  border-color: #848484;        /*Custom css change by me*/
+  /* background-color: #c5c5c5; */
+  background-color: #848484;       /*Custom css change by me*/
   color: #ffffff;
 }
 body .ui-chkbox .ui-chkbox-box .ui-chkbox-icon {
   overflow: hidden;
   position: relative;
-  font-size: 18px;
+  /* font-size: 18px; */  font-size: 14px;  /*Custom css change by me*/
 }
 body .ui-chkbox-label {
   margin: 0 0 0 0.5em;
@@ -508,6 +512,7 @@ body p-chips.ng-dirty.ng-invalid > .ui-inputtext {
 body .ui-dropdown {
   background: #ffffff;
   border: 1px solid #a6a6a6;
+  border-radius: 4px;    /*Custom css added by me*/
   -moz-transition: border-color 0.2s, box-shadow 0.2s;
   -o-transition: border-color 0.2s, box-shadow 0.2s;
   -webkit-transition: border-color 0.2s, box-shadow 0.2s;
@@ -776,6 +781,7 @@ body .ui-inputtext {
   padding: 0.429em;
   border: 1px solid #a6a6a6;
   border-radius: 4px;                   /*Custom css add by me*/
+  font-family: palatino !important;   /*Custom css added by me*/
   -moz-transition: border-color 0.2s, box-shadow 0.2s;
   -o-transition: border-color 0.2s, box-shadow 0.2s;
   -webkit-transition: border-color 0.2s, box-shadow 0.2s;
@@ -2488,8 +2494,8 @@ body .ui-accordion .ui-accordion-header a {
   padding: 0.571em 1em;
   border: 1px solid #c8c8c8;
   color: #333333;
-  background-color: #f4f4f4;
-  color: #333333;
+  /* background-color: #f4f4f4; */  background-color: #013164;  /*Custom css hange by me*/
+  /* color: #333333; */    color: #ffffff;
   font-weight: 700;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -2500,34 +2506,34 @@ body .ui-accordion .ui-accordion-header a {
   transition: background-color 0.2s, box-shadow 0.2s;
 }
 body .ui-accordion .ui-accordion-header a .ui-accordion-toggle-icon {
-  color: #848484;
+  /* color: #848484; */  color: #ffffff;  /*Custom css change by me*/
 }
 body .ui-accordion .ui-accordion-header a:focus {
   outline: 0 none;
   outline-offset: 0;
   -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
   -moz-box-shadow: 0 0 0 0.2em #8dcdff;
-  box-shadow: 0 0 0 0.2em #8dcdff;
+  box-shadow: 0 0 0 0.2em #ffffff;   /*Custom css change by me*/
 }
-body .ui-accordion .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover a {
+/* body .ui-accordion .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover a {
   background-color: #dbdbdb;
   border: 1px solid #dbdbdb;
   color: #333333;
-}
+} */
 body .ui-accordion .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover a .ui-accordion-toggle-icon {
-  color: #333333;
+  /* color: #333333; */ color: #ffffff;  /*Custom css change by me*/
 }
 body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active a {
-  background-color: #007ad9;
-  border: 1px solid #007ad9;
+  /* background-color: #007ad9; */   background-color: #013164;   /*Custom Css Change by me*/
+  /* border: 1px solid #007ad9; */   border: 1px solid #013164;
   color: #ffffff;
 }
 body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active a .ui-accordion-toggle-icon {
   color: #ffffff;
 }
 body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active:hover a {
-  border: 1px solid #005b9f;
-  background-color: #005b9f;
+  /* border: 1px solid #005b9f; */  border: 1px solid #013164;   /*Custom css change by me*/
+  /* background-color: #005b9f; */  background-color: #013164;
   color: #ffffff;
 }
 body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active:hover a .ui-accordion-toggle-icon {
@@ -2666,8 +2672,8 @@ body .ui-tabview.ui-tabview-top .ui-tabview-nav, body .ui-tabview.ui-tabview-bot
   border: 0 none;
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li, body .ui-tabview.ui-tabview-left .ui-tabview-nav li, body .ui-tabview.ui-tabview-right .ui-tabview-nav li {
-  border: 1px solid #c8c8c8;
-  background-color: #f4f4f4;
+  /* border: 1px solid #c8c8c8; */  border: 1px solid #013164;        /* Custom change by me */
+  /* background-color: #f4f4f4; */  background-color: #013164;        /* Custom change by me */
   -moz-transition: background-color 0.2s, box-shadow 0.2s;
   -o-transition: background-color 0.2s, box-shadow 0.2s;
   -webkit-transition: background-color 0.2s, box-shadow 0.2s;
@@ -2676,7 +2682,7 @@ body .ui-tabview.ui-tabview-top .ui-tabview-nav li, body .ui-tabview.ui-tabview-
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li a, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li a, body .ui-tabview.ui-tabview-left .ui-tabview-nav li a, body .ui-tabview.ui-tabview-right .ui-tabview-nav li a {
   float: none;
   display: inline-block;
-  color: #333333;
+  /* color: #333333; */ color: #ffffff;   /* Custom change by me */
   padding: 0.571em 1em;
   font-weight: 700;
 }
@@ -2699,31 +2705,31 @@ body .ui-tabview.ui-tabview-top .ui-tabview-nav li .ui-tabview-close:focus, body
   box-shadow: 0 0 0 0.2em #8dcdff;
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover, body .ui-tabview.ui-tabview-left .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover, body .ui-tabview.ui-tabview-right .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover {
-  background-color: #dbdbdb;
-  border: 1px solid #dbdbdb;
+  /* background-color: #dbdbdb; */  background-color: #013164;  /* Custom change by me */
+  /* border: 1px solid #dbdbdb; */   border: 1px solid #013164;  /* Custom change by me */
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover a, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover a, body .ui-tabview.ui-tabview-left .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover a, body .ui-tabview.ui-tabview-right .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover a {
-  color: #333333;
+  /* color: #333333; */ color: #ffffff;  /* Custom change by me */
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover .ui-tabview-close, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover .ui-tabview-close, body .ui-tabview.ui-tabview-left .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover .ui-tabview-close, body .ui-tabview.ui-tabview-right .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover .ui-tabview-close {
   color: #333333;
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active {
-  background-color: #007ad9;
-  border: 1px solid #007ad9;
+  /* background-color: #007ad9; */  background-color: #ffffff;   /* Custom change by me */
+  /* border: 1px solid #007ad9; */  border: 1px solid #ffffff;   /* Custom change by me */
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active a, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active a, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active a, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active a {
-  color: #ffffff;
+  /* color: #ffffff; */  color: #FF8C00;    /* Custom change by me */
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active .ui-tabview-close, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active .ui-tabview-close, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active .ui-tabview-close, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active .ui-tabview-close {
   color: #ffffff;
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active:hover, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active:hover, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active:hover {
-  border: 1px solid #005b9f;
-  background-color: #005b9f;
+  /* border: 1px solid #005b9f; */  border: 1px solid #ffffff;   /* Custom change by me */
+  /* background-color: #005b9f; */  background-color: #ffffff;
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover a, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active:hover a, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active:hover a, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active:hover a {
-  color: #ffffff;
+  /* color: #ffffff; */ color: #FF8C00;  /* Custom change by me */
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-left-icon, body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-right-icon, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-left-icon, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-right-icon, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-left-icon, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-right-icon, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-left-icon, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-right-icon {
   color: #ffffff;
@@ -2736,7 +2742,7 @@ body .ui-tabview.ui-tabview-top .ui-tabview-nav li:focus, body .ui-tabview.ui-ta
   outline-offset: 0;
   -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
   -moz-box-shadow: 0 0 0 0.2em #8dcdff;
-  box-shadow: 0 0 0 0.2em #8dcdff;
+  box-shadow: 0 0 0 0.2em transparent;   /* Custom change by me */
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav {
   margin-bottom: -1px;
