@@ -11,7 +11,7 @@
            </div>
               <!-- Top hedaer Title div_end -->
         <!--Tab_View compo start-->
-        <p-tabView styleClass="whitebackground-ht">
+        <p-tabView>
             <p-tabPanel header="Contract Type">
             <!--Mandatory Line section start-->
             <div class="p-grid p-nogutter pt-innerpart">
@@ -21,12 +21,12 @@
                     </div>                
                 </div>
                 <div class="p-col-6">
-                  <span class="customicon"><i class="fa fa-expand" data-fa-transform="rotate-90" aria-hidden="true" style="padding-right: 5px;"></i>Expand All</span>
+                  <span class="customicon"><i class="fa fa-expand" aria-hidden="true" style="padding-right: 5px; transform: rotate(136deg);"></i>Expand All</span>
                 </div>
             </div>
                <!--default accordian_comp start-->
-               <!-- <p-scrollPanel [style]="{width: '100%', height: '250px'}" styleClass="custombar1"> -->
-                <div class="whitebackground-ht1">
+               <p-scrollPanel [style]="{width: '100%', height: '400px'}" styleClass="custombar1">
+                <!-- <div class="whitebackground-ht1"> -->
                 <p-accordion>
                   <p-accordionTab header="Contract Type Name" [selected]="true">
                     <!--formfrid with input_field-->
@@ -52,16 +52,27 @@
                         <label for="label"><span class="colorred">*</span>Label</label>
                         <input id="label" name="label1" type="text" pInputText placeholder="Add Label"> 
                     </div>
-                    <div class="p-field p-col-12 p-md-2">
+                    <div class="p-field p-col-12 p-md-3">
                         <label for="datatypes"><span class="colorred">*</span>Data Type</label>
                         <p-dropdown [options]="datatypes" [(ngModel)]="selecteddatatype1" name="datatype1" placeholder="Select a DataType"></p-dropdown>
                         <!-- <p>Selected Car: {{selecteddatatype1 || 'none'}}</p> -->
                     </div>
-                    <div class="p-field p-col-12 p-md-7">
+                    <!-- <div class="p-field p-col-12 p-md-6"></div> -->
+                    <div class="p-field p-col-12 p-md-6" *ngIf="selecteddatatype1 == 'Multiselect Dropdown' || selecteddatatype1 == 'Dropdown' || selecteddatatype1 == 'Boolean'">
                         <label for="values">Values</label>
                         <!-- <input id="values" name="datavalues" type="text" pInputText placeholder="Add Details">  -->
                         <p-chips [(ngModel)]="values1" name="chipvalues" placeholder="Add Details"></p-chips>
                      </div>
+                     <div class="p-field p-col-12 p-md-3" *ngIf="selecteddatatype1 == 'Master Data'">
+                        <label for="mastertype">Master Type</label>
+                        <p-dropdown [options]="mastertypes" [(ngModel)]="selectedmastertype1" name="mastertype1" placeholder="Select a Mastertype"></p-dropdown>
+                        <!-- <p>Selected Car: {{selectedmastertype1 || 'none'}}</p> -->
+                    </div>
+                    <div class="p-field p-col-12 p-md-3" *ngIf="selecteddatatype1 == 'Master Data'">
+                        <label for="linkmetadata">Link Metadata</label>
+                        <p-dropdown [options]="linkmetadatas" [(ngModel)]="selectedlinkmdata" name="linkmetadata" placeholder="Select a DataType"></p-dropdown>
+                        <!-- <p>Selected Car: {{selectedlinkmdata || 'none'}}</p> -->
+                    </div>
                     <div class="p-field p-col-12 p-md-3">
                         <label for="defaultvalue">Default Value</label>
                         <input id="defaultvalue" name="defaultvalue1" type="text" pInputText placeholder="Add default Value"> 
@@ -78,16 +89,16 @@
                         <label for="helptext">Help Text</label>
                         <input id="helptext" name="helptext1" type="text" pInputText placeholder="Add Help Text"> 
                     </div>
-                    <div class="p-field p-col-12 p-md-2">
+                    <!-- <div class="p-field p-col-12 p-md-2" *ngIf="selecteddatatype1 == 'Master Data'">
                         <label for="mastertype">Master Type</label>
                         <p-dropdown [options]="mastertypes" [(ngModel)]="selectedmastertype1" name="mastertype1" placeholder="Select a Mastertype"></p-dropdown>
-                        <!-- <p>Selected Car: {{selectedmastertype1 || 'none'}}</p> -->
+                        <p>Selected Car: {{selectedmastertype1 || 'none'}}</p>
                     </div>
-                    <div class="p-field p-col-12 p-md-2">
+                    <div class="p-field p-col-12 p-md-2" *ngIf="selecteddatatype1 == 'Master Data'">
                         <label for="linkmetadata">Link Metadata</label>
                         <p-dropdown [options]="linkmetadatas" [(ngModel)]="selectedlinkmdata" name="linkmetadata" placeholder="Select a DataType"></p-dropdown>
-                        <!-- <p>Selected Car: {{selectedlinkmdata || 'none'}}</p> -->
-                    </div>
+                        <p>Selected Car: {{selectedlinkmdata || 'none'}}</p>
+                    </div> -->
                     <div class="p-field p-col-12 p-md-3">
                         <label for="dependenton">Dependent On</label>
                         <input id="dependenton" name="dependenton1" type="text" pInputText placeholder="Add Sequence #"> 
@@ -97,7 +108,7 @@
                         <p-dropdown [options]="inheritedlists" [(ngModel)]="selectedinheritedlist" name="inheritedlist" placeholder="Select"></p-dropdown>
                         <!-- <p>Selected Car: {{selectedinheritedlist || 'none'}}</p> -->
                     </div>
-                    <div class="p-field p-col-12 p-md-2">
+                    <div class="p-field p-col-12 p-md-3">
                         <label for="inheritedfrom">Inherited From</label>
                         <p-dropdown [options]="inheritedfroms" [(ngModel)]="selectedinheritedfrom" name="inheritedfrom" placeholder="Select"></p-dropdown>
                         <!-- <p>Selected Car: {{selectedinheritedfrom || 'none'}}</p> -->
@@ -118,8 +129,8 @@
                         <label for="option3">Hidden</label>
                     </div>
                     <div class="p-field-checkbox">
-                        <p-checkbox name="option4" value="Summery Display" [(ngModel)]="checkoptions" inputId="option4"></p-checkbox>
-                        <label for="option4">Summery Display</label>
+                        <p-checkbox name="option4" value="Summary Display" [(ngModel)]="checkoptions" inputId="option4"></p-checkbox>
+                        <label for="option4">Summary Display</label>
                     </div>
                     <div class="p-field-checkbox">
                         <p-checkbox name="option5" value="Editable Post Exceution" [(ngModel)]="checkoptions" inputId="option5"></p-checkbox>
@@ -187,8 +198,11 @@
         </p-table>   <!--table_1 end -->
              </p-accordionTab>      <!--accordiontab_2 enddd-->  
            </p-accordion>      <!--default accordian comp enddd-->
-           </div>
+        </p-scrollPanel> 
+
+           <!-- </div> -->
              <!--Buttons-->
+             <hr class="bordermargin-lr">
              <div class="p-grid htbottom-buttons">
                 <div class="p-col-12 p-md-6 p-lg-3"></div>
                 <div class="p-col-12 p-md-6 p-lg-3"></div>
@@ -201,7 +215,7 @@
                     </div>
                 </div>
             </div>
-         <!-- </p-scrollPanel>  -->
+        
             </p-tabPanel>      <!--tabpanel_1 end-->
             <p-tabPanel header="Association">
                 <div class="whitebackground-ht2">
@@ -295,6 +309,7 @@
             </p-table>   <!--table_2 end -->
             </div>
             <!--Buttons-->
+            <hr class="bordermargin-lr">
             <div class="p-grid htbottom-buttons">
                 <div class="p-col-12 p-md-6 p-lg-3"></div>
                 <div class="p-col-12 p-md-6 p-lg-3"></div>

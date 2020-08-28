@@ -487,7 +487,7 @@ body .ui-chips > ul.ui-inputtext .ui-chips-input-token {
   padding: 0.2145em 0;
 }
 body .ui-chips > ul.ui-inputtext .ui-chips-input-token input {
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  /* font-family: "Open Sans", "Helvetica Neue", sans-serif; */  font-family: palatino;  /*Custom css*/
   font-size: 14px;
   padding: 0;
   margin: 0;
@@ -2540,8 +2540,8 @@ body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active:
   color: #ffffff;
 }
 body .ui-accordion .ui-accordion-content {
-  padding: 0.571em 1em;
-  border: 1px solid #c8c8c8;
+  padding: 0.571em 1em;  
+  border: 1px solid #c8c8c8;  /* border: 1px solid #013164; Custom css change by me */
   background-color: #ffffff;
   color: #333333;
   padding: 0.571em 1em;
@@ -4121,3 +4121,8 @@ body .ui-terminal .ui-terminal-command {
 }
 
 /* Add your customizations of theme here */
+/* body .ui-accordion .ui-accordion-content{
+  border-top-color: rgb(200, 200, 200);
+    border-top-style: solid;
+    border-top-width: 1px;
+} */

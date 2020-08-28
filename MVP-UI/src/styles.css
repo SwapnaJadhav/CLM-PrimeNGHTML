@@ -299,15 +299,27 @@ span.colorred {
 position: sticky;
 }
 .whitebackground-ht1{
-    height: 29em;
+    height: 28.5em;
     overflow-y: scroll;
 }
 .whitebackground-ht2{
     height: 30em;
 }
+.bordermargin-lr{
+    margin-left: -1em;
+    margin-right: -1em;
+}
 /*Footer css*/
+.textalignment{
+    padding: 6px;
+    text-align: center;
+}
 footer.footer {
     background-color: #013164;
     color: #ffffff;
-    padding: 6px;
+    position: fixed;
+    width: 100%;
+    z-index: 11004;
+    display: block;
+    bottom: 0;
 }
