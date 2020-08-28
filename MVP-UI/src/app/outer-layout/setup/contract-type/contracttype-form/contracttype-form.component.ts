@@ -22,12 +22,14 @@ export class ContracttypeFormComponent implements OnInit {
   selectedinheritedlist: string;
   inheritedfroms: SelectItem[];  //dropdown5
   selectedinheritedfrom: string;
+  sectionnames: SelectItem[];          //dropdown6
+  selectedSecname: string;
   checkoptions: any[] = [];   //checkboxs var
   customtabledata: any[];      // table1 var
   cols: any[];
-  associationstages: SelectItem[];        //dropdown6 var
+  associationstages: SelectItem[];        //dropdown7 var
   selectedstage1: string;               //if needed to pushkar otherwise delete
-  associationtypes: SelectItem[];        //dropdown7 var
+  associationtypes: SelectItem[];        //dropdown8 var
   selectedtype1: string;                //if needed to pushkar otherwise delete
   selectedmandatory: string[] = [];     //checkbox mandatory
   Associationtabledata: any[];      // table2 var
@@ -68,7 +70,14 @@ this.inheritedfroms = [
     {label: '', value: ''},
     {label: '', value: ''}
 ];
-    this.associationstages = [
+this.sectionnames = [
+  {label: 'Section A', value: 'Section A'},
+  {label: 'Section B', value: 'Section B'},
+  {label: 'Section C', value: 'Section C'},
+  {label: 'Section D', value: 'Section D'},
+  {label: 'Section E', value: 'Section E'}
+];
+this.associationstages = [
       {label: 'pre-requisite', value: 'pre-requisite'},
       {label: 'Before Signature Submission', value: 'Before Signature Submission'},
       {label: 'Before Approval Submission', value: 'Before Approval Submission'},

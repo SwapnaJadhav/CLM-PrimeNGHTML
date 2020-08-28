@@ -3760,16 +3760,13 @@ body .ui-tieredmenu .ui-menuitem-link .ui-menuitem-icon {
   margin-right: 0.5em;
 }
 body .ui-tieredmenu .ui-menuitem-link:not(.ui-state-disabled):hover {
-  /* background-color: #eaeaea; */
-  background-color: #FF8C00;         /* Custom css change by me */
+  /* background-color: #eaeaea; */    background-color: #FF8C00;         /* Custom css change by me */
 }
 body .ui-tieredmenu .ui-menuitem-link:not(.ui-state-disabled):hover .ui-menuitem-text {
-  /* color: #080707; */
-  color: #ffffff;                 /* Custom css change 3px by me */
+  /* color: #080707; */  color: #ffffff;                 /* Custom css change 3px by me */
 }
 body .ui-tieredmenu .ui-menuitem-link:not(.ui-state-disabled):hover .ui-menuitem-icon {
-  /* color: #333333; */
-  color: #ffffff;    /*Custom css change by me*/
+  /* color: #333333; */    color: #ffffff;    /*Custom css change by me*/
 }
 body .ui-tieredmenu .ui-menuitem-link:focus {
   outline: 0 none;
@@ -3779,8 +3776,7 @@ body .ui-tieredmenu .ui-menuitem-link:focus {
   box-shadow: inset 0 0 0 0.1em #ffffff;         /*Custom css chnage by me 8dcdff*/
 }
 body .ui-tieredmenu .ui-menuitem-link.ui-menuitem-link-active .ui-menuitem-text {
-  /* color: #007ad9; */
-  color: #ffffff;         /*Custom css add by me ffffff*/
+  /* color: #007ad9; */   color: #ffffff;         /*Custom css add by me ffffff*/
 }
 body .ui-tieredmenu .ui-menuitem-link.ui-menuitem-link-active .ui-menuitem-icon {
   color: #007ad9;
@@ -3800,20 +3796,16 @@ body .ui-tieredmenu .ui-menuitem .ui-menuitem-link .ui-submenu-icon {
   right: 0.429em;
 }
 body .ui-tieredmenu .ui-menuitem.ui-menuitem-active > .ui-menuitem-link {
-  /* background-color: #eaeaea; */
-  background-color: #FF8C00;           /* Custom css change by me */
+  /* background-color: #eaeaea; */   background-color: #FF8C00;           /* Custom css change by me */
 }
 body .ui-tieredmenu .ui-menuitem.ui-menuitem-active > .ui-menuitem-link .ui-menuitem-text {
-  /* color: #333333; */
-  color: #ffffff;                         /* Custom css change 3px by me */
+  /* color: #333333; */   color: #ffffff;                         /* Custom css change 3px by me */
 }
 body .ui-tieredmenu .ui-menuitem.ui-menuitem-active > .ui-menuitem-link .ui-menuitem-icon, body .ui-tieredmenu .ui-menuitem.ui-menuitem-active > .ui-menuitem-link .ui-submenu-icon {
-  /* color: #333333; */
-  color: #ffffff;                               /* Custom css change 3px by me */
+  /* color: #333333; */    color: #ffffff;                         /* Custom css change 3px by me */
 }
 body .ui-tieredmenu .ui-menu-separator {
-  /* border: 1px solid #c8c8c8; */
-  border: 1px inset #c8c8c8;        /*Custom css change by me*/
+  /* border: 1px solid #c8c8c8; */  border: 1px inset #c8c8c8;        /*Custom css change by me*/
   border-width: 1px 0 0 0;
 }
 body .ui-message {

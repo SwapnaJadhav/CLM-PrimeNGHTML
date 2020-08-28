@@ -1,3 +1,4 @@
+<p-scrollPanel [style]="{width: '100%', height: '70%'}">
 <div class="layout-main">
     <div class="layout-content">
        <div class="p-grid">
@@ -42,23 +43,23 @@
             <div class="p-grid">
                 <div class="p-col-9 grayborder-r">
                   <div class="ui-fluid p-formgrid p-grid">
-                    <div class="p-field p-col-11">
-                        <label for="sendto">Send To</label>
-                        <p-multiSelect [options]="sendto" name="sendto"></p-multiSelect>
+                    <div class="p-field p-col-9">
+                    <label for="sendto1">Send To</label>
+                     <p-chips [(ngModel)]="values2" separator=","></p-chips>
                     </div>
-                    <div class="p-field p-col-1 plusicon">
-                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        <!-- pTooltip comp -->
-                        <!-- <span pTooltip="Add User" tooltipPosition="top" tooltipEvent="focus"></span> -->
-                   </div>
-                    <div class="p-field p-col-11">
+                    <div class="p-field p-col-3">
+                        <label for="selectpreuser">Add Users From List</label>
+                       <p-multiSelect [options]="selectpreuser" name="selectpreuser"></p-multiSelect>
+                </div>
+                <div class="p-field p-col-9">
                         <label for="ccto">CC To</label>
-                        <p-multiSelect [options]="ccto" name="ccto"></p-multiSelect>
+                        <p-chips [(ngModel)]="values3" separator=","></p-chips>
                     </div>
-                    <div class="p-field p-col-1 plusicon">
-                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                      </div>
-                    <div class="p-field p-col-12">
+                    <div class="p-field p-col-3">
+                      <label for="cctopreuser">Select Users From List</label>
+                        <p-multiSelect [options]="cctopreuser" name="cctopreuser"></p-multiSelect>
+                    </div>
+                   <div class="p-field p-col-12">
                         <label for="subject">Subject</label>
                         <input id="subject" name="subject" type="text" pInputText placeholder="Add Subject"> 
                     </div>
@@ -106,3 +107,4 @@
        
     </div>       <!--layout-content end-->
    </div>       <!--layout-main end-->
+</p-scrollPanel>

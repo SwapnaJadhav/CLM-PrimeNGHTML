@@ -57,6 +57,10 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     border: none;
     background-color: #013164;
 }
+/* a.ui-menuitem-link.ui-corner-all.ng-star-inserted.ui-menuitem-link-active {
+    height: 45px !important;
+    padding-top: 15px !important;
+  } */
 .sidebarsize.ui-sidebar-left{
     width: 12.5em;             /*edit by pushkar*/
     top: 51px;

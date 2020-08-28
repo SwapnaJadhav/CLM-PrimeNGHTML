@@ -12,11 +12,14 @@ export class NotificationFormComponent implements OnInit {
   selectednotitype1: string;
   contracttype: SelectItem[];
   triggerbasedon: SelectItem[];
-  sendto: SelectItem[];
-  ccto: SelectItem[];
+  values2: string[];    //chip1
+  values3: string[];    //chip2
+  selectpreuser: SelectItem[];
+  cctopreuser: SelectItem[];
   dragmetadatadalist: SelectItem[];
   selectedmetadata: string = 'Contract ID';     /*check with pushkar*/
   text1: string = '';        //Editor
+
 
 
   constructor() {
@@ -40,20 +43,20 @@ export class NotificationFormComponent implements OnInit {
   {label: 'Completed Signature', value: 'Completed Signature'},
   {label: 'Expired', value: 'Expired'}
 ];    //  end of Trigeer_Multiselect2
-this.sendto = [
-  {label: 'swapnajadhav396@gmail.com', value: 'swapnajadhav396@gmail.com'},
-  {label: 'rajesapna8448@gmail.com', value: 'rajesapna8448@gmail.com'},
-  {label: 'satyamjoshi11@gmail.com', value: 'satyamjoshi11@gmail.com'},
-  {label: 'dheerug@hotmail.com', value: 'dheerug@hotmail.com'},
-  {label: 'yadav.sandeep1920@gmail.com', value: 'Completed Review'}
-];    //  end of sendto_Multiselect3
-this.ccto = [
-  {label: 'swapnajadhav396@gmail.com', value: 'swapnajadhav396@gmail.com'},
-  {label: 'rajesapna8448@gmail.com', value: 'rajesapna8448@gmail.com'},
-  {label: 'satyamjoshi11@gmail.com', value: 'satyamjoshi11@gmail.com'},
-  {label: 'dheerug@hotmail.com', value: 'dheerug@hotmail.com'},
-  {label: 'yadav.sandeep1920@gmail.com', value: 'Completed Review'}
-];    //  end of ccto_Multiselect4
+this.selectpreuser = [
+  {label: 'Current User', value: 'Current User'},
+  {label: 'Previous User', value: 'Previous User'},
+  {label: 'Next User', value: 'Next User'},
+  {label: 'Owner', value: 'Owner'}
+];   
+ //  end of sendto_Multiselect3
+this.cctopreuser = [
+  {label: 'Current User', value: 'Current User'},
+  {label: 'Previous User', value: 'Previous User'},
+  {label: 'Next User', value: 'Next User'},
+  {label: 'Owner', value: 'Owner'}
+];   
+ //  end of ccto_Multiselect4
 this.dragmetadatadalist = [
   {label:'Contract ID', value:'Contract ID'},
   {label:'Contract Type', value:'Contract Type'},
@@ -63,6 +66,7 @@ this.dragmetadatadalist = [
   {label:'Expiry Date', value:'Expiry Date'},
   {label:'Action', value:'Action'}
 ];   //  end of dragmedatadalist
+
 }   //  end of construcor() method
 
   ngOnInit(): void {
