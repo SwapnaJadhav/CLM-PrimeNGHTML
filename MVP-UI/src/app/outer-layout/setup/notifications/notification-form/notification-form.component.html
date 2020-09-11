@@ -1,4 +1,3 @@
-<p-scrollPanel [style]="{width: '100%', height: '70%'}">
 <div class="layout-main">
     <div class="layout-content">
        <div class="p-grid">
@@ -11,9 +10,10 @@
                    <div class="p-col-12 p-md-3"></div>
            </div>
               <!-- Top hedaer Title div_end -->
+    <!-- <form action=""> -->
         <p-card  styleClass="ui-card-shadow">
             <div class="py-mandatoryline">
-            <p>**All Fields are mandatory</p>
+              <p>**All Fields are mandatory</p>
             </div>
            <!--1st Row-->
             <div class="ui-fluid p-formgrid p-grid">
@@ -28,7 +28,7 @@
                 <div class="p-field p-col">
                     <label for="notificationtype">Notification Type</label>
                     <p-dropdown [options]="notificationtypes" [(ngModel)]="selectednotitype1" name="notitypes" placeholder="Select a Type"></p-dropdown>
-                     <!-- <p>Selected Car: {{selectednotitype1 || 'none'}}</p> -->
+                     <!-- <p>Selected notitype1: {{selectednotitype1 || 'none'}}</p> -->
                 </div>
                 <div class="p-field p-col">
                     <label for="contracttype">Contract Type</label>
@@ -78,11 +78,12 @@
                     <div class="py-mandatoryline">
                       <p class="text-color-gray">Drag Metedata to email body which you would like to include in your email or subject.</p>
                      </div>
-                    <p-scrollPanel [style]="{width: '100%', height: '200px'}" styleClass="custombar1">
+                    <!-- <p-scrollPanel [style]="{width: '100%', height: '200px'}" styleClass="custombar1"> -->
                           <p-listbox [options]="dragmetadatadalist" [(ngModel)]="selectedmetadata" [checkbox]="false" [filter]="true" optionLabel="label">
+                            <!-- <p-scrollPanel [style]="{width: '100%', height: '200px'}" styleClass="custombar1"></p-scrollPanel> -->
                             <!-- <p-header>Cars</p-header> -->
                           </p-listbox>
-                    </p-scrollPanel>
+                    <!-- </p-scrollPanel> -->
                   <!-- <p>Selected metadata: <span *ngFor="let c of selectedmetadata" style="margin-right: 10px">{{c.label}</span></p> -->
              <!-- </p-card> -->
             </div>
@@ -102,9 +103,9 @@
             </div>
             <!--3rd Row end-->
            </p-card>
+        <!-- </form> -->
           </div>
        </div>       <!--top grid end-->
        
     </div>       <!--layout-content end-->
    </div>       <!--layout-main end-->
-</p-scrollPanel>

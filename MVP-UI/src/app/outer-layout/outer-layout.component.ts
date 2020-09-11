@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {MenubarModule} from 'primeng/menubar';
 // import  { MenubarModule} from 'customprimeng/menubar/public_api';
-import {SidebarModule} from 'primeng/sidebar';
+// import {SidebarModule} from 'primeng/sidebar';
+// import {SidebarModule} from './customprimengmodules/sidebar/public_api';
 import {TieredMenuModule} from 'primeng/tieredmenu';
 import {MenuItem} from 'primeng/api';
 
@@ -14,12 +15,12 @@ import {MenuItem} from 'primeng/api';
   encapsulation: ViewEncapsulation.Emulated
 })
 export class OuterLayoutComponent implements OnInit {
-constructor() { }
-
   items: MenuItem[];
   visibleSidebar1 = false;
   sundeussidemenu: MenuItem[];
-  
+  // disabled: boolean;
+
+constructor() { }
 
 ngOnInit(): void {
     this.items = [
@@ -91,7 +92,7 @@ this.sundeussidemenu = [
       label: 'Contracts',
       styleClass: 'expandcontent',
       icon: 'contractimg',
-      
+      routerLink: ['/app/contract/list'],
   },
   {separator:true},
   {
@@ -113,9 +114,9 @@ this.sundeussidemenu = [
   styleClass: 'expandcontent',
   icon: 'usermtimg',
 items: [
-      {label: 'Users'},
+      {styleClass: 'submenupadd-tb', label: 'Users'},
       {separator:true},
-      {label: 'Role & permissions'}
+      {styleClass: 'submenupadd-tb', label: 'Role & permissions'}
   ]
 },
 {separator:true},
@@ -125,15 +126,15 @@ items: [
   icon: 'setupimg',
   // routerLink: ['/app/setup/notifications/notification-list'],
   items: [
-      {label: 'Alerts & Notification', routerLink: ['/app/setup/notifications/notification-list'] },
+      {styleClass: 'submenupadd-tb', label: 'Alerts & Notification', routerLink: ['/app/setup/notifications/list'] },
       {separator:true},
-      {label: 'Contract Type', routerLink: ['/app/setup/contract-type/contracttype-list'] },
+      {styleClass: 'submenupadd-tb', label: 'Contract Type', routerLink: ['/app/setup/contract-type/list'] },
       {separator:true},
-      {label: 'Clauses'},
+      {styleClass: 'submenupadd-tb', label: 'Clauses', routerLink: ['/app/setup/clauses/list'], 'disabled': true},
       {separator:true},
-      {label: 'Templates'},
+      {styleClass: 'submenupadd-tb', label: 'Templates', routerLink: ['/app/setup/templates/list']},
       {separator:true},
-      {label: 'Organisation Details'},
+      {styleClass: 'submenupadd-tb', label: 'Organisation Details', routerLink: ['/app/setup/organisation-details/form']},
 
   ]
 },

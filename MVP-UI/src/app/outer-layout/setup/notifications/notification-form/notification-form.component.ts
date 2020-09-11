@@ -64,6 +64,20 @@ this.dragmetadatadalist = [
   {label:'Contract Status', value:'Contract Status'},
   {label:'Created By', value:'Created On'},
   {label:'Expiry Date', value:'Expiry Date'},
+  {label:'Action', value:'Action'},
+  {label:'Contract ID', value:'Contract ID'},
+  {label:'Contract Type', value:'Contract Type'},
+  {label:'Contract Name', value:'Contract Name'},
+  {label:'Contract Status', value:'Contract Status'},
+  {label:'Created By', value:'Created On'},
+  {label:'Expiry Date', value:'Expiry Date'},
+  {label:'Action', value:'Action'},
+  {label:'Contract ID', value:'Contract ID'},
+  {label:'Contract Type', value:'Contract Type'},
+  {label:'Contract Name', value:'Contract Name'},
+  {label:'Contract Status', value:'Contract Status'},
+  {label:'Created By', value:'Created On'},
+  {label:'Expiry Date', value:'Expiry Date'},
   {label:'Action', value:'Action'}
 ];   //  end of dragmedatadalist
 

@@ -15,7 +15,7 @@ export class ContracttypeListComponent implements OnInit {
 
   ngOnInit(): void {
     this.customtabledata = [
-      {"Contract Type": "Non Disclosure Agreement", "checked": false, "Created By": "111232", "Last Updated By": "Human Resource", "Version": "Manager", "Status": ""},
+      {"Contract Type": "Non Disclosure Agreement", "checked": false, "Created By": "111232", "Last Updated By": "Human Resource", "Version": "1.0", "Status": ""},
       {"Contract Type": "Partnership Agreement", "checked": false, "Created By": "Admin", "Last Updated By": "Human Resource", "Version": "Manager", "Status": ""},
       {"Contract Type": "Master Services Agreement", "checked": false, "Created By": "Admin", "Last Updated By": "Human Resource", "Version": "Manager" ,"Status": ""},
       {"Contract Type": "Lease Agreement", "checked": false, "Created By": "Admin", "Last Updated By": "Human Resource","Version": "Manager","Status": ""},
@@ -73,4 +73,4 @@ isFirstPage(): boolean {
   return this.first === 0;
 }
 // end pagination
-}   // end bracket of export class
+}   //end bracket of export class

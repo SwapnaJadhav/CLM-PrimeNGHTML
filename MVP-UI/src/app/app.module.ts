@@ -9,7 +9,8 @@ import { MenubarModule } from 'primeng/menubar';
  //import  { MenubarModule} from './customprimengmodules/menubar/public_api';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
-import {SidebarModule} from 'primeng/sidebar';
+// import {SidebarModule} from 'primeng/sidebar';
+import {SidebarModule} from './customprimengmodules/sidebar/public_api';
 //import {TieredMenuModule} from 'primeng/tieredmenu';
 import {TieredMenuModule} from './customprimengmodules/tieredmenu/public_api';
 import { DashboardComponent } from './outer-layout/dashboard/dashboard.component';
@@ -38,10 +39,24 @@ import {TabViewModule} from 'primeng/tabview';
 import {AccordionModule} from 'primeng/accordion';
 import {ChipsModule} from 'primeng/chips';
 import {CheckboxModule} from 'primeng/checkbox';
+import { ClausesComponent } from './outer-layout/setup/clauses/clauses.component';
+import { ClausesListComponent } from './outer-layout/setup/clauses/clauses-list/clauses-list.component';
+import { AddclauseFormComponent } from './outer-layout/setup/clauses/addclause-form/addclause-form.component';
+import { TemplatesComponent } from './outer-layout/setup/templates/templates.component';
+import { TemplatesListComponent } from './outer-layout/setup/templates/templates-list/templates-list.component';
+import { OrganisationDetailsComponent } from './outer-layout/setup/organisation-details/organisation-details.component';
+import { OrganisationdetailsFormComponent } from './outer-layout/setup/organisation-details/organisationdetails-form/organisationdetails-form.component';
+import { ContractComponent } from './outer-layout/contract/contract.component';
+import { ContractListComponent } from './outer-layout/contract/contract-list/contract-list.component';
+import { ContractFormComponent } from './outer-layout/contract/contract-form/contract-form.component';
+import { ContractFormContractTypeComponent } from './outer-layout/contract/contract-form/contract-form-contract-type/contract-form-contract-type.component';
+import { ContractFormEnterDataComponent } from './outer-layout/contract/contract-form/contract-form-enter-data/contract-form-enter-data.component';
+import { ContractFormContractTemplateComponent } from './outer-layout/contract/contract-form/contract-form-contract-template/contract-form-contract-template.component';
+import { ContractFormValidateComponent } from './outer-layout/contract/contract-form/contract-form-validate/contract-form-validate.component';
+import {StepsModule} from 'primeng/steps';
+import {CalendarModule} from 'primeng/calendar';
 
-
-
-
+import {InputNumberModule} from 'primeng/inputnumber';
 
 
 // import {MenuItem} from 'primeng/api';
@@ -57,7 +72,22 @@ import {CheckboxModule} from 'primeng/checkbox';
     ContractTypeComponent,
     ContracttypeListComponent,
     ContracttypeFormComponent,
-
+    ClausesComponent,
+    ClausesListComponent,
+    AddclauseFormComponent,
+    TemplatesComponent,
+    TemplatesListComponent,
+    OrganisationDetailsComponent,
+    OrganisationdetailsFormComponent,
+    ContractComponent,
+    ContractListComponent,
+    ContractFormComponent,
+    ContractFormContractTypeComponent,
+    ContractFormEnterDataComponent,
+    ContractFormContractTemplateComponent,
+    ContractFormValidateComponent
+    
+   
   ],
   imports: [
     BrowserModule,
@@ -84,7 +114,10 @@ import {CheckboxModule} from 'primeng/checkbox';
     TabViewModule,
     AccordionModule,
     ChipsModule,
-    CheckboxModule
+    CheckboxModule,
+    StepsModule,
+    CalendarModule,
+    InputNumberModule
    
     // MenuItem
   ],

@@ -11,6 +11,7 @@ body{
 }
 .Sundeusmenuright.ui-menubar .ui-menubar-custom {
     float: left;
+    margin-left: 14px;
 } 
 .Sundeusmenuright.ui-menubar.ui-widget.ui-widget-content.ui-corner-all{
     position: fixed;
@@ -20,7 +21,7 @@ body{
 .Sundeusheaderlogo1{
     content: url(./dist/SundeusCLMImg/Sundeus_logo/Logo.svg);
     height: 40px;
-    width: 155px;
+    width: 180px;
     vertical-align: middle;
 }
 .Sundeusmenuright span.ui-submenu-icon.pi.pi-fw.pi-caret-down.ng-star-inserted {
@@ -57,10 +58,6 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     border: none;
     background-color: #013164;
 }
-/* a.ui-menuitem-link.ui-corner-all.ng-star-inserted.ui-menuitem-link-active {
-    height: 45px !important;
-    padding-top: 15px !important;
-  } */
 .sidebarsize.ui-sidebar-left{
     width: 12.5em;             /*edit by pushkar*/
     top: 51px;
@@ -91,11 +88,6 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     height: 25px;
     width: 25px;
 }
-/* .ui-menuitem-icon.dashimg:hover{
-    content: url(./dist/SundeusCLMImg/Orange_menuicon/dashboardSelected.svg);
-    height: 25px;
-    width: 25px;
-} */
 .ui-menuitem-icon.contractimg{
     content: url(./dist/SundeusCLMImg/menuicon_white/ContractTypewhite.svg);
     height: 25px;
@@ -122,8 +114,8 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     font-family: Avenir Heavy;
 }
 .Sundeussideborder.ui-tieredmenu .ui-menuitem .ui-menuitem-link .ui-submenu-icon {
-    right: 3px;
-    font-size: 14px;
+    right: -3px;
+    font-size: 18px;
     color: #ffffff;
 }
 .Sundeussideborder.ui-tieredmenu .ui-menuitem-link .ui-menuitem-icon {
@@ -134,11 +126,14 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     background-color: #013164;
     border: none;
 }
-a.ng-tns-c22-0.ui-sidebar-close.ui-corner-all.ng-star-inserted {
-    display: none !important;
+.Sundeussideborder li.submenupadd-tb.ng-star-inserted.ui-menuitem.ui-widget.ui-corner-all > a.ui-menuitem-link {
+    height: 3.2em;
+    padding-top: 15px;
 }
-
-   /* Dashboard Comp css */
+/* a.ng-tns-c22-0.ui-sidebar-close.ui-corner-all.ng-star-inserted {
+    display: none !important;
+} */
+       /* Dashboard Comp css */
 .layout-main{
     margin-left: 70px;
     padding-top: 52px;
@@ -195,7 +190,7 @@ width: 80%;
 /* Notification-List/module Screen CSS start*/
  span.title-caption{                /*re-usable in list screen*/
     color: #013164 !important;
-    font-size: 14px;
+    font-size: 16px;
     font-family: Avenir Heavy;
     font-weight: bold;
 }
@@ -222,7 +217,7 @@ th.w-coltable.ui-sortable-column {
 }
 td.listactionicon img{    /*re-usable*/
     /* margin-left: 22px; */
-    height: 14px;
+    height: 18px;
     vertical-align: middle;
 }
 body .ui-togglebutton:not(.ui-state-disabled):not(.ui-state-active) {
@@ -243,9 +238,8 @@ body .ui-togglebutton:not(.ui-state-disabled):not(.ui-state-active):hover {
     font-size: 11px;
 }
 ul.ui-listbox-list {
-    /* height: 100%; */
-    height: 32em;
-    /* overflow-y: scroll;   */  /*ask to pushkar_add new class as per documetn */
+    /* height: 100%; */       /*ask to pushkar_add new class as per documetn */
+    height: 30.2em;
 }
 label {
     font-weight: bold !important;      /*reusable*/
@@ -261,13 +255,11 @@ p.text-color-gray{
 .custombar1 .ui-scrollpanel-wrapper {
     border-right: 9px solid #f4f4f4;
 }
-    
 .custombar1 .ui-scrollpanel-bar {
     background-color: #013164;
     opacity: 1;
     transition: background-color .3s;
 }
-    
 .custombar1 .ui-scrollpanel-bar:hover {
     background-color: #135ba1;
 }
@@ -293,25 +285,39 @@ span.colorred {
 .pt-innerpart{
     padding-top: 5px;
 }
-/* .ui-tabview-panels{                     
-    height: 34em;
-}
-.whitebackground-ht{
-    height: 30em;
-} */
 .htbottom-buttons{
 position: sticky;
 }
-.whitebackground-ht1{
+/* .whitebackground-ht1{
     height: 28.5em;
     overflow-y: scroll;
-}
-.whitebackground-ht2{
-    height: 30em;
+} */
+.whitebackground-ht1{
+    height: 29.5em;
 }
 .bordermargin-lr{
     margin-left: -1em;
     margin-right: -1em;
+}
+/*Contract css comps*/
+/* Steps css */
+.steps-custom.steps-custom.ui-steps.ui-widget.ui-helper-clearfix.ui-steps-readonly{
+margin-top: -14px;
+}
+.steps-custom.ui-steps .ui-steps-item {
+ width: 16.5%;
+}
+.steps-custom li.ui-steps-item.ui-state-default.ui-state-disabled.ui-steps-incomplete{
+    opacity: 1.5;
+}
+.whitebackground-ht2{
+    height: 27em;
+}
+/*Enter data comp css*/
+.bgcoloricon button.ui-datepicker-trigger.ui-calendar-button {
+    background: #013164;
+    color: #ffffff;
+    border-radius: 0px;
 }
 /*Footer css*/
 .textalignment{
@@ -327,3 +333,7 @@ footer.footer {
     display: block;
     bottom: 0;
 }
+
+
+
+

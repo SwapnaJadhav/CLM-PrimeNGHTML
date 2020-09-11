@@ -1,4 +1,3 @@
-<p-scrollPanel [style]="{width: '100%', height: '70%'}">
 <div class="layout-main">
     <div class="layout-content">
        <div class="p-grid">
@@ -26,7 +25,7 @@
                 </div>
             </div>
                <!--default accordian_comp start-->
-               <p-scrollPanel [style]="{width: '100%', height: '400px'}" styleClass="custombar1">
+               <p-scrollPanel [style]="{width: '100%', height: '390px'}" styleClass="custombar1">
                 <!-- <div class="whitebackground-ht1"> -->
                 <p-accordion>
                   <p-accordionTab header="Contract Type Name" [selected]="true">
@@ -50,8 +49,8 @@
                 <p-accordionTab header="Contract Details">
                  <div class="ui-fluid p-formgrid p-grid">
                     <div class="p-field p-col-12 p-md-3">
-                        <label for="label"><span class="colorred">*</span>Label</label>
-                        <input id="label" name="label1" type="text" pInputText placeholder="Add Label"> 
+                        <label for="label1"><span class="colorred">*</span>Label</label>
+                        <input id="label1" name="label1" type="text" pInputText placeholder="Add Label"> 
                     </div>
                     <div class="p-field p-col-12 p-md-3">
                         <label for="datatypes"><span class="colorred">*</span>Data Type</label>
@@ -92,16 +91,6 @@
                         <label for="helptext">Help Text</label>
                         <input id="helptext" name="helptext1" type="text" pInputText placeholder="Add Help Text"> 
                     </div>
-                    <!-- <div class="p-field p-col-12 p-md-2" *ngIf="selecteddatatype1 == 'Master Data'">
-                        <label for="mastertype">Master Type</label>
-                        <p-dropdown [options]="mastertypes" [(ngModel)]="selectedmastertype1" name="mastertype1" placeholder="Select a Mastertype"></p-dropdown>
-                        <p>Selected Car: {{selectedmastertype1 || 'none'}}</p>
-                    </div>
-                    <div class="p-field p-col-12 p-md-2" *ngIf="selecteddatatype1 == 'Master Data'">
-                        <label for="linkmetadata">Link Metadata</label>
-                        <p-dropdown [options]="linkmetadatas" [(ngModel)]="selectedlinkmdata" name="linkmetadata" placeholder="Select a DataType"></p-dropdown>
-                        <p>Selected Car: {{selectedlinkmdata || 'none'}}</p>
-                    </div> -->
                     <div class="p-field p-col-12 p-md-3">
                         <label for="dependenton">Dependent On</label>
                         <input id="dependenton" name="dependenton1" type="text" pInputText placeholder="Add Sequence #"> 
@@ -221,7 +210,7 @@
         
             </p-tabPanel>      <!--tabpanel_1 end-->
             <p-tabPanel header="Association">
-                <div class="whitebackground-ht2">
+                <div class="whitebackground-ht1">
                 <div class="ui-fluid p-formgrid p-grid pt-innerpart">
                 <div class="p-col-10">
                     <div class="p-grid">
@@ -334,4 +323,3 @@
        
     </div>       <!--layout-content end-->
    </div>       <!--layout-main end-->
-</p-scrollPanel>

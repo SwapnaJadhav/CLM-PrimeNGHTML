@@ -18,7 +18,7 @@ import {RouterModule} from '@angular/router';
                         [ngClass]="{'ui-state-disabled':child.disabled}" (click)="itemClick($event, listItem, child)" role="menuitem" [attr.aria-haspopup]="item.items != null" [attr.aria-expanded]="item === activeItem">
                         <span class="ui-menuitem-icon" *ngIf="child.icon" [ngClass]="child.icon"></span>
                         <span class="ui-menuitem-text">{{child.label}}</span>
-                        <span class="ui-submenu-icon pi pi-fw fa fa-chevron-circle-right" *ngIf="child.items"></span>
+                        <span class="ui-submenu-icon pi pi-fw fa fa fa-caret-right" *ngIf="child.items"></span>
                     </a>
                     <a *ngIf="child.routerLink" [routerLink]="child.routerLink" role="menuitem" [queryParams]="child.queryParams" [routerLinkActive]="'ui-menuitem-link-active'" role="menuitem" [attr.tabindex]="child.disabled ? null : '0'"
                         [routerLinkActiveOptions]="child.routerLinkActiveOptions||{exact:false}"
@@ -27,7 +27,7 @@ import {RouterModule} from '@angular/router';
                         [fragment]="child.fragment" [queryParamsHandling]="child.queryParamsHandling" [preserveFragment]="child.preserveFragment" [skipLocationChange]="child.skipLocationChange" [replaceUrl]="child.replaceUrl" [state]="child.state">
                         <span class="ui-menuitem-icon" *ngIf="child.icon" [ngClass]="child.icon"></span>
                         <span class="ui-menuitem-text">{{child.label}}</span>
-                        <span class="ui-submenu-icon pi pi-fw fa fa-chevron-circle-right" *ngIf="child.items"></span>
+                        <span class="ui-submenu-icon pi pi-fw fa fa-caret-right" *ngIf="child.items"></span>
                     </a>
                     <p-tieredMenuSub class="ui-submenu" [item]="child" *ngIf="child.items" [baseZIndex]="baseZIndex" [parentActive]="listItem==activeItem" [autoZIndex]="autoZIndex"></p-tieredMenuSub>
                 </li>
