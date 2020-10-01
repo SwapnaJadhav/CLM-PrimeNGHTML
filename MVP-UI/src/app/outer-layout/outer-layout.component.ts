@@ -105,7 +105,7 @@ this.sundeussidemenu = [
 {
   label: 'Search',
   styleClass: 'expandcontent',
-  icon: 'pi pi-fw pi-search-plus',
+  icon: 'searchimg',
   
 },
 {separator:true},

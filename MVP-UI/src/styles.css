@@ -18,6 +18,25 @@ body{
     width: 100%;
     z-index: 2000;
 }
+.Sundeusmenuright .ui-button {
+    margin: 0;
+    color: #012164;
+    background-color: #ffffff;
+    border: transparent;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: background-color 0.2s, box-shadow 0.2s;
+} 
+.Sundeusmenuright .ui-button:enabled:hover{
+    background-color: #ffffff;
+    color: #013164;
+    border-color: #012164;
+}
+.Sundeusmenuright .ui-button:enabled:active{
+    background-color: #ffffff;
+    color: #013164;
+    border-color: #012164;
+}
 .Sundeusheaderlogo1{
     content: url(./dist/SundeusCLMImg/Sundeus_logo/Logo.svg);
     height: 40px;
@@ -83,6 +102,9 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     padding-left: 0px;         /*edit by pushkar*/
     padding-top: 0px !important;
 }
+.ui-widget-overlay.ui-sidebar-mask {
+    background-color: transparent;
+}
 .ui-menuitem-icon.dashimg{
     content: url(./dist/SundeusCLMImg/menuicon_white/dashboardwhite.svg);
     height: 25px;
@@ -95,6 +117,11 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
 }
 .ui-menuitem-icon.reportsimag{
     content: url(./dist/SundeusCLMImg/menuicon_white/ruleswhite.svg);
+    height: 25px;
+    width: 25px;
+}
+.ui-menuitem-icon.searchimg{
+    content: url(./dist/SundeusCLMImg/menuicon_white/searchwhite.svg);
     height: 25px;
     width: 25px;
 }
@@ -119,7 +146,7 @@ span.ui-menuitem-icon.SundeusLogout.ng-star-inserted {
     color: #ffffff;
 }
 .Sundeussideborder.ui-tieredmenu .ui-menuitem-link .ui-menuitem-icon {
-    color: #ffffff;
+    /* color: #818181; */
     margin-right: 15px;
   }
 .Sundeussideborder.ui-tieredmenu .ui-submenu-list{
@@ -282,6 +309,9 @@ th.w-col25{
 span.colorred {
     color: red;
 }
+.colordarkblue{
+    color: #012164;
+}
 .pt-innerpart{
     padding-top: 5px;
 }
@@ -292,7 +322,7 @@ position: sticky;
     height: 28.5em;
     overflow-y: scroll;
 } */
-.whitebackground-ht1{
+.whitebackground-ht1{    /*reusable*/
     height: 29.5em;
 }
 .bordermargin-lr{
@@ -310,7 +340,7 @@ margin-top: -14px;
 .steps-custom li.ui-steps-item.ui-state-default.ui-state-disabled.ui-steps-incomplete{
     opacity: 1.5;
 }
-.whitebackground-ht2{
+.whitebackground-ht2{    /*reusable*/
     height: 27em;
 }
 /*Enter data comp css*/
@@ -334,6 +364,8 @@ footer.footer {
     bottom: 0;
 }
 
-
-
-
+/* @media (max-width: 1366px) {
+    .card.myTasktable {
+    height: 27em !important;
+    }
+  } */

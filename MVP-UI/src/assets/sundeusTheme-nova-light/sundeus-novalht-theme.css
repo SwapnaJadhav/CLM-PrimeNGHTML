@@ -51,7 +51,7 @@ body .ui-widget {
   text-decoration: none;
 }
 body .ui-widget-overlay {
-  /* background-color: rgba(0, 0, 0, 0.4); */  background-color: none;  /*Custom css change by me*/
+   background-color: rgba(0, 0, 0, 0.4);
 }
 body .ui-widget-content p {
   line-height: 1.5;
@@ -837,8 +837,7 @@ body .ui-listbox .ui-listbox-list {
 body .ui-listbox .ui-listbox-list .ui-listbox-item {
   margin: 0;
   padding: 0.429em 0.857em;
-  /* border: 0 none; */
-  border: 1px solid gray;     /*Custon css chanage by me*/
+  /* border: 0 none; */  border: 1px solid lightgray;     /*Custon css chanage by me*/
   color: #333333;
   background-color: transparent;
   -moz-transition: background-color 0.2s, box-shadow 0.2s;
@@ -1343,20 +1342,19 @@ body .p-togglebutton.ng-dirty.ng-invalid .ui-button {
 }
 body .ui-button {
   margin: 0;
-  color: #012164;
-  background-color: #ffffff;    /* Custom css change color by me*/
-  border: transparent;    /* Custom css change  color by me*/
-  border-radius: 3px;      /* Custom css add radius by me*/
-  font-size: 14px;                  /* Custom css change fontsize 14 by me*/
+  color: #ffffff;
+  background-color: #007ad9;
+  border: 1px solid #007ad9;
+  font-size: 14px;
   -moz-transition: background-color 0.2s, box-shadow 0.2s;
   -o-transition: background-color 0.2s, box-shadow 0.2s;
   -webkit-transition: background-color 0.2s, box-shadow 0.2s;
   transition: background-color 0.2s, box-shadow 0.2s;
 }
 body .ui-button:enabled:hover {
-  background-color: #ffffff;    /* Custom css change color by me*/
-  color: #012164;
-  border-color: none;      /* Custom css change color by me*/
+  background-color: #116fbf;
+  color: #ffffff;
+  border-color: #116fbf;
 }
 body .ui-button:enabled:focus {
   outline: 0 none;
@@ -1366,9 +1364,9 @@ body .ui-button:enabled:focus {
   box-shadow: 0 0 0 0.2em #ffffff;
 }
 body .ui-button:enabled:active {
-  background-color: #ffffff;      
-  color: #012164;
-  border-color: #ffffff;         /* Custom css change color 005b9f by me*/
+  background-color: #005b9f;
+  color: #ffffff;
+  border-color: #005b9f;     
 }
 body .ui-button.ui-button-text-only .ui-button-text {
   padding: 0.429em 1em;
@@ -2701,7 +2699,7 @@ body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover a, body
   /* color: #ffffff; */ color: #FF8C00;  /* Custom change by me */
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-left-icon, body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-right-icon, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-left-icon, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-right-icon, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-left-icon, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-right-icon, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-left-icon, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-right-icon {
-  color: #ffffff;
+  /* color: #ffffff; */ color: #FF8C00;    /* Custom change by me */
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-tabview-selected a, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-tabview-selected a, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-tabview-selected a, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-tabview-selected a {
   cursor: pointer;

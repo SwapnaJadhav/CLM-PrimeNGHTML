@@ -55,8 +55,23 @@ import { ContractFormContractTemplateComponent } from './outer-layout/contract/c
 import { ContractFormValidateComponent } from './outer-layout/contract/contract-form/contract-form-validate/contract-form-validate.component';
 import {StepsModule} from 'primeng/steps';
 import {CalendarModule} from 'primeng/calendar';
+import {RadioButtonModule} from 'primeng/radiobutton';
 
 import {InputNumberModule} from 'primeng/inputnumber';
+import {InputMaskModule} from 'primeng/inputmask';
+import {FileUploadModule} from 'primeng/fileupload';
+
+
+import { SummaryComponent } from './outer-layout/contract/contract-form/contract-form-validate/summary/summary.component';
+import { DetailsComponent } from './outer-layout/contract/contract-form/contract-form-validate/details/details.component';
+import { TeamsComponent } from './outer-layout/contract/contract-form/contract-form-validate/teams/teams.component';
+import { SupportingDocComponent } from './outer-layout/contract/contract-form/contract-form-validate/supporting-doc/supporting-doc.component';
+import { ObligationsComponent } from './outer-layout/contract/contract-form/contract-form-validate/obligations/obligations.component';
+import { HistoryComponent } from './outer-layout/contract/contract-form/contract-form-validate/history/history.component';
+import { NotesComponent } from './outer-layout/contract/contract-form/contract-form-validate/notes/notes.component';
+import { ValidateClauseComponent } from './outer-layout/contract/contract-form/contract-form-validate/validate-clause/validate-clause.component';
+import {PanelModule} from 'primeng/panel';
+import {DialogModule} from 'primeng/dialog';
 
 
 // import {MenuItem} from 'primeng/api';
@@ -85,9 +100,15 @@ import {InputNumberModule} from 'primeng/inputnumber';
     ContractFormContractTypeComponent,
     ContractFormEnterDataComponent,
     ContractFormContractTemplateComponent,
-    ContractFormValidateComponent
-    
-   
+    ContractFormValidateComponent,
+    SummaryComponent,
+    DetailsComponent,
+    TeamsComponent,
+    SupportingDocComponent,
+    ObligationsComponent,
+    HistoryComponent,
+    NotesComponent,
+    ValidateClauseComponent
   ],
   imports: [
     BrowserModule,
@@ -117,7 +138,12 @@ import {InputNumberModule} from 'primeng/inputnumber';
     CheckboxModule,
     StepsModule,
     CalendarModule,
-    InputNumberModule
+    RadioButtonModule,
+    PanelModule,
+    DialogModule,
+    InputNumberModule,
+    InputMaskModule,
+    FileUploadModule
    
     // MenuItem
   ],

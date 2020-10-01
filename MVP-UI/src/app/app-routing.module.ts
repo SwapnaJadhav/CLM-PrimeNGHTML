@@ -23,7 +23,14 @@ import { ContractFormContractTypeComponent } from './outer-layout/contract/contr
 import { ContractFormEnterDataComponent } from './outer-layout/contract/contract-form/contract-form-enter-data/contract-form-enter-data.component';
 import { ContractFormContractTemplateComponent } from './outer-layout/contract/contract-form/contract-form-contract-template/contract-form-contract-template.component';
 import { ContractFormValidateComponent } from './outer-layout/contract/contract-form/contract-form-validate/contract-form-validate.component';
-
+import { SummaryComponent } from './outer-layout/contract/contract-form/contract-form-validate/summary/summary.component';
+import { DetailsComponent } from './outer-layout/contract/contract-form/contract-form-validate/details/details.component';
+import { TeamsComponent } from './outer-layout/contract/contract-form/contract-form-validate/teams/teams.component';
+import { ValidateClauseComponent } from './outer-layout/contract/contract-form/contract-form-validate/validate-clause/validate-clause.component';
+import { SupportingDocComponent } from './outer-layout/contract/contract-form/contract-form-validate/supporting-doc/supporting-doc.component';
+import { ObligationsComponent } from './outer-layout/contract/contract-form/contract-form-validate/obligations/obligations.component';
+import { HistoryComponent } from './outer-layout/contract/contract-form/contract-form-validate/history/history.component';
+import { NotesComponent } from './outer-layout/contract/contract-form/contract-form-validate/notes/notes.component';
 
 const routes: Routes = [
   { 
@@ -38,8 +45,20 @@ const routes: Routes = [
           { path: '' , redirectTo: 'step1', pathMatch: 'full'},
           { path: 'step1', component: ContractFormContractTypeComponent },
           { path: 'step2', component: ContractFormEnterDataComponent },
-          { path: 'contract-form-contract-template', component: ContractFormContractTemplateComponent },
-          { path: 'contract-form-validate', component: ContractFormValidateComponent },
+          { path: 'step3', component: ContractFormContractTemplateComponent },
+          { path: 'step4', component: ContractFormValidateComponent,
+          children: [
+            { path: '', redirectTo: 'summary', pathMatch: 'full' },
+            { path: 'summary', component: SummaryComponent },
+            { path: 'details', component: DetailsComponent },
+            { path: 'teams', component: TeamsComponent },
+            { path: 'validateclause', component: ValidateClauseComponent },
+            { path: 'document', component: SupportingDocComponent },
+            { path: 'obligations', component: ObligationsComponent },
+            { path: 'history', component: HistoryComponent },
+            { path: 'notes', component: NotesComponent },
+          ]
+        },
         ]
        },
       ]

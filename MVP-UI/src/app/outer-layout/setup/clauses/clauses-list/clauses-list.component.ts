@@ -14,7 +14,7 @@ export class ClausesListComponent implements OnInit {
   selectedtemplate1: string;
   customtabledata: any[];
   cols: any[];
-  first = 0;
+  first = 0;  //pagination
   rows = 10;
 
   constructor() {
@@ -93,4 +93,4 @@ isFirstPage(): boolean {
 }
 // end pagination
 
-}
+} //end of export class bracket
