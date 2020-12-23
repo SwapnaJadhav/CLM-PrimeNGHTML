@@ -72,6 +72,22 @@ import { NotesComponent } from './outer-layout/contract/contract-form/contract-f
 import { ValidateClauseComponent } from './outer-layout/contract/contract-form/contract-form-validate/validate-clause/validate-clause.component';
 import {PanelModule} from 'primeng/panel';
 import {DialogModule} from 'primeng/dialog';
+import {TabMenuModule} from 'primeng/tabmenu';
+import { AuditLogComponent } from './outer-layout/contract/contract-form/contract-form-validate/history/audit-log/audit-log.component';
+import { VersionComponent } from './outer-layout/contract/contract-form/contract-form-validate/history/version/version.component';
+import { ApproverComponent } from './outer-layout/contract/contract-form/contract-form-validate/teams/approver/approver.component';
+import { ReviewerComponent } from './outer-layout/contract/contract-form/contract-form-validate/teams/reviewer/reviewer.component';
+import { UserMgmtComponent } from './outer-layout/user-mgmt/user-mgmt.component';
+import { UsersComponent } from './outer-layout/user-mgmt/users/users.component';
+import { RoleComponent } from './outer-layout/user-mgmt/role/role.component';
+import { UsersListComponent } from './outer-layout/user-mgmt/users/users-list/users-list.component';
+import { UserFormComponent } from './outer-layout/user-mgmt/users/user-form/user-form.component';
+import { RoleListComponent } from './outer-layout/user-mgmt/role/role-list/role-list.component';
+import { RoleFormComponent } from './outer-layout/user-mgmt/role/role-form/role-form.component';
+import { RolesComponent } from './outer-layout/user-mgmt/role/role-form/roles/roles.component';
+import { PermissionsComponent } from './outer-layout/user-mgmt/role/role-form/permissions/permissions.component';
+import { LoginComponent } from './auth/login/login.component';
+import {PasswordModule} from 'primeng/password';
 
 
 // import {MenuItem} from 'primeng/api';
@@ -108,7 +124,21 @@ import {DialogModule} from 'primeng/dialog';
     ObligationsComponent,
     HistoryComponent,
     NotesComponent,
-    ValidateClauseComponent
+    ValidateClauseComponent,
+    AuditLogComponent,
+    VersionComponent,
+    ApproverComponent,
+    ReviewerComponent,
+    UserMgmtComponent,
+    UsersComponent,
+    RoleComponent,
+    UsersListComponent,
+    UserFormComponent,
+    RoleListComponent,
+    RoleFormComponent,
+    RolesComponent,
+    PermissionsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -143,7 +173,9 @@ import {DialogModule} from 'primeng/dialog';
     DialogModule,
     InputNumberModule,
     InputMaskModule,
-    FileUploadModule
+    FileUploadModule,
+    TabMenuModule,
+    PasswordModule
    
     // MenuItem
   ],

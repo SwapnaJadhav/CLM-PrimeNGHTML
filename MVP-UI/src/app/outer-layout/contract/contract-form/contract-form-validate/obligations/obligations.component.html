@@ -49,8 +49,8 @@
         </div>
      </div>
 <!-- </div> -->
-<div class="whitebackground-ht1">
-<p-table [columns]="cols" [value]="customtabledata" (sortFunction)="customSort($event)" [customSort]="true" [resizableColumns]="true" [scrollable]="true" scrollHeight="170px">
+<!-- <div class="whitebackground-ht1"> -->
+<p-table [columns]="cols" [value]="customtabledata" (sortFunction)="customSort($event)" [customSort]="true" [resizableColumns]="true" [scrollable]="true" scrollHeight="180px">
      <ng-template pTemplate="colgroup" let-columns>
         <colgroup>
           <col *ngFor="let col of columns" [style.width]="col.width">
@@ -120,7 +120,7 @@
  </tr>
 </ng-template>
 </p-table>
-</div>
+<!-- </div> -->
 <hr class="bordermargin-lr">
 <!--Bottom_buttons-->
 <div class="p-grid">

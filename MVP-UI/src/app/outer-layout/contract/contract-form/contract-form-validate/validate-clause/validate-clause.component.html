@@ -1,5 +1,10 @@
 <!-- <p>validate-clause works!</p> -->
-<p-table [columns]="cols" [value]="customtabledata" (sortFunction)="customSort($event)" [customSort]="true" [resizableColumns]="true">
+<p-table [columns]="cols" [value]="customtabledata" (sortFunction)="customSort($event)" [customSort]="true" [scrollable]="true" scrollHeight="320px" [resizableColumns]="true">
+                    <ng-template pTemplate="colgroup" let-columns>
+                      <colgroup>
+                        <col *ngFor="let col of columns" [style.width]="col.width">
+                       </colgroup>
+                    </ng-template>
                   <ng-template pTemplate="header" let-columns>
                   <tr>
                        <!-- <th *ngFor="let col of columns" [pSortableColumn]="col.field">
@@ -32,11 +37,11 @@
                      <!-- <td *ngFor="let col of columns">
                            {{rowData[col.field]}}
                      </td> -->
-                   <td>{{rowData['Clause Name']}}</td>
-                   <td>{{rowData['Version']}}</td>
-                   <td>{{rowData['Language']}}</td>
-                   <td>{{rowData['Analytics']}}</td>
-                   <td class="listactionicon">
+                   <td class="ui-resizable-column">{{rowData['Clause Name']}}</td>
+                   <td class="ui-resizable-column">{{rowData['Version']}}</td>
+                   <td class="ui-resizable-column">{{rowData['Language']}}</td>
+                   <td class="ui-resizable-column">{{rowData['Analytics']}}</td>
+                   <td class="listactionicon ui-resizable-column">
                         <img src="dist/SundeusCLMImg/List Page icons/Editlatest.svg"  alt="" style="padding-right: 10px;" (click)="showModalDialog()">
                         <img src="dist/SundeusCLMImg/List Page icons/Viewlatest.svg" alt="" style="padding-right: 10px;" (click)="showLogModalDialog()">
                         <!-- <img src="dist/SundeusCLMImg/List Page icons/Deletelatest.svg" alt=""> -->

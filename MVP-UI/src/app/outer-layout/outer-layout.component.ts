@@ -114,9 +114,9 @@ this.sundeussidemenu = [
   styleClass: 'expandcontent',
   icon: 'usermtimg',
 items: [
-      {styleClass: 'submenupadd-tb', label: 'Users'},
+      {styleClass: 'submenupadd-tb', label: 'Users', routerLink: ['/app/usermgmt/users/list']},
       {separator:true},
-      {styleClass: 'submenupadd-tb', label: 'Role & permissions'}
+      {styleClass: 'submenupadd-tb', label: 'Role & permissions', routerLink: ['/app/usermgmt/role/list']}
   ]
 },
 {separator:true},

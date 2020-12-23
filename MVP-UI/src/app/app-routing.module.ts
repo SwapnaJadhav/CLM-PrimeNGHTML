@@ -31,11 +31,27 @@ import { SupportingDocComponent } from './outer-layout/contract/contract-form/co
 import { ObligationsComponent } from './outer-layout/contract/contract-form/contract-form-validate/obligations/obligations.component';
 import { HistoryComponent } from './outer-layout/contract/contract-form/contract-form-validate/history/history.component';
 import { NotesComponent } from './outer-layout/contract/contract-form/contract-form-validate/notes/notes.component';
+import { AuditLogComponent } from './outer-layout/contract/contract-form/contract-form-validate/history/audit-log/audit-log.component';
+import { VersionComponent } from './outer-layout/contract/contract-form/contract-form-validate/history/version/version.component';
+import { ApproverComponent } from './outer-layout/contract/contract-form/contract-form-validate/teams/approver/approver.component';
+import { ReviewerComponent } from './outer-layout/contract/contract-form/contract-form-validate/teams/reviewer/reviewer.component';
+import { UserMgmtComponent } from './outer-layout/user-mgmt/user-mgmt.component';
+import { UsersComponent } from './outer-layout/user-mgmt/users/users.component';
+import { RoleComponent } from './outer-layout/user-mgmt/role/role.component';
+import { UsersListComponent } from './outer-layout/user-mgmt/users/users-list/users-list.component';
+import { UserFormComponent } from './outer-layout/user-mgmt/users/user-form/user-form.component';
+import { RoleListComponent } from './outer-layout/user-mgmt/role/role-list/role-list.component';
+import { RoleFormComponent } from './outer-layout/user-mgmt/role/role-form/role-form.component';
+import { RolesComponent } from './outer-layout/user-mgmt/role/role-form/roles/roles.component';
+import { PermissionsComponent } from './outer-layout/user-mgmt/role/role-form/permissions/permissions.component';
+import { LoginComponent } from './auth/login/login.component';
 
 const routes: Routes = [
+{path: 'login' , component: LoginComponent},
   { 
     path: 'app', component: OuterLayoutComponent,
     children:[
+      { path : '', redirectTo: '/app/dashboard', pathMatch: 'full'},
       { path: 'dashboard', component: DashboardComponent },
       { path: 'contract', component: ContractComponent,
       children: [
@@ -51,11 +67,23 @@ const routes: Routes = [
             { path: '', redirectTo: 'summary', pathMatch: 'full' },
             { path: 'summary', component: SummaryComponent },
             { path: 'details', component: DetailsComponent },
-            { path: 'teams', component: TeamsComponent },
+            { path: 'teams', component: TeamsComponent,
+            children: [
+              { path: '', redirectTo: 'reviewer', pathMatch: 'full' },
+              { path: 'reviewer', component: ReviewerComponent },
+              { path: 'approver', component: ApproverComponent },
+            ]
+           },
             { path: 'validateclause', component: ValidateClauseComponent },
             { path: 'document', component: SupportingDocComponent },
             { path: 'obligations', component: ObligationsComponent },
-            { path: 'history', component: HistoryComponent },
+            { path: 'history', component: HistoryComponent,
+            children: [
+              { path: '', redirectTo: 'auditlog', pathMatch: 'full' },
+              { path: 'auditlog', component: AuditLogComponent },
+              { path: 'version', component: VersionComponent },
+            ]
+           },
             { path: 'notes', component: NotesComponent },
           ]
         },
@@ -64,7 +92,29 @@ const routes: Routes = [
       ]
      },
 
-      { path: 'setup', component: SetupComponent ,
+     { path: 'usermgmt', component: UserMgmtComponent,
+     children: [
+      { path: 'users', component: UsersComponent,
+      children: [
+        { path: 'list', component: UsersListComponent },
+        { path: 'form', component: UserFormComponent },
+      ]
+    },
+      { path: 'role', component: RoleComponent,
+      children: [
+        { path: 'list', component: RoleListComponent },
+        { path: 'form', component: RoleFormComponent,
+        children: [
+          { path: 'createrole', component: RolesComponent },
+          { path: 'permission', component: PermissionsComponent },
+        ]
+       },
+      ]
+    },
+     ]
+     },
+
+     { path: 'setup', component: SetupComponent ,
       children: [
         { path: 'notifications', component: NotificationsComponent,
         children: [

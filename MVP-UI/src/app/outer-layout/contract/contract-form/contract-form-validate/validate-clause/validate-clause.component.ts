@@ -28,11 +28,11 @@ ngOnInit(): void {
       { "Clause Name": "Legal Agreement", "Version": "2.1", "Language": "Marathi", "Analytics": "Lorem Ipsum" }
   ];
     this.cols = [
-      { field: 'Clause Name', header: 'Clause Name' },
+      { field: 'Clause Name', header: 'Clause Name', width: '25%'},
       { field: 'Version', header: 'Version'},
       { field: 'Language', header: 'Language'},
-      { field: 'Analytics', header: 'Analytics'},
-      { field: 'image', header: 'Action'}
+      { field: 'Analytics', header: 'Analytics', width: '35%'},
+      { field: 'image', header: 'Action', width: '10%'}
   ];
   }   // end bracket of ngOnInit():void Method
 

@@ -83,15 +83,15 @@ this.notices = [
 
 ];
     this.cols = [
-      { field: 'Entitlement Type', header: 'Entitlement Type' },
+      { field: 'Entitlement Type', header: 'Entitlement Type',  width: '15%'},
       { field: 'Frequency', header: 'Frequency'},
       { field: 'Valid From', header: 'Valid From'},
       { field: 'Valid To', header: 'Valid To'},
-      { field: 'Email', header: 'Email'},
+      { field: 'Email', header: 'Email', width: '20%'},
       { field: 'Approval', header: 'Approval'},
       { field: 'Reminder', header: 'Reminder'},
       { field: 'Status', header: 'Status'},
-      { field: 'image', header: 'Action'}
+      { field: 'image', header: 'Action', width: '8%'}
   ];
   }  //end of ngOnInit():void method
   customSort(event: SortEvent) {
