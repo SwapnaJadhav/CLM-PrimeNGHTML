@@ -63,7 +63,7 @@
                                     <p-inputMask mask="(999) 999-9999" [(ngModel)]="value1" placeholder="(999) 999-9999"></p-inputMask>                                
                                 </div>
                                 <div class="p-field p-col-12 p-md-8">
-                                    <label for="fileupload"><span class="colorred">*</span>Profile Picture</label>
+                                    <label for="fileupload">Profile Picture</label>
                                     <input id="fileupload" name="fileupload" type="text" pInputText placeholder="Browse..."> 
                                 </div>
                             </div>
@@ -84,7 +84,7 @@
                                 </div>
                                 <div class="p-field p-col-12 p-md-4">
                                     <label for="pwd"><span class="colorred">*</span>Password</label>
-                                    <input pPassword type="password" pPassword [(ngModel)]="property"/>                                
+                                    <input pPassword type="password" pPassword [(ngModel)]="property"  pInputText placeholder="Enter Password" />                                
                                 </div>
                             </div>
                         </div>

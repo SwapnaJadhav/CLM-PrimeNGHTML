@@ -45,6 +45,7 @@ import { RoleFormComponent } from './outer-layout/user-mgmt/role/role-form/role-
 import { RolesComponent } from './outer-layout/user-mgmt/role/role-form/roles/roles.component';
 import { PermissionsComponent } from './outer-layout/user-mgmt/role/role-form/permissions/permissions.component';
 import { LoginComponent } from './auth/login/login.component';
+import { SearchResultComponent } from './outer-layout/search-result/search-result.component';
 
 const routes: Routes = [
 {path: 'login' , component: LoginComponent},
@@ -91,6 +92,8 @@ const routes: Routes = [
        },
       ]
      },
+     
+     { path: 'search', component: SearchResultComponent },
 
      { path: 'usermgmt', component: UserMgmtComponent,
      children: [
@@ -105,6 +108,7 @@ const routes: Routes = [
         { path: 'list', component: RoleListComponent },
         { path: 'form', component: RoleFormComponent,
         children: [
+          { path: '', redirectTo: 'createrole', pathMatch: 'full' },
           { path: 'createrole', component: RolesComponent },
           { path: 'permission', component: PermissionsComponent },
         ]

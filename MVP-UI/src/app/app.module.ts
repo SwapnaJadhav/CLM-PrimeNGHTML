@@ -88,6 +88,7 @@ import { RolesComponent } from './outer-layout/user-mgmt/role/role-form/roles/ro
 import { PermissionsComponent } from './outer-layout/user-mgmt/role/role-form/permissions/permissions.component';
 import { LoginComponent } from './auth/login/login.component';
 import {PasswordModule} from 'primeng/password';
+import { SearchResultComponent } from './outer-layout/search-result/search-result.component';
 
 
 // import {MenuItem} from 'primeng/api';
@@ -138,7 +139,8 @@ import {PasswordModule} from 'primeng/password';
     RoleFormComponent,
     RolesComponent,
     PermissionsComponent,
-    LoginComponent
+    LoginComponent,
+    SearchResultComponent
   ],
   imports: [
     BrowserModule,

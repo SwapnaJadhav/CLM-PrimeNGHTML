@@ -20,7 +20,7 @@
                    <div class="p-grid">
                       <div class="p-col-8"></div>
                        <div class="p-col-4">
-                           <button pButton type="button" label="Add User" class="ui-button-primary Sundeus-button-ui" routerLink = "/app/usermgmt/users/form"></button>
+                           <button pButton type="button" label="Add Role" class="ui-button-primary Sundeus-button-ui" routerLink = "/app/usermgmt/role/form"></button>
                        </div>
                    </div>
                    <!--PrimeNg Sort&page Table-->
@@ -51,22 +51,9 @@
                          {{columns[2].header}}
                         <p-sortIcon [field]="columns[2].field"></p-sortIcon>
                     </th>
-                        <th [pSortableColumn]="columns[3].field" pResizableColumn>
-                               {{columns[3].header}}
-                           <p-sortIcon [field]="columns[3].field"></p-sortIcon>
+                     <th pResizableColumn>
+                        {{columns[3].header}}
                      </th>
-                       <th [pSortableColumn]="columns[4].field" pResizableColumn>
-                          {{columns[4].header}}
-                        <p-sortIcon [field]="columns[4].field"></p-sortIcon>
-                        </th>
-                  <th [pSortableColumn]="columns[5].field" pResizableColumn>
-                         {{columns[5].header}}
-                        <p-sortIcon [field]="columns[5].field"></p-sortIcon>
-               </th>
-            
-              <th pResizableColumn>
-                        {{columns[6].header}}
-              </th>
         </tr>
                   </ng-template>
                   <ng-template pTemplate="body" let-rowData let-columns="columns">
@@ -74,11 +61,8 @@
                      <!-- <td *ngFor="let col of columns">
                            {{rowData[col.field]}}
                      </td> -->
-                   <td><a href="#">{{rowData['User Name']}}</a></td>
-                   <td>{{rowData['Department']}}</td>
-                   <td>{{rowData['Role']}}</td>
-                   <td>{{rowData['Email']}}</td>
-                   <td>{{rowData['Created On']}}</td>
+                   <td><ins><a href="#">{{rowData['Role Name']}}</a></ins></td>
+                   <td>{{rowData['Created By']}}</td>
                    <td>
                        <p-toggleButton [(ngModel)]="rowData['checked']" onLabel="Active" offLabel="Inactive" [style]="{'width':'75px','border-radius':'25px'}" styleClass="togglebutton">{{rowData['Status']}}</p-toggleButton>
                    </td>

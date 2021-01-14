@@ -106,7 +106,8 @@ this.sundeussidemenu = [
   label: 'Search',
   styleClass: 'expandcontent',
   icon: 'searchimg',
-  
+  routerLink: ['/app/search'],
+
 },
 {separator:true},
 {
