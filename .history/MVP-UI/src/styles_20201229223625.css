@@ -12,7 +12,7 @@ body{
 .Sundeusmenuright.ui-menubar .ui-menubar-custom {
     float: left;
     margin-left: 14px;
-}
+} 
 .Sundeusmenuright.ui-menubar.ui-widget.ui-widget-content.ui-corner-all{
     position: fixed;
     width: 100%;
@@ -26,7 +26,7 @@ body{
     border-radius: 3px;
     font-size: 14px;
     transition: background-color 0.2s, box-shadow 0.2s;
-}
+} 
 .Sundeusmenuright .ui-button:enabled:hover{
     background-color: #ffffff;
     color: #013164;
@@ -201,7 +201,7 @@ height: 55px !important;
     font-weight: bold;
 }
 span.customicon {
-    float: right;
+    float: right;        
     color: #013164;
     font-size: 14px;
 }
@@ -209,7 +209,7 @@ span.customicon.pr-doticon {
     padding-right: 13px;
 }
 .ui-table-mytask th.w-tableheader {
-width: 80%;
+width: 80%;                  
 }
 .ui-table-mytask td.w-tableheader {
     width: 80%;
@@ -386,7 +386,7 @@ border-radius: 40px;
     color: #013164;
     padding-top: 8px;
 }
-.whitebackground-ht3{
+.whitebackground-ht3{    
     height: 22em;
 }
 /*Footer css*/
@@ -408,10 +408,7 @@ footer.footer {
     background-image: url(/dist/SundeusCLMImg/Sundeus_login.png);
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    /* height: 45.6rem; */
+    height: 45.6rem;
     margin: 0rem;
 }
 .title1{
